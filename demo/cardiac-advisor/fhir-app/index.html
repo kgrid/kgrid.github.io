@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+	html, body
+	{
+		height: 100%;
+	}
+
+	.blue-background
+	{
+		background-color: steelblue !important;
+		color: white;
+	}
+  .color-scheme
+  {
+	  background-color: #cc0000 !important;
+	  color: white !important;
+  }
+  .jumbotron
+  {
+	  height: 250px;
+	  margin-bottom: 0px !important;
+  }
+  .inline
+  {
+	display: inline-block;
+  }
+
+	.border-box
+	{
+		outline: 1px solid steelblue;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.border-right
+	{
+		border-right: 1px solid steelblue;
+	}
+
+	.borders
+	{
+		border-left: 1px solid steelblue;
+		border-right: 1px solid steelblue;
+		margin: -1px;
+
+	}
+	.visual-field
+	{
+		border: 1px solid steelblue;
+		height: 50%;
+		display: none;
+		margin-bottom: 15px;
+		margin-right: 5px;
+	}
+
+	.box-header
+	{
+		padding: -15px;
+	}
+
+	.table-striped
+	{
+		width: 100%;
+	}
+
+	form
+	{
+		padding: 10px;
+	}
+
+	.pad
+	{
+		padding-left:  10px;
+		padding-right: 10px;
+	}
+	 .bg-1 {
+      background-color: #474e5d; /* Green */
+      color: white;
+      /*background-image: url("https://s-media-cache-ak0.pinimg.com/736x/6a/0a/21/6a0a21b30b781a2d35f1e1fa9c2ff130.jpg");*/
+
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+    .margin {margin-bottom: 45px;}
+
+  .myButton {
+  background-color: #cc0000;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  display:inline-block;
+  cursor:pointer;
+  color: white;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+  .myButton:hover {
+  background-color:#5cbf2a;
+  color: white;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+  .myButton2 {
+  background-color: #5cbf2a;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  display:inline-block;
+  cursor:pointer;
+  color: white;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+  .myButton2:hover {
+  background-color: #cc0000;
+  color: white;
+}
+.myButton2:active {
+  position:relative;
+  top:1px;
+}
+
+	.bg-2 {
+      background-color: #4CAF50; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-car {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .knowledgeButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 400px	;
+}
+
+.margin-bot
+{
+	margin-bottom: 10px;
+}
+
+#get_data
+{
+	margin: 15px;
+}
+
+#input_div
+{
+	display: none;
+}
+
+</style>
+<head>
+  	<script src="https://rawgithub.com/smart-on-fhir/client-js/master/dist/fhir-client.js"> </script>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<script src="raphael-2.1.4.min.js"></script>
+	<script src="justgage.js"></script>
+<!-- 	<script src="iconarray.js"> </script>
+ -->	<script src="https://d3js.org/d3.v4.js"></script>
+
+  <script src="https://kgrid-stack.herokuapp.com/knowledgeObject/ark:/99999/fk40s01p75/payload/content"></script>
+
+ </head>
+
+<body>
+
+<div class="jumbotron container-fluid color-scheme text-center">
+	 <h1><font color = "white"> Welcome to the Cardiac Advisor </font> </h1>
+  <p>
+    <font color=#e6e6e6>The Cardiac Advisor is powered by the Object Teller digital library management system which is part of the Knowledge Grid platform from the University of Michigan Medical School </font></p>
+
+</p>
+
+</div>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Check it Out</h3>
+    <a class="myButton" role="button" id="start">Cardiac Advisor</a>
+</div>
+
+
+
+<div class="container" id="input_div">
+  <div class="row border-box">
+	  <div class="container box-header color-scheme">
+			<h3> input information </h3>
+			<input style="margin-bottom: 10px;" class="sample" id="sample1" type="radio" name="patient1" value="patient1"> Sample Input 1 &nbsp &nbsp &nbsp
+			<input style="margin-bottom: 10px;" class="sample" id="sample2" type="radio" name="patient1" value="patient1"> Sample Input 2 &nbsp &nbsp &nbsp
+			<input style="margin-bottom: 10px;" class="sample" id="sample3" type="radio" name="patient1" value="patient1"> Sample Input 3 &nbsp &nbsp &nbsp
+			<input style="margin-bottom: 10px;" class="sample" id="sample4" type="radio" name="patient1" value="patient1"> Sample Input 4
+
+	  </div>
+	  <br>
+	  <table class="table-striped">
+		  <thead>
+			  <tr>
+				  <th class="pad">Continuing DAPT?</th>
+				  <th class="pad">Peripheral Artery Disease?</th>
+				  <th clas="pad">Hypertension?</th>
+				  <th class="pad">Renal Insufficiency?</th>
+			  </tr>
+		  </thead>
+		 <tbody>
+			<tr>
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form> </td>
+
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form></td>
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value=1> Yes <br>
+					<input class="no-btn"type="radio" name="yes/no" value=0> No </form></td>
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form> </td>
+			</tr>
+		 </tbody>
+		 <thead>
+		 	<tr>
+			 	<th class="pad">at presentation</th>
+			 	<th class="pad">Prior PCI</th>
+			 	<th class="pad">History of CHF or LVEF < 30%</th>
+			 	<th class="pad">Vein graft PCI</th>
+		 	</tr>
+		 </thead>
+
+		<tbody>
+			<tr>
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form> </td>
+
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form></td>
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value=1> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form></td>
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form> </td>
+			</tr>
+		 </tbody>
+
+		 <thead>
+		 	<tr>
+				<th class="pad">Stent Diameter &lt 30mm</th>
+			 	<th class="pad">Paclitaxel-eluting stent</th>
+			 	<th class="pad">Cigarette smoker</th>
+			 	<th class="pad">Diabetes</th>
+		 	</tr>
+		 </thead>
+
+		 	 <tbody>
+			<tr>
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form> </td>
+
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form></td>
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value=1> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form></td>
+
+				<td> <form class="info"> <input class="yes-btn" type="radio" name="yes/no" value="1"> Yes <br>
+					<input class="no-btn" type="radio" name="yes/no" value=0> No </form> </td>
+			</tr>
+		 </tbody>
+	  </table>
+
+  </div>
+  <div class="row">
+    <button type="button" id="get_data" class="btn btn-primary btn-lg color-scheme" style="display: none;">Get Risk</button>
+  </div>
+
+
+</div>
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 visual-field text-center" style="border: 1px solid #cc0000;">
+			<h3> This patient's age was retrieved from an electronic health record using SMART API</h3><br>
+			<h2> Retrieved age value: <span id="patient-age"> </span> </h2>
+		</div>
+
+		<div class="col-lg-4 col-lg-offset-2 visual-field text-center">
+			<div id="bleed-div">
+				<h3>Ischemic Bleeding Risk: <span class="risk-val" id="bleed-risk"> </span></h3>
+
+				<button id="bleed-vis" class="show_gage btn btn-primary btn-block" name="bleeding-icon">Display Visual</button>
+				<br><br>
+				<div id=svg-container>
+					<div id="bleeding-icon" style="display: none;"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 visual-field">
+			<div id="stent-div">
+				<h3>Stent Risk: <span class="risk-val" id="stent-risk"> </span> </h3>
+				<button id="stent-vis" class="show_gage btn btn-primary btn-block" name="stent-gage">Display Visual</button>
+				<br><br>
+				<div id="stent-gage" style="display: none;"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid container-car bg-2 text-center">
+  <h3 >Object Teller</h3>
+  <p>This Cardiac Advisor makes use of Knowledge Objects from the Object Teller Library</p>
+  <a href="http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/home" class="btn btn-default btn-lg" target="_blank">
+    <span class="glyphicon glyphicon-search"></span> Object Teller Library
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid container-car bg-3 text-center">
+  <h3 class="margin">Knowledge Objects used in this project</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/object/ark:/67034/k47c7m" class=knowledgeButton target="_blank">Bleeding Risk Calculator</a>
+    </div>
+    <div class="col-sm-4">
+      <a href="http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/object/ark:/99999/fk45m6gq9t" class=knowledgeButton target="_blank">Stent Thrombosis Risk Calclator</a>
+    </div>
+    <div class="col-sm-4">
+     <a href="http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ObjectTeller/object/ark:/99999/fk40s01p75" class=knowledgeButton target="_blank">Icon Array</a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center margin-bot" style="margin-bottom: 0px; background-color: steelblue; color: white;">
+			<p>This application asks you to input some information about a patient</p>
+
+			<p>Some information, like age and gender, does not need to be entered, as this application gathers data from
+				an electronc health record sandbox</p>
+
+			<p>To gather information from the EHR, this app uses SMART-on-FHIR API</p> <br>
+			<a class="myButton2" href="http://smarthealthit.org" target="_blank">
+				SMART
+			</a>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid container-car bg-4 text-center">
+  <p>Univeristy of Michigan Medical School 2016</p>
+</footer>
+
+</body>
+
+<script>
+
+  // var esUrl = "http://dlhs-fedora-dev-a.umms.med.umich.edu:8080/ExecutionStack/";
+  var esUrl = "https://kgrid-stack.herokuapp.com/";
+	function calculateAge(birthday)
+	{
+		var today = new Date();
+		var birthDate = new Date(birthday);
+		var age = today.getFullYear() - birthDate.getFullYear();
+		var m = today.getMonth() - birthDate.getMonth();
+		if(m < 0 || (m == 0 && today.getDate() < birthDate.getDate()))
+			age--;
+
+		return age;
+	}
+
+  function get_patient_name(patient)
+  {
+	  if(patient.name)
+	  {
+		  var names = patient.name.map(function(name)
+		  {
+			  return name.given.join(" ") + " " + name.family.join(" ");
+		  })
+		  return names.join("/");
+	  }
+	  else return "anonymous";
+  }
+
+  function getButtonValue(inputName)
+  {
+	  alert($('input[name="yes/no"]:checked').val())
+  }
+
+
+  function get_stent_data(pt)
+  {
+  	 var set =
+  	 {
+		  "url": esUrl+"knowledgeObject/ark:/99999/fk45m6gq9t/result",
+		  "method": "POST",
+		  "headers": {
+			  "content-type": "application/json",
+		  }
+	 }
+
+ 	var keyDict = {0: 'DAPT', 4: 'infar', 5: 'priorPCI', 6: 'CHF', 7: 'veinGraft', 8: 'stentDiameter',
+ 				9: 'pac', 10: 'cigSmoker', 11: 'diabetes', 1: 'periphDisease',  2: 'hypertension', 3: 'renal'};
+
+
+  	var data = {'DAPT': -1, 'infar': -1,  'priorPCI': -1, 'CHF': -1, 'veinGraft': -1, 'stentDiameter': -1, 'pac': -1, 'cigSmoker': -1,
+  	'diabetes': -1, 'periphDisease': -1, 'hypertension': -1,  'renal': -1};
+
+
+  	var checkedValues = $("input[name='yes/no']:checked").map(function()
+  	{
+  		return this.value;
+  	}).get();
+
+  	console.log("got checked values: ", checkedValues);
+
+  	//populate data dictionary
+  	for(var i = 0; i < checkedValues.length; ++i)
+  	{
+  		data[keyDict[i]] = checkedValues[i];
+  	}
+
+  	console.log("populated data: ", data);
+
+  	//data['age'] = "" + calculateAge(pt.birthDate);
+
+  	set['data'] = JSON.stringify(data);
+
+  	console.log("AJAX settings: ", set);
+
+  	var res = null;
+  	$.ajax(set).done(function(response) {
+					if(response.result)
+					{
+						console.log('got value from stent object');
+						res = response.result;
+						$("#stent-risk").text((res * 100).toFixed(2) + '%');
+
+					}
+				   else
+				   {
+				   		res = "ERROR";
+						console.log('got error in stent msg');
+
+					   console.log(response.errorMessage);
+					}
+					//createGage(divID, response.result * 100);
+				});
+
+  	console.log("result from bleeding object: ", res);
+  	return res;
+  }
+
+  function get_ischemic_data(pt)
+  {
+  	var settings = {
+	  "url": esUrl+"knowledgeObject/ark:/67034/k47c7m/result",
+	  "method": "POST",
+	  "headers": {
+		  "content-type": "application/json",
+	  },
+  }
+  	var checkedValues = $("input[name='yes/no']:checked").map(function()
+				{
+					return this.value;
+
+				}).get()
+
+  	var keyDict = {0: 'DAPT', 1: 'periphDisease',  2: 'hypertension', 3: 'renal'};
+
+	var data = {'DAPT': -1, 'periphDisease': -1, 'hypertension': -1, 'renal': -1};
+
+	var i = 0;
+
+	for(var i = 0; i < checkedValues.length; ++i)
+  	{
+  		if(i in keyDict)
+  			data[keyDict[i]] = checkedValues[i];
+  	}
+
+	console.log(pt);
+	var patientAge = calculateAge(pt.birthDate);
+	$("#patient-age").text(patientAge);
+	data['age'] = "" + patientAge;
+	console.log(data);
+	settings['data'] =  JSON.stringify(data);
+	console.log('ischemic settings: ', settings)
+
+	$.ajax(settings).done(function (response) {
+		if(response.result)
+		{
+			console.log('result  ' + response.result);
+			$("#bleed-risk").text("" + (response.result * 100).toFixed(2) + '%');
+		}
+	   else
+	   {
+		   console.log(response.errorMessage);
+		   $("#bleed-vis").css("display", "none");
+		   $("#bleed-risk").text(response.errorMessage);
+
+	   }
+		//createGage(divID, response.result * 100);
+	});
+
+  }
+
+
+  $(document).ready(function()
+  {
+
+	$("#get_data").click(function()
+	{
+	  //alert('yo');
+		FHIR.oauth2.ready(function(smart)
+		{
+		   // alert("whoa")
+			var patient = smart.patient.read()
+			$.when(patient).done(function(pt)
+			{
+				console.log("PATIENT RESOURCE: ", pt);
+			   // alert('got yo patient')
+				patientInfo = pt;
+				console.log(patientInfo);
+
+				get_ischemic_data(pt);
+				get_stent_data();
+				$(".visual-field").slideDown("slow");
+
+			})
+		})
+
+	})
+
+	$("input:radio[name='yes/no']").change(function()
+	{
+		//alert("!");
+		$("#bleeding-icon").slideUp("slow");
+		$("#bleeding-icon").html("");
+		$("#stent-gage").slideUp("slow");
+		$("#stent-gage").html("");
+		if($("input[name='yes/no']:checked").length == 12)
+		{
+			$("#get_data").slideDown("slow");
+		}
+
+	})
+
+	$("#sample1").click(function()
+	{
+		$(".no-btn").each(function(index)
+		{
+			if(index % 2)
+			{
+				$(this).prop("checked", true);
+			}
+
+		})
+
+		$(".yes-btn").each(function(index)
+		{
+			if(!(index % 2))
+			{
+				$(this).prop("checked", true);
+			}
+		})
+
+		$("#get_data").slideDown("slow");
+
+	})
+
+	$("#sample2").click(function()
+	{
+		$(".no-btn").each(function(index)
+		{
+			if(!(index % 3))
+				$(this).prop("checked", true);
+		})
+		$(".yes-btn").each(function(index)
+		{
+			if(index % 3)
+				$(this).prop("checked", true);
+		})
+
+		$("#get_data").slideDown("slow")
+	})
+
+	$("#sample3").click(function()
+	{
+		$(".yes-btn").each(function()
+		{
+			if(!$(this).is(":checked"))
+				$(this).prop("checked", true);
+		})
+
+		$("#get_data").slideDown("slow")
+	});
+
+	$("#sample4").click(function()
+	{
+		$(".no-btn").each(function()
+		{
+			if(!$(this).is(":checked"))
+				$(this).prop("checked", true);
+		})
+
+		$("#get_data").slideDown("slow")
+
+	});
+
+	var add = (function()
+	{
+		var count = 0;
+		return function()
+		{
+			count += 1;
+			return count
+		}
+	})();
+
+
+	$(".show_gage").click(function()
+	{
+		$div = $(this).parent("div");
+		id = $div.attr("id");
+		text = $div.find("span").text();
+		text = text.substr(0, text.length - 1);
+
+		//alert(text);
+		var divID_ = this.name;
+		console.log("divID: ", divID_);
+		var domObj = $("#" + divID_);
+
+
+		if(!domObj.is(":visible"))
+		{
+			draw_array({divID: divID_, count: parseFloat(text), gridWidth: 10, gridHeight: 10, personFill: "steelblue",
+					backgroundFill: "#FFFFFF", key: true})
+			$("#" + divID_).slideDown("slow");
+		}
+
+		//createGage(divID, parseFloat(text));
+
+
+	})
+
+  })
+
+  $("#start").click(function()
+  {
+  	$("#input_div").slideDown("slow");
+  })
+
+
+</script>
+
+</html>
