@@ -2,3 +2,4 @@
 .gitignore
 .idea/
 kgrid.github.io.iml
+/staging/syncnow.bat

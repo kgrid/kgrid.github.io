@@ -6,7 +6,7 @@
 */
 
 /* ==== Google font ==== */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic');
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
@@ -29,7 +29,7 @@ body {
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
 	color:#222;
@@ -356,7 +356,7 @@ section.section {
 .navbar {
 	line-height: 100px;
 	height: 100px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: #fff;
 	display: block;
 	vertical-align: middle;
 	text-align: center;
@@ -381,7 +381,7 @@ section.section {
 	height: 100%;
 	line-height: 100%;
 	vertical-align: middle;
-	color: #fff;
+	color: #e6e6e6;
 	font-weight: 700;
 	font-size: 13px;
 	letter-spacing: .1em;
@@ -407,9 +407,9 @@ section.section {
 }
 
 h1 a.navbar-brand {
-	font-size: 24px;
-	color: #fff;
-	font-weight: 900;
+	font-size: 18px;
+	color: #e6e6e6;
+	font-weight: 400;
 	text-shadow: none;
 }
 
@@ -417,7 +417,7 @@ h1 a.navbar-brand {
 	padding: 0;
 	display: table-cell;
 	vertical-align: middle;
-	line-height: 90px;
+	line-height: 60px;
 }
 
 .navbar-brand img {
@@ -441,11 +441,18 @@ h1 a.navbar-brand {
 =========================== */
 
 section.featured {
-	padding: 200px 0 60px;
-	background: #70B9B0;
+	padding: 120px 0 60px;
+	background: #fff;
 	color: #fdfdfd;
 }
 
+section.featured .slogan {
+	line-height: 1.5em;
+}
+
+section.featured .slogan span.italic{
+	font-style: italic;
+}
 section.featured h2.slogan {
 	color: #fff;
 	font-size: 48px;
@@ -594,11 +601,6 @@ section.featured.inner {
 	border-style:none;
 }
 
-#section-services .container, .featured .container{
-	background-image: url('../img/project_papper.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
 .fullwidthbanner a.btn {
 	color: #fff;
 }

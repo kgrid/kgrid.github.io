@@ -4,18 +4,22 @@
 */
 a {
 	color: #35A49C;
+	transition: color 0.8s ease;
 }
 a:hover {
-	color: #79CDC0;
+	color: #00274c;
 }
 
 /* menu */
 .nav>li>a:hover {
-	color: #79CDC0;
+	color: #00274c;
 }
-
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+}
 .navbar .navbar-nav > .active > a {
-	color: #79CDC0;
+	color: #00274c;
 }
 
 /* flexslider */
@@ -28,7 +32,7 @@ a:hover {
 }
 
 .testimonial span.author a {
-	color: #79CDC0;
+	color: #00274c;
 }
 
 /* --- icon box hover --- */
