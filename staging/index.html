@@ -34,7 +34,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="fa fa-bars color-white"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">knowledgegrid.org
+					<h1><a class="navbar-brand" href="index.html" data-0="line-height:60px;" data-300="line-height:30px;">
 					</a></h1>
 				</div>
 				<div class="navbar-collapse collapse">
@@ -42,7 +42,18 @@
 						<li class="active"><a href="#section-story">Story</a></li>
 						<li><a href="#section-uses">Uses</a></li>
 						<li><a href="#section-tech">Technology</a></li>
-            <li><a href="#section-dev">For Developer</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">For Developer</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Authoring Manual</a>
+                      </li>
+                  <li><a href="#">Execution Stack Manual</a>
+                      </li>
+                  <li><a href="#">Object Teller Manual</a>
+                      </li>
+                  <li><a href="#">Demo App</a>
+                      </li>
+                </ul>
+              </li>
 						<!-- <li><a href="#section-contact">Contact</a></li> -->
 					</ul>
 				</div><!--/.navbar-collapse -->
@@ -70,7 +81,7 @@
 		</section>
 
 		<!-- services -->
-		<section id="section-story" class="section pad-bot30 bg-white">
+		<section id="section-story" class="section appear pad-bot30 bg-white">
 		<div class="container">
 
 			<div class="row mar-bot40">
@@ -79,7 +90,7 @@
 						<i class="fa fa-heartbeat fa-5x mar-bot20"></i>
 						<h4 class="text-bold">ADD KNOWLEDGE</h4>
             <h3>Put Your Knowledge On The Grid</h3>
-						<p>In my role as CEO of the “Heart Health Association”, I place the highest priority on developing
+						<p class='story-appear' data-appear-top-offset="-150">In my role as CEO of the “Heart Health Association”, I place the highest priority on developing
             evidence-based tools that both cardiologists and primary care docs can use in practice.
             My organization has led the development of several excellent predictive analytics and computable
             heart care toolkits. Thanks to the Knowledge Grid, it has been easy for us to create,
@@ -89,17 +100,19 @@
 
 						</p>
 					</div>
-          <div class='align-right'>
+          <div class='align-right story-appear'>
             <p>  -Miranda Grayson, MD, FACS</p>
           </div>
 				</div>
 
 				<div class="col-lg-4" >
-					<div class="align-right">
+					<div class="align-left">
+            <div class='align-right'>
 						<i class="fa fa-bed fa-5x mar-bot20"></i>
 						<h4 class="text-bold">ACTIVATE KNOWLEDGE</h4>
             <h3> Deploy KNowledge Using The Grid</h3>
-						<p>As Senior VP for Innovation for “Valiant”, I lead a technical team of 38 analysts, engineers,
+          </div>
+						<p class='story-appear' data-appear-top-offset="-150">As Senior VP for Innovation for “Valiant”, I lead a technical team of 38 analysts, engineers,
             and programmers. Our job is to find ways to improve the Valiant Electronic Health Record
             (EHR) system. The Knowledge Grid has made it possible for us to rapidly add large amounts
             trusted, updated health knowledge from expert sources to the Va liant EHR. Every Valiant
@@ -110,7 +123,7 @@
 
 						</p>
 					</div>
-          <div class='align-right'>
+          <div class='align-right story-appear'>
             <p>  -Thomas S. Garcia, MBA </p>
           </div>
 				</div>
@@ -120,7 +133,7 @@
 						<i class="fa fa-balance-scale fa-5x mar-bot20"></i>
 						<h4 class="text-bold">BENEFIT FROM KNOWLEDGE</h4>
             <h3> Make Better Informed Health Decisions With The Grid</h3>
-						<p>I am a primary care physician responsible for taking care of a large group of older adults.
+						<p class='story-appear' data-appear-top-offset="-150">I am a primary care physician responsible for taking care of a large group of older adults.
             For years I have worked hard to keep up with the latest medical evidence but that is hard to
             do. My patients struggle with a great diversity of health issues. I used to struggle to provide
             my patients with the most current medical advice. However, a dramatic improvement has
@@ -132,7 +145,7 @@
             system. That’s amazing and appreciated.
 						</p>
 					</div>
-          <div class='align-right'>
+          <div class='align-right story-appear'>
             <p>    -Charles Hawary, MD</p>
           </div>
 				</div>
@@ -143,7 +156,7 @@
 		</section>
 
 		<!-- about -->
-		<section id="section-uses" class="section appear clearfix">
+		<section id="section-uses" class="section appear bg-white clearfix">
 		<div class="container">
 
 				<div class="row mar-bot40">

@@ -99,6 +99,16 @@
 			jQuery(".nav a[href='#" + id + "']").parent().addClass("active");
 		});
 
+		jQuery(".story-appear").appear();
+		jQuery(".story-appear").on("appear", function(data) {
+			$(this).addClass("active");
+
+		});
+		jQuery(".story-appear").on("disappear", function(data) {
+			$(this).removeClass("active");
+
+		});
+
 
 		//parallax
         var isMobile = false;
