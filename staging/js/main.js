@@ -105,7 +105,7 @@
 
 		});
 		jQuery(".story-appear").on("disappear", function(data) {
-			$(this).removeClass("active");
+			// $(this).removeClass("active");
 
 		});
 

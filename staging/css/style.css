@@ -340,8 +340,8 @@ section.section {
   --- Header & menu ----
 =========================== */
 .navbar {
-	line-height: 100px;
-	height: 100px;
+	line-height: 60px;
+	/*height: 100px;*/
 	background-color: #fff;
 	display: block;
 	vertical-align: middle;
@@ -355,13 +355,15 @@ section.section {
 	padding-bottom:0;
 }
 
-.nav li {
+.nav li, .dropdown-menu li {
 	height: 100%;
 	line-height: 100%;
 	margin-bottom: 0;
 	padding-bottom:0;
 }
-
+.dropdown-menu {
+	border: none;
+}
 .nav>li>a, .dropdown-menu > li > a {
 	display: table-cell;
 	height: 100%;
@@ -372,6 +374,8 @@ section.section {
 	font-size: 13px;
 	letter-spacing: .1em;
 	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .nav>li>a:hover {
@@ -388,9 +392,7 @@ section.section {
 .navbar .navbar-nav > .active > a {
 	color: #fff;
 }
-.navbar .navbar-nav > .active > a {
-	padding-bottom: 22px;
-}
+
 
 h1 a.navbar-brand {
 	font-size: 18px;
@@ -417,8 +419,12 @@ h1 a.navbar-brand {
 }
 
 .navbar-collapse.in {
-	margin-top: -5px !important;
+	margin-top: -3px !important;
+	margin-left: -30px;
 	overflow-y: visible;
+	padding-right:0px;
+	border: none;
+	box-shadow: none;
 }
 
 
@@ -676,7 +682,6 @@ a.scrollup:hover{
 }
 .dropdown:hover>.dropdown-menu {
 	display: block;
-	background-color: transparent;
 	text-align: left;
 	color: #e6e6e6;
 }
@@ -717,17 +722,18 @@ Media queries
 @media (max-width: 767px) {
 
 	.navbar.navbar-fixed-top {
-		background-color:rgba(0,0,0,0.6);
+		background-color:rgba(0,0,0,0.9);
 	}
 	.navbar .navbar-collapse ul.nav {
-		background-color: rgba(0,0,0,0.6);
+		border: none;
 		width: 100%;
 		float: none;
 		margin:0;
 		padding:0;
+		box-shadow: none;
 	}
 	.navbar .navbar-collapse ul.nav li {
-		border-bottom: 1px solid #666;
+		border-bottom: none;
 	}
 	section.featured {
 		padding-top: 80px;
@@ -741,10 +747,11 @@ Media queries
 	.dropdown-menu {
     display: block;
 		width: 100%;
-		background-color: rgba(0,0,0,0.6);
+		background-color: rgba(0,0,0,0.9);
 		text-align: left;
 		padding-left: 25px;
 		color: #fff;
+		margin-top:1px;
   }
 	section.section {
 		margin:0;
@@ -755,11 +762,10 @@ Media queries
 /* New test style */
 .story-appear{
 	color: rgba(0,0,0,0.01);
-	transition: all 1.5s ease;
+	transition: color 1.5s ease;
 	font-style: italic;
 }
 .story-appear.active {
-
 	color:rgba(0,0,0,0.99);
 }
 

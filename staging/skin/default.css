@@ -4,19 +4,17 @@
 */
 a {
 	color: #35A49C;
-	transition: color 0.8s ease;
+	transition: all 1s ease;
 }
 a:hover {
 	color: #00274c;
 }
 
 /* menu */
-.nav>li>a:hover {
-	color: #00274c;
-}
-.nav > li > a:hover, .nav > li > a:focus {
+.nav > li > a:hover, .nav > li > a:focus, .dropdown-menu >li>a:hover {
     text-decoration: none;
     background-color: #fff;
+		color: #00274c;
 }
 .navbar .navbar-nav > .active > a {
 	color: #00274c;
