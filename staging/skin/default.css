@@ -19,7 +19,9 @@ a:hover {
 .navbar .navbar-nav > .active > a {
 	color: #00274c;
 }
-
+.um-blue {
+	color:#00274c;
+}
 /* flexslider */
 .flex-control-paging li a {
 	background: #35A49C;
