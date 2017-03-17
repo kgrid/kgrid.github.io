@@ -2,8 +2,6 @@
 	var scrollbarwidth=getScrollbarWidth();
 	var viewportWidth = $(window).width()+scrollbarwidth;
 	var viewportHeight = $(window).height()+scrollbarwidth;
-	var blogo_w=$('#blogo').width();
-	var blogo_h=$('#blogo').width();
 
 	var adjratio=0.45;
 	if(viewportWidth>767) {
@@ -12,30 +10,33 @@
 	var navOffset = $("#kgridlogo").offset().top;
   $("#kgridlogo").wrap('<div id="logowrapper"></div>');
 
-	$(window).scroll(function(){
-		// if ($(this).scrollTop() > 100) {
-		// 	$('.scrollup').fadeIn();
-		// 	} else {
-		// 		$('.scrollup').fadeOut();
-		// 	}
-				//Manage logo
-			var klogotop= $('#kgridlogo').offset().top - $(window).scrollTop();
-			var scrolltop = $(window).scrollTop();
-			var w=(1-(navOffset-klogotop)*adjratio/navOffset)*100;
-			if(w>100) w=100;
-			console.log("L-Top@"+klogotop+" W-Top@"+scrolltop+" N-Offset@"+navOffset+" w="+w);
-			$("#logowrapper").height($("#kgridlogo").outerHeight(false));
-			$("div#kgridlogo").css("width",w+"%");
-			console.log("Div width="+$("div#kgridlogo").height());
-			if(scrolltop<=navOffset){
-						$('#kgridlogo').removeClass("fixed");
-						$(".navbar").css("background-color","transparent");
-			}else{
-						$('#kgridlogo').addClass("fixed");
-						$(".navbar").css("background-color","#fff");
-			}
+	var scrollManager = {
+			logowrapper:$("#logowrapper"),
+			kgridlogo:$("div#kgridlogo"),
+			navbar:$(".navbar"),
+			onScroll:function(){
+					//Manage logo
+					var self =this;
+					var scrolltop = $(window).scrollTop();
+					var klogotop= self.kgridlogo.offset().top - scrolltop;
+					var w=(1-(navOffset-klogotop)*adjratio/navOffset)*100;
+					if(w>100) w=100;
+					console.log("L-Top@"+klogotop+" W-Top@"+scrolltop+" N-Offset@"+navOffset+" w="+w);
+					self.logowrapper.height($("#kgridlogo").outerHeight());
+					self.kgridlogo.css("width",w+"%");
+					console.log("Div width="+$("div#kgridlogo").height());
+					if(scrolltop<=navOffset){
+								self.kgridlogo.removeClass("fixed");
+								self.navbar.css("background-color","transparent");
+					}else{
+								self.kgridlogo.addClass("fixed");
+								self.navbar.css("background-color","#fff");
+					}
 
-		});
+				}
+	};
+
+	$(window).scroll(_.throttle(function(){scrollManager.onScroll();}, 10));
 
 
 
@@ -53,6 +54,10 @@
 				var viewportWidth = $(window).width()+scrollbarwidth;
 				var viewportHeight = $(window).height()+scrollbarwidth;
 				console.log("Width: "+viewportWidth+"   Height: "+viewportHeight);
+				adjratio=0.45;
+				if(viewportWidth>767) {
+					adjratio=0.75;
+				}
 				$("html, body").animate({ scrollTop: 0 }, 1000);
 				navOffset = $("#kgridlogo").offset().top;
 			});
