@@ -342,7 +342,7 @@ section.section {
 .navbar {
 	line-height: 60px;
 	height: 60px;
-	background-color: transparent;
+	background-color: #fff;
 	display: block;
 	vertical-align: middle;
 	text-align: center;
@@ -439,7 +439,9 @@ h1 a.navbar-brand {
 	padding-right:0px;
 }
 
-
+#blogo {
+	z-index:1000;
+}
 
 /*===========================
   --- Featured section ----
@@ -649,7 +651,7 @@ Media queries
 
 @media only screen and (min-device-width : 979px) and (max-device-width : 1024px)  {
 	.navbar.navbar-fixed-top {
-		background-color:transparent;
+		background-color:#fff;
 	}
 	.navbar-nav {
 		margin-top: 20px;
@@ -665,7 +667,7 @@ Media queries
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.navbar.navbar-fixed-top {
-		background-color:transparent;
+		background-color:#fff;
 	}
 	.navbar-nav {
 		margin-top: 20px;
@@ -680,7 +682,7 @@ Media queries
 @media (max-width: 767px) {
 
 	.navbar.navbar-fixed-top {
-		background-color:transparent;
+		background-color:#fff;
 	}
 	.navbar .navbar-collapse ul.nav {
 		border: none;
@@ -764,7 +766,13 @@ section span {
 }
 div#kgridlogo img {
 	width: 100%;
+	margin:0;
+	padding:0;
 }
 #navlogo img{
 	height: 100%;
+}
+.fixed{
+	position: fixed;
+	top:0px;
 }
