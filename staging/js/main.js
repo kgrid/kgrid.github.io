@@ -3,9 +3,13 @@
 	var viewportWidth = $(window).width()+scrollbarwidth;
 	var viewportHeight = $(window).height()+scrollbarwidth;
 
-	var adjratio=0.45;
+	var adjratio=0.15;
 	if(viewportWidth>767) {
 		adjratio=0.75;
+	}else if(viewportWidth>576){
+		adjratio=0.45;
+	}else if(viewportWidth>320){
+		adjratio=0.25;
 	}
 	var navOffset = $("#kgridlogo").offset().top;
   $("#kgridlogo").wrap('<div id="logowrapper"></div>');
@@ -38,16 +42,17 @@
 
 	$(window).scroll(_.throttle(function(){scrollManager.onScroll();}, 10));
 
-
-
 		  //Manage button
 			$('.navbar-collapse').on('hidden.bs.collapse', function () {
 			  $("button.navbar-toggle>span").addClass("fa-bars");
 				$("button.navbar-toggle>span").removeClass("fa-times");
+				//	$(this).find('.navbar-nav').first().stop(true, true).slideUp(3000);
 			});
 			$('.navbar-collapse').on('show.bs.collapse', function () {
 				$("button.navbar-toggle>span").removeClass("fa-bars");
 				$("button.navbar-toggle>span").addClass("fa-times");
+				//$(this).find('.navbar-nav').first().stop(true, true).slideDown(3000);
+
 			});
 
 			$(window).resize(function(){
@@ -58,8 +63,8 @@
 				if(viewportWidth>767) {
 					adjratio=0.75;
 				}
-				$("html, body").animate({ scrollTop: 0 }, 1000);
-				navOffset = $("#kgridlogo").offset().top;
+				// $("html, body").animate({ scrollTop: 0 }, 1000);
+				// navOffset = $("#kgridlogo").offset().top;
 			});
 
 
@@ -72,7 +77,7 @@
 	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
 
 	// fancybox
-	jQuery(".fancybox").fancybox();
+	// jQuery(".fancybox").fancybox();
 
 	if (Modernizr.mq("screen and (max-width:1024px)")) {
 			jQuery("body").toggleClass("body");
