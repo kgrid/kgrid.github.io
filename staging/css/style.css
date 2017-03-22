@@ -843,3 +843,6 @@ div#kgridlogo img {
   -o-transition: height 0.01s;
   transition: height 0.01s;
 }
+h3.customheading {
+	display: none;
+}
