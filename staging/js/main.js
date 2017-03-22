@@ -2,14 +2,17 @@
 	var scrollbarwidth=getScrollbarWidth();
 	var viewportWidth = $(window).width()+scrollbarwidth;
 	var viewportHeight = $(window).height()+scrollbarwidth;
-
-	var adjratio=0.15;
-	if(viewportWidth>767) {
-		adjratio=0.75;
+	var breakpoint = 0;
+	if(viewportWidth>1199) {
+		breakpoint=200;
+	}else	if(viewportWidth>991) {
+		breakpoint=140;
+	}else if(viewportWidth>767) {
+		breakpoint=120;
 	}else if(viewportWidth>576){
-		adjratio=0.45;
+		breakpoint=70;
 	}else if(viewportWidth>320){
-		adjratio=0.25;
+		breakpoint=20;
 	}
 	var navOffset = $("#section-featured").offset().top;
 	var hmax = $('#navlogo').height();
@@ -20,9 +23,8 @@
 			var self = this;
 			var scrolltop = $(window).scrollTop();
 			var h=0;
-			if((scrolltop<200)&(scrolltop>0)){
+			if((scrolltop<breakpoint)&(scrolltop>0)){
 				h=hmax-scrolltop;
-
 				console.log(scrolltop);
 				self.kgridlogo.css("height",h+"px");
 			}
