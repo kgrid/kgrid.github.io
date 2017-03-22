@@ -425,7 +425,8 @@ h1 a.navbar-brand {
 	display:block;
 }
 .navbar-brand {
-	height:60px;
+	position: fixed;
+	height:260px;
 	padding: 0;
 	display: table-cell;
 	vertical-align: middle;
@@ -459,7 +460,7 @@ h1 a.navbar-brand {
 =========================== */
 
 section.featured {
-	padding: 120px 0 60px;
+	padding: 320px 0 60px;
 	background: #fff;
 	color: #fdfdfd;
 }

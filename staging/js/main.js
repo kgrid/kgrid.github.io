@@ -11,62 +11,79 @@
 	}else if(viewportWidth>320){
 		adjratio=0.25;
 	}
-	var navOffset = $("#kgridlogo").offset().top;
-  $("#kgridlogo").wrap('<div id="logowrapper"></div>');
-  $("logowrapper").height($("#kgridlogo").outerHeight());
+	var navOffset = $("#section-featured").offset().top;
+	var hmax = $('#navlogo').height();
+	console.log(hmax+" == "+navOffset);
 	var scrollManager = {
-			logowrapper:$("#logowrapper"),
-			kgridlogo:$("div#kgridlogo"),
-			navbar:$(".navbar"),
-			onScroll:function(){
-					//Manage logo
-					var self =this;
-					var scrolltop = $(window).scrollTop();
-					var klogotop= self.kgridlogo.offset().top - scrolltop;
-					var w=(1-(navOffset-klogotop)*adjratio/navOffset)*100;
-					if(w>100) w=100;
-					console.log("L-Top@"+klogotop+" W-Top@"+scrolltop+" N-Offset@"+navOffset+" w="+w);
-					self.logowrapper.height($("#kgridlogo").outerHeight());
-					self.kgridlogo.css("width",w+"%");
-					console.log("Div width="+$("div#kgridlogo").height());
-					if(scrolltop<=navOffset){
-								self.kgridlogo.removeClass("fixed");
-								self.navbar.css("background-color","transparent");
-					}else{
-								self.kgridlogo.addClass("fixed");
-								self.navbar.css("background-color","#fff");
-					}
+		kgridlogo: $('#navlogo'),
+		onScroll: function(){
+			var self = this;
+			var scrolltop = $(window).scrollTop();
+			var h=0;
+			if((scrolltop<200)&(scrolltop>0)){
+				h=hmax-scrolltop;
 
-				}
-	};
-	var altScrollManager = {
-			logowrapper:$("#logowrapper"),
-			kgridlogo:$("div#kgridlogo"),
-			navbar:$(".navbar"),
-			onScroll:function(){
-					//Manage logo
-					var self =this;
-					var scrolltop = $(window).scrollTop();
-					var klogotop= self.kgridlogo.offset().top - scrolltop;
-					var w=(1-(navOffset-klogotop)*adjratio/navOffset)*100;
-					if(w>100) w=100;
-					console.log("L-Top@"+klogotop+" W-Top@"+scrolltop+" N-Offset@"+navOffset+" w="+w);
-					self.logowrapper.height($("#kgridlogo").outerHeight());
-					self.kgridlogo.css("width",w+"%");
-					console.log("Div width="+$("div#kgridlogo").height());
-					if(scrolltop<=navOffset){
-								self.kgridlogo.removeClass("fixed");
-								self.navbar.css("background-color","transparent");
-					}else{
-								self.kgridlogo.addClass("fixed");
-								self.navbar.css("background-color","#fff");
-					}
+				console.log(scrolltop);
+				self.kgridlogo.css("height",h+"px");
+			}
+			//
+		}
+	}
+  // $("#kgridlogo").wrap('<div id="logowrapper"></div>');
+  // $("logowrapper").height($("#kgridlogo").outerHeight());
+	// var scrollManager = {
+	// 		logowrapper:$("#logowrapper"),
+	// 		kgridlogo:$("div#kgridlogo"),
+	// 		navbar:$(".navbar"),
+	// 		onScroll:function(){
+	// 				//Manage logo
+	// 				var self =this;
+	// 				var scrolltop = $(window).scrollTop();
+	// 				var klogotop= self.kgridlogo.offset().top - scrolltop;
+	// 				var w=(1-(navOffset-klogotop)*adjratio/navOffset)*100;
+	// 				if(w>100) w=100;
+	// 				console.log("L-Top@"+klogotop+" W-Top@"+scrolltop+" N-Offset@"+navOffset+" w="+w);
+	// 				self.logowrapper.height($("#kgridlogo").outerHeight());
+	// 				self.kgridlogo.css("width",w+"%");
+	// 				console.log("Div width="+$("div#kgridlogo").height());
+	// 				if(scrolltop<=navOffset){
+	// 							self.kgridlogo.removeClass("fixed");
+	// 							self.navbar.css("background-color","transparent");
+	// 				}else{
+	// 							self.kgridlogo.addClass("fixed");
+	// 							self.navbar.css("background-color","#fff");
+	// 				}
+	//
+	// 			}
+	// };
+	// var altScrollManager = {
+	// 		logowrapper:$("#logowrapper"),
+	// 		kgridlogo:$("div#kgridlogo"),
+	// 		navbar:$(".navbar"),
+	// 		onScroll:function(){
+	// 				//Manage logo
+	// 				var self =this;
+	// 				var scrolltop = $(window).scrollTop();
+	// 				var klogotop= self.kgridlogo.offset().top - scrolltop;
+	// 				var w=(1-(navOffset-klogotop)*adjratio/navOffset)*100;
+	// 				if(w>100) w=100;
+	// 				console.log("L-Top@"+klogotop+" W-Top@"+scrolltop+" N-Offset@"+navOffset+" w="+w);
+	// 				self.logowrapper.height($("#kgridlogo").outerHeight());
+	// 				self.kgridlogo.css("width",w+"%");
+	// 				console.log("Div width="+$("div#kgridlogo").height());
+	// 				if(scrolltop<=navOffset){
+	// 							self.kgridlogo.removeClass("fixed");
+	// 							self.navbar.css("background-color","transparent");
+	// 				}else{
+	// 							self.kgridlogo.addClass("fixed");
+	// 							self.navbar.css("background-color","#fff");
+	// 				}
+	//
+	// 			}
+	// };
 
-				}
-	};
 
-
-	$(window).scroll(_.throttle(function(){scrollManager.onScroll();}, 10));
+	 $(window).scroll(_.throttle(function(){scrollManager.onScroll();}, 10));
 
 		  //Manage button
 			$('.navbar-collapse').on('hidden.bs.collapse', function () {
