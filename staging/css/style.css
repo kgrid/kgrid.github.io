@@ -332,7 +332,7 @@ section.section {
 	text-align: center;
 }
 .section-header h2.section-heading {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-weight: 700;
 }
 
@@ -361,6 +361,10 @@ section.section {
 	margin-bottom: 0;
 	padding-bottom:0;
 }
+
+.nav li:hover {
+}
+
 .navbar .navbar-collapse ul.nav li.dropdown {
 	height: auto;
 	overflow-y: visible;
@@ -370,7 +374,6 @@ section.section {
 	width: auto;
 	background-color: rgba(255,255,255,0.85);
 	text-align: left;
-	padding-left: 25px;
 	color: #fff;
 	margin-top:1px;
 	border:none;
@@ -384,7 +387,7 @@ section.section {
 	font-weight: 700;
 	font-size: 13px;
 	letter-spacing: .1em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -394,6 +397,10 @@ section.section {
 }
 .navbar .navbar-nav > li.active > a >span {
 	border-bottom: 2px solid #00274c;
+}
+.navbar .navbar-nav > li:hover> a >span {
+	border-bottom: 2px solid #00274c;
+	transition border-bottom 0.8s ease;
 }
 
 .nav>li>a:hover {
@@ -577,7 +584,7 @@ section.featured.inner {
 	font-weight: 700;
 	color: #00274c;
 	font-size: 14px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 img.use-icon {
@@ -599,6 +606,14 @@ section#footer {
 section#footer .copyright {
 	text-align: center;
 	font-weight: 300;
+}
+section#footer .school img {
+
+	height: 4em;
+}
+section#footer .dept img {
+	margin: 15px 0px;
+	height: 1.35em;
 }
 
 /* footer menu */
@@ -639,11 +654,11 @@ a.scrollup:hover{
 .drop-menu {
 	display: none;
 }
-.dropdown:hover>.dropdown-menu {
+/*.dropdown:hover>.dropdown-menu {
 	display: block;
 	text-align: left;
 	color: #e6e6e6;
-}
+}*/
 
 /* ========================================
 Media queries
@@ -668,9 +683,9 @@ Media queries
 	.navbar-nav {
 		margin-top: 20px;
 	}
-	.dropdown:hover>.dropdown-menu {
+	/*.dropdown:hover>.dropdown-menu {
     display: block;
-  }
+  }*/
 	.navbar-brand {
 		height: 260px;
 		padding-left: 40px;
@@ -688,9 +703,9 @@ Media queries
 	.navbar-nav {
 		margin-top: 20px;
 	}
-	.dropdown:hover>.dropdown-menu {
+	/*.dropdown:hover>.dropdown-menu {
     display: block;
-  }
+  }*/
 	.navbar-brand {
 		height: 200px;
 		padding-left: 100px;
@@ -712,9 +727,9 @@ Media queries
 		height: 160px;
 		padding-left: 30px;
 	}
-	.dropdown:hover>.dropdown-menu {
+	/*.dropdown:hover>.dropdown-menu {
     display: block;
-  }
+  }*/
 	.navbar-brand {
 		height: 180pox;
 		padding-left: 100px;
@@ -821,7 +836,7 @@ Media queries
     background-repeat: repeat-x;
 }*/
 
-button {
+button.primary {
 	background-color: #00274c;
 	border:1px solid #00274c;
 	border-radius: 15px;
@@ -830,6 +845,22 @@ button {
 	padding: 10px 25px;
 	width: 100%;
 	margin: 5px 0px 5px 0px;
+}
+button.secondary {
+	background-color: transparent;
+	border:none;
+	border-radius: 15px;
+	color: #00274c;
+	font-weight: 400;
+	padding: 10px 0px;
+	width: 100%;
+	margin: 5px 0px 5px 0px;
+    text-align: left;
+}
+
+button.secondary span{
+	font-size: 16px;
+	font-weight: 700;
 }
 button img {
 	margin-left: 15px;
@@ -856,6 +887,16 @@ div#kgridlogo img {
 .fixed{
 	position: fixed;
 	top:0px;
+}
+img#down {
+	padding-left: 5px;
+	transition: transform 0.8s ease;
+}
+.dropdown.open img#down{
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
 }
 .no-transition {
   -webkit-transition: height 0.01s;

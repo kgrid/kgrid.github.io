@@ -99,7 +99,7 @@
 				//$(this).find('.navbar-nav').first().stop(true, true).slideDown(3000);
 
 			});
-
+			
 			$(window).resize(function(){
 				var viewportWidth = $(window).width()+scrollbarwidth;
 				var viewportHeight = $(window).height()+scrollbarwidth;
@@ -119,7 +119,7 @@
 		// });
 
 	// local scroll
-	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
+	// jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
 
 	// fancybox
 	// jQuery(".fancybox").fancybox();
