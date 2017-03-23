@@ -85,7 +85,7 @@
 	// };
 
 
-	 $(window).scroll(_.throttle(function(){scrollManager.onScroll();}, 10));
+	// $(window).scroll(_.throttle(function(){scrollManager.onScroll();}, 10));
 
 		  //Manage button
 			$('.navbar-collapse').on('hidden.bs.collapse', function () {
@@ -99,7 +99,7 @@
 				//$(this).find('.navbar-nav').first().stop(true, true).slideDown(3000);
 
 			});
-			
+
 			$(window).resize(function(){
 				var viewportWidth = $(window).width()+scrollbarwidth;
 				var viewportHeight = $(window).height()+scrollbarwidth;
@@ -153,10 +153,13 @@
 	//Scroll to show/hide stories
 	jQuery(".story-appear").appear();
 	jQuery(".story-appear").on("appear", function(data) {
+			var h = $(this).parent().find(".story-dummy").height();
 			$(this).addClass("active");
+			$(this).css("height",h+"px");
 	});
 	jQuery(".story-appear").on("disappear", function(data) {
  			$(this).removeClass("active");
+			$(this).css("height","1px");
 	});
 
 	function getScrollbarWidth() {

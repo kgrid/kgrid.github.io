@@ -608,7 +608,6 @@ section#footer .copyright {
 	font-weight: 300;
 }
 section#footer .school img {
-
 	height: 4em;
 }
 section#footer .dept img {
@@ -772,7 +771,13 @@ Media queries
 			padding-top: 180px;
 		}
 
-
+		section#footer .school img {
+			height: 2.8em;
+		}
+		section#footer .dept img {
+			margin-top: 15px;
+			height: 1.15em;
+		}
 }
 
 @media only screen  and  (max-width: 575px) {
@@ -816,14 +821,39 @@ Media queries
 	section.featured {
 		padding-top: 80px;
 	}
+	section#footer .school img {
+		height: 2.3em;
+	}
+	section#footer .dept img {
+		margin-top: 15px;
+		height: 0.8em;
+	}
 }
 /* New test style */
-.story-appear{
+.story-holder {
+	position: relative;
+}
+.story-dummy {
 	color: rgba(0,0,0,0.01);
-	transition: color 1.5s ease;
 	font-style: italic;
+	border-left: 2px solid #fff;
+	padding-left: 25px;
+	overflow: hidden;
+	height:auto;
+}
+.story-appear{
+	color: rgba(0,0,0,0.31);
+	transition: color 3s ease, height 3s ease;
+	font-style: italic;
+	border-left: 2px solid #fff;
+	padding-left: 25px;
+	overflow: hidden;
+	height:1px;
+	position: absolute;
+	top: 0;
 }
 .story-appear.active {
+	border-left: 2px solid #00274c;
 	color:rgba(0,0,0,0.99);
 }
 
@@ -884,8 +914,8 @@ div#kgridlogo img {
 #navlogo img{
 	height: 100%;
 }
-.fixed{
-	position: fixed;
+.affix{
+
 	top:0px;
 }
 img#down {
@@ -907,4 +937,10 @@ img#down {
 }
 h3.customheading {
 	display: none;
+}
+
+img#blogo {
+	height: 60px;
+	width: auto;
+	z-index: 99999;
 }

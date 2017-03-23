@@ -35,7 +35,7 @@
 						<span class="fa fa-bars um-blue"></span>
 					</button>
 					<div ><a id="navlogo" class="navbar-brand" href="index.html">
-              <img id="nlogo" src="./img/logo/KGridLogo_Full_Blue.png" alt="KNOWLEDGE GRID"/>
+              <!-- <img id="nlogo" src="./img/logo/KGridLogo_Full_Blue.png" alt="KNOWLEDGE GRID"/> -->
 					</a></div>
 				</div>
 				<div class="navbar-collapse collapse no-transition">
@@ -64,11 +64,14 @@
 		<section id="section-featured" class="featured section">
     <h3 class='customheading'>Feature</h3>
       <div class="container">
-        <!-- <div id="kgridlogo" class="row">
-            <div class="col-md-offset-1 col-md-10 align-left">
-              <img id="blogo" src="./img/logo/KGridLogo_Full_Blue.png" alt="KNOWLEDGE GRID"/>
+        <div id="kgridlogo"  class="row">
+            <div data-spy="affix" data-offset-top="120" class="col-md-offset-1 col-md-2 align-left" >
+              <img id="blogo"  src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID"/>
             </div>
-          </div> -->
+            <div class="col-md-8 align-left" >
+              <img id="blogo"  src="./img/logo/KG_SpelledOut.png" alt="KNOWLEDGE GRID"/>
+            </div>
+          </div>
 				<div class="row">
 						<div class="col-md-offset-1 col-md-10 align-left">
 
@@ -105,7 +108,7 @@
 			</div>
 		</section>
 		<!-- services -->
-		<section id="section-story" class="section appear pad-bot30 bg-white">
+		<section id="section-story" data-appear-top-offset='100' class="section appear pad-bot30 bg-white">
     <h3  class='customheading'> Story </h3>
     <div class="container">
 
@@ -119,7 +122,19 @@
             <h3>Take actionable knowledge, make it machine-ready, and manage it.</h3>
           </div>
         </div>
-						<p class='story-appear' data-appear-top-offset="-150">In my role as CEO of the “Heart Health Association”, I place the highest priority on developing evidence-based tools that both
+        <div class='story-holder'>
+          <div class='story-dummy'>
+  						<p>In my role as CEO of the “Heart Health Association”, I place the highest priority on developing evidence-based tools that both
+  cardiologists and primary care docs can use in practice. My organization has led the development of several excellent predictive
+  analytics and computable heart care toolkits. Thanks to the Knowledge Grid, it has been easy for us to create, manage,
+  and update a collection of digital knowledge objects that carry our most updated findings about heart health. We are delighted
+  with the response. More people than ever are taking advantage of our knowledge, from IT systems to consumer apps and
+  other health organizations. Moreover, the API backend automates computation of health data for third party applications,
+  giving us access to real-world usage data and a new source of income.
+
+  						</p></div>
+        <div class='story-appear' data-appear-top-offset="50">
+						<p>In my role as CEO of the “Heart Health Association”, I place the highest priority on developing evidence-based tools that both
 cardiologists and primary care docs can use in practice. My organization has led the development of several excellent predictive
 analytics and computable heart care toolkits. Thanks to the Knowledge Grid, it has been easy for us to create, manage,
 and update a collection of digital knowledge objects that carry our most updated findings about heart health. We are delighted
@@ -127,7 +142,13 @@ with the response. More people than ever are taking advantage of our knowledge, 
 other health organizations. Moreover, the API backend automates computation of health data for third party applications,
 giving us access to real-world usage data and a new source of income.
 
-						</p>
+						</p></div>
+
+
+          </div>
+
+
+
 					</div>
 
 				</div>
@@ -143,14 +164,25 @@ giving us access to real-world usage data and a new source of income.
                 </div>
 
             </div>
-						<p class='story-appear align-left' data-appear-top-offset="-150">As Senior VP for Innovation for “Valiant”, I lead a technical team of analysts, engineers, and programmers. Our job is to find
+<div class="story-holder">
+  <div class='story-dummy'>
+  <p>As Senior VP for Innovation for “Valiant”, I lead a technical team of analysts, engineers, and programmers. Our job is to find
 ways to improve the Valiant Electronic Health Record (EHR) system. The Knowledge Grid has made it possible for us to rapidly
 add large amounts of trusted, up-to-date, health knowledge from expert sources to the Valiant EHR. Every Valiant EHR user,
 and all the patients they assist, now benefit from predictions and guidelines that appear automatically on screen right when
 needed and in context. This includes the predictive analytics and toolkits from the “Heart Health Association”, which are deployed
 in the Valiant EHR and being used to help improve the health of thousands of people every day.
 
-						</p>
+  </p></div>
+            <div class='story-appear' data-appear-top-offset="-150">
+						<p>As Senior VP for Innovation for “Valiant”, I lead a technical team of analysts, engineers, and programmers. Our job is to find
+ways to improve the Valiant Electronic Health Record (EHR) system. The Knowledge Grid has made it possible for us to rapidly
+add large amounts of trusted, up-to-date, health knowledge from expert sources to the Valiant EHR. Every Valiant EHR user,
+and all the patients they assist, now benefit from predictions and guidelines that appear automatically on screen right when
+needed and in context. This includes the predictive analytics and toolkits from the “Heart Health Association”, which are deployed
+in the Valiant EHR and being used to help improve the health of thousands of people every day.
+
+						</p></div></div>
 					</div>
 
 				</div></div>
@@ -164,7 +196,19 @@ in the Valiant EHR and being used to help improve the health of thousands of peo
             <h3> Apply the health advice to real-world decisions for better outcomes.</h3>
           </div>
         </div>
-						<p class='story-appear' data-appear-top-offset="-150">I am a primary care physician responsible for taking care of a large group of patients. For years, I have worked to keep up
+        <div class="story-holder">
+          <div class='story-dummy' >
+              <p >I am a primary care physician responsible for taking care of a large group of patients. For years, I have worked to keep up
+  with the latest medical evidence, but that is hard to do. My patients struggle with a diversity of health issues. The Knowledge
+  Grid is now helping me keep up. Thanks to the Knowledge Grid, the "Valiant" EHR software I use in the clinic provides me with
+  useful medical advice in many disease areas, and the advice is tailored to each patient. My EHR performs both automated
+  health data analysis to identify hidden patterns, as well as ad-hoc information requests from me. For example, it uses the
+  "Heart Health Association" predictive analytics to determine which of my patients are at more risk of myocardial infarction
+  and which would benefit most from surgery. Thanks to the Knowledge Grid, the new EHR significantly expands my abilities to
+  not only improve patient outcomes but also to cut costs from unnecessary interventions.
+              </p></div>
+        <div class='story-appear' data-appear-top-offset="-150">
+						<p >I am a primary care physician responsible for taking care of a large group of patients. For years, I have worked to keep up
 with the latest medical evidence, but that is hard to do. My patients struggle with a diversity of health issues. The Knowledge
 Grid is now helping me keep up. Thanks to the Knowledge Grid, the "Valiant" EHR software I use in the clinic provides me with
 useful medical advice in many disease areas, and the advice is tailored to each patient. My EHR performs both automated
@@ -172,8 +216,8 @@ health data analysis to identify hidden patterns, as well as ad-hoc information 
 "Heart Health Association" predictive analytics to determine which of my patients are at more risk of myocardial infarction
 and which would benefit most from surgery. Thanks to the Knowledge Grid, the new EHR significantly expands my abilities to
 not only improve patient outcomes but also to cut costs from unnecessary interventions.
-						</p>
-					</div>
+						</p></div>
+					</div></div>
 
 				</div>
 </div>
@@ -182,7 +226,7 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 	</section>
 
 		<!-- about -->
-		<section id="section-uses"  class="section appear bg-white clearfix">
+		<section id="section-uses" data-appear-top-offset='150' class="section appear bg-white clearfix">
     <h3  class='customheading'> USES </h3>
   	<div class="container">
 				<div class="row mar-bot60">
@@ -241,7 +285,7 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 		<!-- /about -->
 
 		<!-- section works -->
-		<section id="section-tech"  class="section appear clearfix">
+		<section id="section-tech"  data-appear-top-offset='-150' class="section appear clearfix">
       <h3  class='customheading'> Technology </h3>
       <div class="container">
 
