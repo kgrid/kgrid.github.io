@@ -14,6 +14,8 @@
 	}else if(viewportWidth>320){
 		breakpoint=20;
 	}
+
+	$("#logowrapper").height($("#blogo").outerHeight());
 	var navOffset = $("#section-featured").offset().top;
 	var hmax = $('#navlogo').height();
 	console.log(hmax+" == "+navOffset);
@@ -119,7 +121,7 @@
 		// });
 
 	// local scroll
-	// jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
+	 jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
 
 	// fancybox
 	// jQuery(".fancybox").fancybox();
