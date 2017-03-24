@@ -32,7 +32,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-	color:#222;
+	color:#333333;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 { font-size: 40px; line-height: 30px; }
 h2 { font-size: 28px; line-height: 1.25em;}
 h3 { font-size: 24px; }
-h4 { font-size: 18px; }
+h4 { font-size: 16px; }
 h5 { font-size: 16px; }
 .txt-light { font-weight: 300; }
 .txt-regular { font-weight: 400; }
@@ -76,6 +76,7 @@ small {
 
 a:hover {
 	text-decoration: none;
+	color: #00274c;
 }
 
 :focus {
@@ -121,6 +122,7 @@ a:hover {
 }
 .container {
 	overflow: initial;
+	width:100%;
 }
 .trans {
 	border: 0 !important;
@@ -383,16 +385,16 @@ section.section {
 	height: 100%;
 	line-height: 100%;
 	vertical-align: middle;
-	color: #00274c;
-	font-weight: 700;
-	font-size: 13px;
-	letter-spacing: .1em;
+	color: #333333;
+	font-weight: 500;
+	font-size: 14px;
+	/*letter-spacing: .1em;*/
 	/*text-transform: uppercase;*/
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 .navbar .navbar-nav > li> a >span {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid transparent;
 	transition border-bottom 0.8s ease;
 }
 .navbar .navbar-nav > li.active > a >span {
@@ -422,8 +424,8 @@ section.section {
 
 h1 a.navbar-brand {
 	padding-left: 100px;
-	font-size: 18px;
-	color: #e6e6e6;
+	font-size: 16px;
+	color: #333333;
 	font-weight: 400;
 	text-shadow: none;
 	display:none;
@@ -459,7 +461,7 @@ h1 a.navbar-brand {
 }
 
 #blogo {
-	z-index:1000;
+	z-index:10000;
 }
 
 /*===========================
@@ -608,11 +610,11 @@ section#footer .copyright {
 	font-weight: 300;
 }
 section#footer .school img {
-	height: 4em;
+	height: 2em;
 }
 section#footer .dept img {
 	margin: 15px 0px;
-	height: 1.35em;
+	height: 0.84em;
 }
 
 /* footer menu */
@@ -677,7 +679,7 @@ Media queries
 
 @media only screen and (min-width : 1200px) {
 	.navbar.navbar-fixed-top {
-		background-color:#fff;
+		/*background-color:#fff;*/
 	}
 	.navbar-nav {
 		margin-top: 20px;
@@ -690,14 +692,14 @@ Media queries
 		padding-left: 40px;
 	}
 	section.featured {
-		padding-top: 280px;
+		padding-top: 200px;
 	}
 }
 
 
 @media only screen and (min-width : 992px) and (max-width : 1199px)  {
 	.navbar.navbar-fixed-top {
-		background-color:#fff;
+		/*background-color:rgba(255,255,255,0.8);*/
 	}
 	.navbar-nav {
 		margin-top: 20px;
@@ -710,14 +712,14 @@ Media queries
 		padding-left: 100px;
 	}
 	section.featured {
-		padding-top: 230px;
+		padding-top: 200px;
 	}
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.navbar.navbar-fixed-top {
-		background-color:#fff;
+		/*background-color:#fff;*/
 	}
 	.navbar-nav {
 		margin-top: 20px;
@@ -834,9 +836,9 @@ Media queries
 	position: relative;
 }
 .story-dummy {
-	color: rgba(0,0,0,0.01);
+	color: #333333;
 	font-style: italic;
-	border-left: 2px solid #fff;
+	border-left: 2px solid #00274c;
 	padding-left: 25px;
 	overflow: hidden;
 	height:auto;
@@ -851,6 +853,7 @@ Media queries
 	height:1px;
 	position: absolute;
 	top: 0;
+	display: none;
 }
 .story-appear.active {
 	border-left: 2px solid #00274c;
@@ -906,10 +909,16 @@ section span {
 .use-case {
 	margin-bottom: 30px;
 }
+div#kgridlogo {
+	padding-bottom: 30px;
+}
 div#kgridlogo img {
-	width: 100%;
+	height: 60px;
 	margin:0;
 	padding:0;
+}
+#navlogo {
+	padding-left: 10px;
 }
 #navlogo img{
 	height: 100%;
@@ -943,4 +952,8 @@ img#blogo {
 	height: 60px;
 	width: auto;
 	z-index: 99999;
+}
+
+section#section-pres {
+	display: none;
 }

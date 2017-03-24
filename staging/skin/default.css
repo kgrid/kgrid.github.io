@@ -3,7 +3,7 @@
 #2 = 79CDC0
 */
 a {
-	color: #35A49C;
+	color: #333333;
 	transition: all 1s ease;
 }
 a:hover {
@@ -17,7 +17,7 @@ a:hover {
 		color: #00274c;
 }
 .navbar .navbar-nav > .active > a {
-	color: #00274c;
+	color: #333333;
 }
 .um-blue {
 	color:#00274c;
