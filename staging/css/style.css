@@ -758,7 +758,7 @@ Media queries
 
 @media only screen and (min-width: 576px) and  (max-width: 767px) {
 	.navbar.navbar-fixed-top {
-		background-color:#fff;
+		/*background-color:#fff;*/
 	}
 	.navbar .navbar-collapse ul.nav {
 		border: none;
@@ -804,7 +804,7 @@ Media queries
 
 @media only screen  and  (max-width: 575px) {
 	.navbar.navbar-fixed-top {
-		background-color:#fff;
+		/*background-color:#fff;*/
 	}
 	.navbar .navbar-collapse ul.nav {
 		border: none;
@@ -945,7 +945,6 @@ div#kgridlogo {
 	height: 100%;
 }
 .affix{
-
 	top:0px;
 }
 img#down {
