@@ -687,6 +687,11 @@ Media queries
 	/*.dropdown:hover>.dropdown-menu {
     display: block;
   }*/
+	div#kgridlogo img {
+		height: 60px;
+		margin:0;
+		padding:0;
+	}
 	.navbar-brand {
 		height: 260px;
 		padding-left: 40px;
@@ -707,6 +712,12 @@ Media queries
 	/*.dropdown:hover>.dropdown-menu {
     display: block;
   }*/
+	div#kgridlogo img {
+		height: 60px;
+		margin:0;
+		padding:0;
+	}
+
 	.navbar-brand {
 		height: 200px;
 		padding-left: 100px;
@@ -735,6 +746,11 @@ Media queries
 		height: 180pox;
 		padding-left: 100px;
 	}
+	div#kgridlogo img {
+		height: 50px;
+		margin:0;
+		padding:0;
+	}
 	section.featured {
 		padding-top: 200px;
 	}
@@ -759,7 +775,11 @@ Media queries
 		height: 130px;
 		padding-left: 30px;
 	}
-
+	div#kgridlogo img {
+		height: 40px;
+		margin:0;
+		padding:0;
+	}
 	.stats .col-md-3 {
 		margin-bottom: 30px;
 	}
@@ -804,6 +824,11 @@ Media queries
 		height: 60px;
 	}
 
+	div#kgridlogo img {
+		height: 30px;
+		margin:0;
+		padding:0;
+	}
 	.stats .col-md-3 {
 		margin-bottom: 30px;
 	}
@@ -821,7 +846,7 @@ Media queries
 		padding: 50px 20px 30px 20px;
 	}
 	section.featured {
-		padding-top: 80px;
+		padding-top: 160px;
 	}
 	section#footer .school img {
 		height: 2.3em;
@@ -912,11 +937,7 @@ section span {
 div#kgridlogo {
 	padding-bottom: 30px;
 }
-div#kgridlogo img {
-	height: 60px;
-	margin:0;
-	padding:0;
-}
+
 #navlogo {
 	padding-left: 10px;
 }
