@@ -43,7 +43,7 @@
 						<li><a href="#section-story"><span>Story</span></a></li>
 						<li><a href="#section-uses"><span>Folks</span></a></li>
 						<li><a href="#section-tech"><span>Tech</span></a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Docs<img id="down" src="./img/logo/Chevron.png" alt="v" height="8px"/></a>
+            <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Docs<img id="down" src="./img/logo/Chevron.png" alt="v" height="8px"/></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">Authoring Manual</a>
                       </li>
@@ -54,13 +54,14 @@
                   <li><a href="#">Demo App</a>
                       </li>
                 </ul>
-              </li>
+              </li> -->
 						<!-- <li><a href="#section-contact">Contact</a></li> -->
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
 		</div>
 </section>
+
 		<section id="section-featured" class="featured section">
     <h3 class='customheading'>Feature</h3>
       <div class="container">
@@ -85,6 +86,13 @@
 							<h4 class="slogan">
                 The <span class="italic">Knowledge Grid </span> converts study findings into coded forms and computes useful advice from any health data.
 </h4>
+
+					</div>
+				</div>
+        <div class="row">
+						<div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 align-left line">
+              <hr>
+
 
 					</div>
 				</div>
@@ -138,7 +146,11 @@
   other health organizations. Moreover, the API backend automates computation of health data for third party applications,
   giving us access to real-world usage data and a new source of income.
 
-  						</p></div>
+  						</p>
+              <div class="row">
+                <div class=" col-md-1"><img class="avatar" src="./img/avatar/CEO.png" alt="Physician"></div>
+                <div class=" col-md-7 persona"><span> Miranda Grayson, MD, FACS </span></div>
+              </div></div>
         <div class='story-appear' data-appear-top-offset="50">
 						<p>In my role as CEO of the “Heart Health Association”, I place the highest priority on developing evidence-based tools that both
 cardiologists and primary care docs can use in practice. My organization has led the development of several excellent predictive
@@ -179,7 +191,11 @@ and all the patients they assist, now benefit from predictions and guidelines th
 needed and in context. This includes the predictive analytics and toolkits from the “Heart Health Association”, which are deployed
 in the Valiant EHR and being used to help improve the health of thousands of people every day.
 
-  </p></div>
+  </p><div class="row">
+    <div class=" col-md-1"><img class="avatar" src="./img/avatar/Garcia.png" alt="Physician"></div>
+    <div class=" col-md-7 persona"><span> Thomas S. Garcia, MBA </span></div>
+  </div>
+</div>
             <div class='story-appear' data-appear-top-offset="-150">
 						<p>As Senior VP for Innovation for “Valiant”, I lead a technical team of analysts, engineers, and programmers. Our job is to find
 ways to improve the Valiant Electronic Health Record (EHR) system. The Knowledge Grid has made it possible for us to rapidly
@@ -188,7 +204,8 @@ and all the patients they assist, now benefit from predictions and guidelines th
 needed and in context. This includes the predictive analytics and toolkits from the “Heart Health Association”, which are deployed
 in the Valiant EHR and being used to help improve the health of thousands of people every day.
 
-						</p></div></div>
+						</p>
+          </div></div>
 					</div>
 
 				</div></div>
@@ -212,7 +229,13 @@ in the Valiant EHR and being used to help improve the health of thousands of peo
   "Heart Health Association" predictive analytics to determine which of my patients are at more risk of myocardial infarction
   and which would benefit most from surgery. Thanks to the Knowledge Grid, the new EHR significantly expands my abilities to
   not only improve patient outcomes but also to cut costs from unnecessary interventions.
-              </p></div>
+              </p>
+              <div class="row">
+                <div class=" col-md-1"><img class="avatar" src="./img/avatar/familyDoctor.png" alt="Physician"></div>
+                <div class=" col-md-7 persona"><span> Charles Hawary, MD </span></div>
+              </div>
+
+            </div>
         <div class='story-appear' data-appear-top-offset="-150">
 						<p >I am a primary care physician responsible for taking care of a large group of patients. For years, I have worked to keep up
 with the latest medical evidence, but that is hard to do. My patients struggle with a diversity of health issues. The Knowledge
@@ -227,10 +250,34 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 
 				</div>
 </div>
+<!-- <div class="row">
+    <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 align-left line">
+      <hr>
+  </div>
+</div> -->
 			</div>
 
 	</section>
 
+  <section id="section-tech1" data-appear-top-offset='0' class="section appear clearfix bg-grey">
+    <div class="container">
+
+      <div class="row pad-bot30">
+        <div class="col-md-offset-1 col-md-4">
+          <div class="align-left">
+            <h2>Curious how it all works? Take a look for yourself.</h2>
+          </div>
+        </div>
+        <div class="col-md-3 align-center col-md-offset-0 ">
+          <button type='button' class='primary'><span>GIT LIBRARY    </span><img src='./img/logo/github.png'/></button>
+        </div>
+        <div class="col-md-3 align-right  col-md-offset-0 ">
+          <button type='button' class='primary' ><span>GIT SHELF    </span> <img src='./img/logo/github.png'/></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 		<!-- about -->
 		<section id="section-uses" data-appear-top-offset='150' class="section appear bg-white clearfix">
     <h3  class='customheading'> USES </h3>
@@ -244,7 +291,9 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 				</div>
 
 					<div class="row align-left mar-bot35">
-						<div class="col-md-offset-1 col-md-4">
+            <div class="col-md-offset-1 col-md-10 nest" >
+              <div='row'>
+						<div class="col-md-4">
 							<div class="use-case">
 
 								<div class="use-detail">
@@ -270,7 +319,7 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<div class="use-case">
 
 								<div class="use-detail">
@@ -285,13 +334,14 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 						</div>
 
 					</div>
-
+</div>
+</div>
 		</div>
 		</section>
 		<!-- /about -->
 
 		<!-- section works -->
-		<section id="section-tech"  data-appear-top-offset='-150' class="section appear clearfix">
+		<section id="section-tech"  data-appear-top-offset='-150' class="section appear clearfix bg-grey">
       <h3  class='customheading'> Technology </h3>
       <div class="container">
 
@@ -304,7 +354,9 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 				</div>
 
 					<div class="row align-left mar-bot20">
-						<div class="col-md-offset-1 col-md-4">
+            <div class="col-md-offset-1 col-md-10 nest" >
+              <div='row'>
+						<div class="col-md-4">
 							<div class="use-case">
 
 								<div class="use-detail">
@@ -322,9 +374,8 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<div class="use-case">
-
 								<div class="use-detail">
 								<h4>OBJECT ACTIVATORS</h4>
 									<span>Systems that support deployment and use of Knowledge Objects to process health data</span>
@@ -333,7 +384,8 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 						</div>
 
 					</div>
-
+        </div>
+      </div>
 
 			</div>
 		</section>
@@ -347,6 +399,9 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 	<section id="footer" class="section footer">
     <h3  class='customheading'>Footer</h3>
     <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-5">
+      <a href="http://lhs.medicine.umich.edu/">
 			<div class="row align-center copyright school">
 					<img src="./img/logo/MedicalSchoolLogo.png" alt="UofM Medical School"/>
       </div>
@@ -356,22 +411,30 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
       <div class="row align-center copyright text">
                     <!-- <p>Copyright &copy; 2017</p> -->
       </div>
-
-
-
-
-                        <!-- <div class="credits">
-
-                                All the links in the footer should remain intact.
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Amoeba
-
-                            <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div> -->
-
+        </a>
 			</div>
+      <div class=" col-md-5">
+    <a href="http://lhs.medicine.umich.edu/">
+    <div class="row align-center copyright school">
+        <img src="./img/logo/fedoraLogo.png" alt="Fedora"/>
+    </div>
+    <div class="row align-center copyright dept">
 
+    </div>
+    <div class="row align-center copyright text">
+                  <!-- <p>Copyright &copy; 2017</p> -->
+    </div>
+                      <!-- <div class="credits">
+                              All the links in the footer should remain intact.
+                              You can delete the links only if you purchased the pro version.
+                              Licensing information: https://bootstrapmade.com/license/
+                              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Amoeba
+                          <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                      </div> -->
+      </a>
+    </div>
+    </div>
+    </div>
 
 	</section>
 	<!-- <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a> -->
@@ -389,6 +452,9 @@ not only improve patient outcomes but also to cut costs from unnecessary interve
 	<script src="js/stellar.js"></script>
   <script src="js/lodash.js"></script>
 	<script src="js/jquery.appear.js"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/jquery.lettering.animate.js"></script>
+
     <script src="js/main.js"></script>
     <!-- <script src="contactform/contactform.js"></script> -->
 

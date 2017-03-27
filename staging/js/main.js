@@ -1,38 +1,38 @@
 (function ($) {
-	var scrollbarwidth=getScrollbarWidth();
-	var viewportWidth = $(window).width()+scrollbarwidth;
-	var viewportHeight = $(window).height()+scrollbarwidth;
-	var breakpoint = 0;
-	if(viewportWidth>1199) {
-		breakpoint=200;
-	}else	if(viewportWidth>991) {
-		breakpoint=140;
-	}else if(viewportWidth>767) {
-		breakpoint=120;
-	}else if(viewportWidth>576){
-		breakpoint=70;
-	}else if(viewportWidth>320){
-		breakpoint=20;
-	}
+	// var scrollbarwidth=getScrollbarWidth();
+	// var viewportWidth = $(window).width()+scrollbarwidth;
+	// var viewportHeight = $(window).height()+scrollbarwidth;
+	// var breakpoint = 0;
+	// if(viewportWidth>1199) {
+	// 	breakpoint=200;
+	// }else	if(viewportWidth>991) {
+	// 	breakpoint=140;
+	// }else if(viewportWidth>767) {
+	// 	breakpoint=120;
+	// }else if(viewportWidth>576){
+	// 	breakpoint=70;
+	// }else if(viewportWidth>320){
+	// 	breakpoint=20;
+	// }
 
-	$("#logowrapper").height($("#blogo").outerHeight());
-	var navOffset = $("#section-featured").offset().top;
-	var hmax = $('#navlogo').height();
-	console.log(hmax+" == "+navOffset);
-	var scrollManager = {
-		kgridlogo: $('#navlogo'),
-		onScroll: function(){
-			var self = this;
-			var scrolltop = $(window).scrollTop();
-			var h=0;
-			if((scrolltop<breakpoint)&(scrolltop>0)){
-				h=hmax-scrolltop;
-				console.log(scrolltop);
-				self.kgridlogo.css("height",h+"px");
-			}
-			//
-		}
-	}
+	// $("#logowrapper").height($("#blogo").outerHeight());
+	// var navOffset = $("#section-featured").offset().top;
+	// var hmax = $('#navlogo').height();
+	// console.log(hmax+" == "+navOffset);
+	// var scrollManager = {
+	// 	kgridlogo: $('#navlogo'),
+	// 	onScroll: function(){
+	// 		var self = this;
+	// 		var scrolltop = $(window).scrollTop();
+	// 		var h=0;
+	// 		if((scrolltop<breakpoint)&(scrolltop>0)){
+	// 			h=hmax-scrolltop;
+	// 			console.log(scrolltop);
+	// 			self.kgridlogo.css("height",h+"px");
+	// 		}
+	// 		//
+	// 	}
+	// }
   // $("#kgridlogo").wrap('<div id="logowrapper"></div>');
   // $("logowrapper").height($("#kgridlogo").outerHeight());
 	// var scrollManager = {
@@ -102,17 +102,17 @@
 
 			});
 
-			$(window).resize(function(){
-				var viewportWidth = $(window).width()+scrollbarwidth;
-				var viewportHeight = $(window).height()+scrollbarwidth;
-				console.log("Width: "+viewportWidth+"   Height: "+viewportHeight);
-				adjratio=0.45;
-				if(viewportWidth>767) {
-					adjratio=0.75;
-				}
-				// $("html, body").animate({ scrollTop: 0 }, 1000);
-				// navOffset = $("#kgridlogo").offset().top;
-			});
+			// $(window).resize(function(){
+			// 	var viewportWidth = $(window).width()+scrollbarwidth;
+			// 	var viewportHeight = $(window).height()+scrollbarwidth;
+			// 	console.log("Width: "+viewportWidth+"   Height: "+viewportHeight);
+			// 	adjratio=0.45;
+			// 	if(viewportWidth>767) {
+			// 		adjratio=0.75;
+			// 	}
+			// 	// $("html, body").animate({ scrollTop: 0 }, 1000);
+			// 	// navOffset = $("#kgridlogo").offset().top;
+			// });
 
 
 		// $('.scrollup').click(function(){
@@ -153,37 +153,38 @@
 	});
 
 	//Scroll to show/hide stories
-	jQuery(".story-appear").appear();
-	jQuery(".story-appear").on("appear", function(data) {
-			var h = $(this).parent().find(".story-dummy").height();
-			$(this).addClass("active");
-			$(this).css("height",h+"px");
-	});
-	jQuery(".story-appear").on("disappear", function(data) {
- 			$(this).removeClass("active");
-			$(this).css("height","1px");
-	});
+	//jQuery(".story-appear").appear();
+	//jQuery(".story-appear").on("appear", function(data) {
+			//var h = $(this).parent().find(".story-dummy").height();
+			//$(this).addClass("active");
+			//$(this).lettering().animateLetters({opacity:0},{opacity:1},{randomOrder:false,time:70,reset:true});
+			//$(this).css("height",h+"px");
+	//});
+	//jQuery(".story-appear").on("disappear", function(data) {
+ 			//$(this).removeClass("active");
+			//$(this).css("height","1px");
+	//});
 
-	function getScrollbarWidth() {
-	    var outer = document.createElement("div");
-	    outer.style.visibility = "hidden";
-	    outer.style.width = "100px";
-	    document.body.appendChild(outer);
-
-	    var widthNoScroll = outer.offsetWidth;
-	    // force scrollbars
-	    outer.style.overflow = "scroll";
-
-	    // add innerdiv
-	    var inner = document.createElement("div");
-	    inner.style.width = "100%";
-	    outer.appendChild(inner);
-
-	    var widthWithScroll = inner.offsetWidth;
-
-	    // remove divs
-	    outer.parentNode.removeChild(outer);
-
-	    return widthNoScroll - widthWithScroll;
-	}
+	// function getScrollbarWidth() {
+	//     var outer = document.createElement("div");
+	//     outer.style.visibility = "hidden";
+	//     outer.style.width = "100px";
+	//     document.body.appendChild(outer);
+	//
+	//     var widthNoScroll = outer.offsetWidth;
+	//     // force scrollbars
+	//     outer.style.overflow = "scroll";
+	//
+	//     // add innerdiv
+	//     var inner = document.createElement("div");
+	//     inner.style.width = "100%";
+	//     outer.appendChild(inner);
+	//
+	//     var widthWithScroll = inner.offsetWidth;
+	//
+	//     // remove divs
+	//     outer.parentNode.removeChild(outer);
+	//
+	//     return widthNoScroll - widthWithScroll;
+	// }
 })(jQuery);

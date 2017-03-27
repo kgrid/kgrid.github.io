@@ -7,14 +7,14 @@ a {
 	transition: all 1s ease;
 }
 a:hover {
-	color: #00274c;
+	color: #333333;
 }
 
 /* menu */
 .nav > li > a:hover, .nav > li > a:focus, .dropdown-menu >li>a:hover {
     text-decoration: none;
-    background-color: #fff;
-		color: #00274c;
+    background-color: transparent;
+		color: #333333;
 }
 .navbar .navbar-nav > .active > a {
 	color: #333333;
