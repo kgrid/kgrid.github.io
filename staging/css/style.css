@@ -459,6 +459,9 @@ h1 a.navbar-brand {
 }
 
 .navbar-toggle {
+	position: absolute;
+	right:0px;
+	border: none;
 	padding: 0;
 	margin: 0;
 	width: 80px;
@@ -672,199 +675,6 @@ a.scrollup:hover{
 	color: #e6e6e6;
 }*/
 
-/* ========================================
-Media queries
-========================================= */
-/*@media (min-width: 959px) and (max-width: 1199px) {
-	.navbar-nav {
-		margin-top: 20px;
-	}
-	.dropdown:hover>.dropdown-menu {
-    display: block;
-
-  }
-	h1 a.navbar-brand {
-		padding-left: 100px;
-	}
-}*/
-
-@media only screen and (min-width : 1200px) {
-	.navbar.navbar-fixed-top {
-		/*background-color:#fff;*/
-	}
-	.navbar-nav {
-		margin-top: 20px;
-	}
-	/*.dropdown:hover>.dropdown-menu {
-    display: block;
-  }*/
-	div#kgridlogo img {
-		height: 60px;
-		margin:0;
-		padding:0;
-	}
-	.navbar-brand {
-		height: 260px;
-		padding-left: 40px;
-	}
-	section.featured {
-		padding-top: 200px;
-	}
-}
-
-
-@media only screen and (min-width : 992px) and (max-width : 1199px)  {
-	.navbar.navbar-fixed-top {
-		/*background-color:rgba(255,255,255,0.8);*/
-	}
-	.navbar-nav {
-		margin-top: 20px;
-	}
-	/*.dropdown:hover>.dropdown-menu {
-    display: block;
-  }*/
-	div#kgridlogo img {
-		height: 60px;
-		margin:0;
-		padding:0;
-	}
-
-	.navbar-brand {
-		height: 200px;
-		padding-left: 100px;
-	}
-	section.featured {
-		padding-top: 200px;
-	}
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.navbar.navbar-fixed-top {
-		/*background-color:#fff;*/
-	}
-	.navbar-nav {
-		margin-top: 20px;
-	}
-	.navbar-brand {
-		height: 160px;
-		padding-left: 30px;
-	}
-	/*.dropdown:hover>.dropdown-menu {
-    display: block;
-  }*/
-	.navbar-brand {
-		height: 180pox;
-		padding-left: 100px;
-	}
-	div#kgridlogo img {
-		height: 50px;
-		margin:0;
-		padding:0;
-	}
-	section.featured {
-		padding-top: 200px;
-	}
-}
-
-@media only screen and (min-width: 576px) and  (max-width: 767px) {
-	.navbar.navbar-fixed-top {
-		/*background-color:#fff;*/
-	}
-	.navbar .navbar-collapse ul.nav {
-		border: none;
-		width: 100%;
-		float: none;
-		margin:0;
-		padding:0;
-		box-shadow: none;
-	}
-	.navbar .navbar-collapse ul.nav li {
-		border-bottom: none;
-	}
-	.navbar-brand {
-		height: 130px;
-		padding-left: 30px;
-	}
-	div#kgridlogo img {
-		height: 40px;
-		margin:0;
-		padding:0;
-	}
-	.stats .col-md-3 {
-		margin-bottom: 30px;
-	}
-
-	section.section {
-		margin:0;
-		padding: 50px 20px 30px 20px;
-	}
-
-		section.featured {
-			padding-top: 180px;
-		}
-
-		section#footer .school img {
-			height: 2.8em;
-		}
-		section#footer .dept img {
-			margin-top: 15px;
-			height: 1.15em;
-		}
-}
-
-@media only screen  and  (max-width: 575px) {
-
-	.navbar .navbar-collapse ul.nav {
-		border: none;
-		width: 100%;
-		float: none;
-		margin:0;
-		padding:0;
-		box-shadow: none;
-	}
-	.navbar .navbar-collapse ul.nav li {
-		border-bottom: none;
-	}
-
-
-	.navbar-brand {
-		padding-left: 0px;
-		height: 60px;
-	}
-
-	div#kgridlogo img {
-		height: 30px;
-		margin:0;
-		padding:0;
-	}
-	.stats .col-md-3 {
-		margin-bottom: 30px;
-	}
-	.dropdown-menu {
-		display: block;
-		width: 100%;
-		background-color: rgba(255,255,255,0.85);
-		text-align: left;
-		padding-left: 25px;
-		color: #fff;
-		margin-top:1px;
-	}
-	section.section {
-		margin:0;
-		padding: 30px 20px 0px 20px;
-	}
-	section.featured {
-		padding-top: 160px;
-	}
-	section#footer .school img {
-		height: 2.3em;
-	}
-	section#footer .dept img {
-		margin-top: 15px;
-		height: 0.8em;
-	}
-}
 /* New test style */
 .story-holder {
 	position: relative;
@@ -961,9 +771,6 @@ div#kgridlogo {
 	padding-bottom: 30px;
 }
 
-#navlogo {
-	padding-left: 10px;
-}
 #navlogo img{
 	height: 100%;
 }
@@ -999,4 +806,241 @@ img#blogo {
 
 section#section-pres {
 	display: none;
+}
+
+/* ========================================
+Media queries
+========================================= */
+/*@media (min-width: 959px) and (max-width: 1199px) {
+	.navbar-nav {
+		margin-top: 20px;
+	}
+	.dropdown:hover>.dropdown-menu {
+    display: block;
+
+  }
+	h1 a.navbar-brand {
+		padding-left: 100px;
+	}
+}*/
+
+@media only screen and (min-width : 1200px) {
+	.navbar.navbar-fixed-top {
+		/*background-color:#fff;*/
+	}
+	.navbar-nav {
+		margin-top: 20px;
+	}
+	/*.dropdown:hover>.dropdown-menu {
+    display: block;
+  }*/
+	div#kgridlogo img {
+		height: 60px;
+		margin:0;
+		padding:0;
+	}
+	.navbar-brand {
+		height: 260px;
+		padding-left: 40px;
+	}
+	section.featured {
+		padding-top: 200px;
+	}
+	img.use-icon {
+		width: 60px;
+	}
+	.iconrow {
+		height: 35px;
+	}
+	#navlogo {
+		padding-left: 10px;
+	}
+}
+
+
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+	.navbar.navbar-fixed-top {
+		/*background-color:rgba(255,255,255,0.8);*/
+	}
+	.navbar-nav {
+		margin-top: 20px;
+	}
+	/*.dropdown:hover>.dropdown-menu {
+    display: block;
+  }*/
+	div#kgridlogo img {
+		height: 60px;
+		margin:0;
+		padding:0;
+	}
+
+	.navbar-brand {
+		height: 200px;
+		padding-left: 100px;
+	}
+	section.featured {
+		padding-top: 200px;
+	}
+	img.use-icon {
+		width: 50px;
+	}
+	.iconrow {
+		height: 35px;
+	}
+	#navlogo {
+		padding-left: 10px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar.navbar-fixed-top {
+		/*background-color:#fff;*/
+	}
+	.navbar-nav {
+		margin-top: 20px;
+	}
+	.navbar-brand {
+		height: 160px;
+		padding-left: 30px;
+	}
+	/*.dropdown:hover>.dropdown-menu {
+    display: block;
+  }*/
+	.navbar-brand {
+		height: 180pox;
+		padding-left: 100px;
+	}
+	div#kgridlogo img {
+		height: 50px;
+		margin:0;
+		padding:0;
+	}
+	section.featured {
+		padding-top: 200px;
+	}
+	img.use-icon {
+		width: 40px;
+	}
+	.iconrow {
+		height: 35px;
+	}
+}
+
+@media only screen and (min-width: 576px) and  (max-width: 767px) {
+	.navbar.navbar-fixed-top {
+		/*background-color:#fff;*/
+	}
+	.navbar .navbar-collapse ul.nav {
+		border: none;
+		width: 100%;
+		float: none;
+		margin:0;
+		padding:0;
+		box-shadow: none;
+	}
+	.navbar .navbar-collapse ul.nav li {
+		border-bottom: none;
+	}
+	.navbar-brand {
+		height: 130px;
+		padding-left: 30px;
+	}
+	div#kgridlogo img {
+		height: 40px;
+		margin:0;
+		padding:0;
+	}
+	.stats .col-md-3 {
+		margin-bottom: 30px;
+	}
+
+	section.section {
+		margin:0;
+		padding: 50px 20px 30px 20px;
+	}
+	img.use-icon {
+		width: 40px;
+	}
+
+		section.featured {
+			padding-top: 180px;
+		}
+
+		section#footer .school img {
+			height: 2.8em;
+		}
+		section#footer .dept img {
+			margin-top: 15px;
+			height: 1.15em;
+		}
+
+
+		#navlogo {
+			padding-left: 70px;
+			text-align:center;
+		}
+		.iconrow {
+			height: 35px;
+		}
+}
+
+@media only screen  and  (max-width: 575px) {
+
+	.navbar .navbar-collapse ul.nav {
+		border: none;
+		width: 100%;
+		float: none;
+		margin:0;
+		padding:0;
+		box-shadow: none;
+	}
+	.navbar .navbar-collapse ul.nav li {
+		border-bottom: none;
+	}
+
+
+	.navbar-brand {
+		padding-left: 0px;
+		height: 60px;
+	}
+
+	div#kgridlogo img {
+		height: 30px;
+		margin:0;
+		padding:0;
+	}
+	.stats .col-md-3 {
+		margin-bottom: 30px;
+	}
+	.dropdown-menu {
+		display: block;
+		width: 100%;
+		background-color: rgba(255,255,255,0.85);
+		text-align: left;
+		padding-left: 25px;
+		color: #fff;
+		margin-top:1px;
+	}
+	section.section {
+		margin:0;
+		padding: 30px 20px 0px 20px;
+	}
+	section.featured {
+		padding-top: 160px;
+	}
+	section#footer .school img {
+		height: 2.3em;
+	}
+	section#footer .dept img {
+		margin-top: 15px;
+		height: 0.8em;
+	}
+	img.use-icon {
+		width: 30px;
+	}
+
+	.iconrow {
+		height: 35px;
+	}
 }
