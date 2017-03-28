@@ -687,7 +687,7 @@ a.scrollup:hover{
 .story-holder {
 	position: relative;
 }
-.story-dummy {
+.story-stunt {
 	color: #333333;
 	font-style: italic;
 	border-left: 2px solid #00274c;
@@ -697,15 +697,15 @@ a.scrollup:hover{
 	opacity: 1;
 }
 
-.story-dummy img {
+.story-stunt img {
 	border-radius: 100%;
 	background-color: #f7f7f7;
 	height: 40px;
 }
-.story-dummy .persona {
+.story-stunt .persona {
 	height: 100%;
 }
-.story-dummy .persona span {
+.story-stunt .persona span {
 	font-style: italic;
 	vertical-align: bottom;
 	display:none;
@@ -1054,19 +1054,23 @@ Media queries
 		height: 35px;
 	}
 }
-
-.story-dummy img.avatar-md {
+.story-stunt .iconspacer {
+	height: calc(100% - 120px);
+	width:1px;
+	float:right;
+}
+.story-stunt img.avatar-md {
 	height: 120px;
 	bottom: 0;
 	border: 5px solid #d7d7d7;
 }
 
 div.avaicon {
-	shape-outside: content-box;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	border-radius: 50%;
+	shape-outside: circle();
+	float:right;
+	clear:right;
+	border-radius: 100%;
+	position: relative;
 }
 
 div.avaicon img.use-icon {
