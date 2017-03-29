@@ -1071,6 +1071,8 @@ div.avaicon {
 	clear:right;
 	border-radius: 100%;
 	position: relative;
+	padding:8px;
+	text-align: justify;
 }
 
 div.avaicon img.use-icon {
