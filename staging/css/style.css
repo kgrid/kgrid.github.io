@@ -508,8 +508,8 @@ section.featured.inner {
 	padding: 150px 0 50px;
 }
 section#section-tech {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top:25px;
+	padding-bottom: 25px;
 }
 /* --- Flexslider --- */
 .flexslider {
@@ -847,15 +847,8 @@ Media queries
 }*/
 
 @media only screen and (min-width : 1200px) {
-
-	.navbar-nav {
-		margin-top: 20px;
-	}
-	/*.dropdown:hover>.dropdown-menu {
-    display: block;
-  }*/
 	div#kgridlogo img {
-		height: 30px;
+		height: 24px;
 		margin:0;
 		padding:0;
 	}
@@ -895,7 +888,7 @@ Media queries
     display: block;
   }*/
 	div#kgridlogo img {
-		height: 30px;
+		height: 24px;
 		margin:0;
 		padding:0;
 	}
@@ -944,7 +937,7 @@ Media queries
 		padding-left: 100px;
 	}
 	div#kgridlogo img {
-		height: 30px;
+		height: 24px;
 		margin:0;
 		padding:0;
 	}
@@ -1058,7 +1051,7 @@ Media queries
 	}
 
 	div#kgridlogo img {
-		height: 25px;
+		height: 24px;
 		margin:0;
 		padding:0;
 	}
@@ -1105,6 +1098,9 @@ Media queries
 .story-stunt .iconspacer {
 	height: calc(100% - 120px);
 	width:1px;
+	float:right;
+}
+.nav-spacer {
 	float:right;
 }
 .story-stunt img.avatar-md {
