@@ -10,7 +10,7 @@
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
-@import url('overwrite.css');
+/*@import url('overwrite.css');*/
 @import url('animate.css');
 /*==========================================================================
   General
@@ -152,7 +152,10 @@ a:hover {
 	padding-top: 25px;
 }
 
+.navbar.navbar-fixed-top {
+	z-index: 100;
 
+}
 
 /* --- float --- */
 .float-left {
@@ -331,7 +334,7 @@ hr {
 
 section.section {
 	margin:0;
-	padding: 50px 50px 0px 50px;
+	/*padding: 50px 50px 0px 50px;*/
 	width: 100%;
 }
 
@@ -354,6 +357,8 @@ section > .container{
 	max-width: 1200px;
 	width:100%;
 	margin: 0 auto;
+	padding-top: 35px;
+padding-bottom: 25px;
 }
 /*===========================
   --- Header & menu ----
@@ -361,7 +366,7 @@ section > .container{
 .navbar {
 	line-height: 60px;
 	height: 60px;
-	background-color: #fff;
+	background-color: #e7e7e7;
 	display: block;
 	vertical-align: middle;
 	text-align: center;
@@ -469,8 +474,8 @@ h1 a.navbar-brand {
 }
 
 .navbar-collapse.in {
-	background-color: #f7f7f7;
-	margin-top: -3px !important;
+	background-color: #e7e7e7;
+	/*margin-top: -3px !important;*/
 	margin-left: -30px;
 	overflow-y: visible;
 	padding-right:0px;
@@ -601,6 +606,11 @@ section#section-tech {
 	margin-bottom: 15px;
 }
 
+.use-detail img {
+	height: 180px;
+	width: auto;
+  padding: 25px;
+}
 img.use-icon {
 	max-width: 200px;
 }
@@ -696,7 +706,9 @@ a.scrollup:hover{
 	height:auto;
 	opacity: 1;
 }
-
+.story-stunt p {
+	text-align: justify;
+}
 .story-stunt img {
 	border-radius: 100%;
 	background-color: #f7f7f7;
@@ -736,7 +748,7 @@ a.scrollup:hover{
     background-repeat: repeat-x;
 }*/
 
-button.primary {
+div.primary {
 	background-color: #00274c;
 	border:1px solid #00274c;
 	border-radius: 15px;
@@ -745,6 +757,9 @@ button.primary {
 	padding: 10px 25px;
 	width: 100%;
 	margin: 10px 0px 10px 0px;
+}
+div.primary img {
+	margin-left: 4px;
 }
 button.secondary {
 	background-color: transparent;
@@ -775,9 +790,6 @@ section span {
 }
 .use-case {
 	margin-bottom: 30px;
-}
-div#kgridlogo {
-	padding-bottom: 30px;
 }
 
 #navlogo img{
@@ -835,9 +847,7 @@ Media queries
 }*/
 
 @media only screen and (min-width : 1200px) {
-	.navbar.navbar-fixed-top {
-		/*background-color:#fff;*/
-	}
+
 	.navbar-nav {
 		margin-top: 20px;
 	}
@@ -845,7 +855,7 @@ Media queries
     display: block;
   }*/
 	div#kgridlogo img {
-		height: 60px;
+		height: 30px;
 		margin:0;
 		padding:0;
 	}
@@ -854,7 +864,7 @@ Media queries
 		padding-left: 40px;
 	}
 	section.featured {
-		padding-top: 200px;
+		padding-top: 120px;
 	}
 	img.use-icon {
 		width: 60px;
@@ -864,6 +874,12 @@ Media queries
 	}
 	#navlogo {
 		padding-left: 40px;
+	}
+
+	.use-detail img {
+		height: 180px;
+		width: auto;
+	  padding: 25px;
 	}
 }
 
@@ -879,7 +895,7 @@ Media queries
     display: block;
   }*/
 	div#kgridlogo img {
-		height: 60px;
+		height: 30px;
 		margin:0;
 		padding:0;
 	}
@@ -899,6 +915,12 @@ Media queries
 	}
 	#navlogo {
 		padding-left: 10px;
+	}
+
+	.use-detail img {
+		height: 180px;
+		width: auto;
+	  padding: 25px;
 	}
 }
 
@@ -922,18 +944,24 @@ Media queries
 		padding-left: 100px;
 	}
 	div#kgridlogo img {
-		height: 50px;
+		height: 30px;
 		margin:0;
 		padding:0;
 	}
 	section.featured {
-		padding-top: 200px;
+		padding-top: 120px;
 	}
 	img.use-icon {
 		width: 40px;
 	}
 	.iconrow {
 		height: 35px;
+	}
+
+	.use-detail img {
+		height: 150px;
+		width: auto;
+	  padding: 20px;
 	}
 }
 
@@ -957,7 +985,7 @@ Media queries
 		padding-left: 30px;
 	}
 	div#kgridlogo img {
-		height: 40px;
+		height: 24px;
 		margin:0;
 		padding:0;
 	}
@@ -974,15 +1002,15 @@ Media queries
 	}
 
 		section.featured {
-			padding-top: 180px;
+			padding-top: 100px;
 		}
 
 		section#footer .school img {
-			height: 2.8em;
+			height: 1.8em;
 		}
 		section#footer .dept img {
 			margin-top: 15px;
-			height: 1.15em;
+			height: 0.75em;
 		}
 
 
@@ -992,6 +1020,15 @@ Media queries
 		}
 		.iconrow {
 			height: 35px;
+		}
+    section#section-tech a span {
+    	font-size: 14px;
+    }
+
+		.use-detail img {
+			height: 120px;
+			width: auto;
+		  padding: 15px;
 		}
 }
 
@@ -1009,14 +1046,19 @@ Media queries
 		border-bottom: none;
 	}
 
-
+  section#section-tech a span {
+  	font-size: 14px;
+  }
+  div.primary img {
+      margin-left: 14px;
+  }
 	.navbar-brand {
 		padding-left: 0px;
 		height: 60px;
 	}
 
 	div#kgridlogo img {
-		height: 30px;
+		height: 25px;
 		margin:0;
 		padding:0;
 	}
@@ -1037,7 +1079,7 @@ Media queries
 		padding: 30px 20px 0px 20px;
 	}
 	section.featured {
-		padding-top: 160px;
+		padding-top: 100px;
 	}
 	section#footer .school img {
 		height: 2.3em;
@@ -1052,6 +1094,12 @@ Media queries
 
 	.iconrow {
 		height: 35px;
+	}
+
+	.use-detail img {
+		height: 120px;
+		width: auto;
+	  padding: 15px;
 	}
 }
 .story-stunt .iconspacer {
@@ -1079,6 +1127,6 @@ div.avaicon img.use-icon {
 	position: absolute;
 	width: 40px;
 	height: auto;
-	right: 0px;
-	bottom: 0px;
+	right: 8px;
+	bottom: 8px;
 }
