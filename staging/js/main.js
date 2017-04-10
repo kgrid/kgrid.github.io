@@ -17,7 +17,7 @@
 			});
 
 	// spacer
-		function sizeSpacer(spacer) {
+	function sizeSpacer(spacer) {
     spacer.style.height = 0;
     var container = spacer.parentNode;
     var img = spacer.nextElementSibling || spacer.nextSibling;
@@ -27,7 +27,34 @@
     while (h > 0 && img.getBoundingClientRect().bottom > lastContentNode.getBoundingClientRect().bottom) {
         spacer.style.height = --h + "px";
     }
-}
+	}
+
+	//text effect
+	$("#texteff1").textillate({
+		autoStart: true,
+		loop: false,
+		inEffects: [],
+		outEffects:[],
+			in: {
+				effect: 'fadeIn',
+				delay:5,
+				delayScale: 1,
+				type: 'word'
+			},
+			out: {
+			    effect: 'fadeOut',
+			    delayScale: 1,
+			    delay: 5,
+			    sync: true,
+			    shuffle: false,
+			    reverse: false,
+
+			  },
+		 });
+	$("#texteff2").textillate({ in: { effect: 'fadeIn' ,delay:10, delayScale: 1} });
+	$("#texteff3").textillate({ in: { effect: 'fadeIn' ,delay:10, delayScale: 1} });
+
+	// $(".storywrapper").clone().appendTo(".story-appear");
 
 
 onload = onresize = function() {
