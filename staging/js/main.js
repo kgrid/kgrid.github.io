@@ -58,9 +58,9 @@
 
 
 onload = onresize = function() {
-    sizeSpacer(document.getElementById("sp1"));
-		sizeSpacer(document.getElementById("sp2"));
-		sizeSpacer(document.getElementById("sp3"));
+    // sizeSpacer(document.getElementById("sp1"));
+		// sizeSpacer(document.getElementById("sp2"));
+		// sizeSpacer(document.getElementById("sp3"));
 };
 	// local scroll
 	 jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});

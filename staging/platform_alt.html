@@ -66,15 +66,15 @@
 				<div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 align-left">
           <div class="row">
             <div class="col-md-3" role="complementary">
-              <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix-top">
+              <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs fixed">
                 <h3>Tools </h3>
                 <ul class="nav nav0 bs-docs-sidenav">
                   <li>
-                    <a href="./platform.html">Platform</a>
+                    <a href="#platform">Platform</a>
                       <ul class="nav nav1">
-                        <li><a href="./library.html">Object Library</a></li>
-                        <li><a href="./activator.html">Object Activators</a></li>
-                        <li><a href="./object.html">Knowledge Objects</a>
+                        <li><a href="#library">Object Library</a></li>
+                        <li><a href="#activator">Object Activators</a></li>
+                        <li><a href="#object">Knowledge Objects</a>
                           <ul class="nav nav2">
                             <li><a href="#">Object Name</a></li>
                           <li><a href="#">Object Name</a></li>
@@ -88,18 +88,55 @@
                                     </ul> </nav> </div>
 
             <div class="col-md-8 align-left mar-bot60">
-              <h1 class="slogan">Knowledge Objects</h1>
-              <div class="align-center mar-bot35">
-              <img src="./img/icon/ObjectDrawing1.png" alt="Objects" width="60%"/></div>
-              <h4 class="align-justify line-ht2">
-                Knowledge Objects represent knowledge in a modular, computer-processable form.<br>
-      <br>
-      Knowledge Objects combine a knowledge payload – encoded in any computer language or format – with a detailed description and an interface. <br>
-      <br>
-      Making knowledge computer-processable involves methods for representing health knowledge as rules, graphs, assertions, and probabilities. Once these methods are applied to actionable knowledge, a knowledge payload results. This payload is encapsulated in a Knowledge Object. Examples of Knowledge Object payloads include predictive models, computable guidelines, questionnaires, computable phenotypes, and rule sets.
-                        </h4>
-            </div>
+              <div id="platform" class="mar-top60  pad-top100">
+                <h1 class="slogan">Platform</h1>
+                <div class="mar-bot35">
+                  <img src="./img/icon/PlatformDrawing2.png" alt="Objects" width="100%"/></div>
+                  <h4 class="align-justify line-ht2">
+                    Knowledge Grid works this way. <br>First convert health knowledge into computer-processable forms as Knowledge Objects. <br>Then add Knowledge Objects to the Object Library where they are protected and managed. <br>Next, deploy Knowledge Objects of interest with an Activator. Use the Activator to process external health data and generate health advice messages.
+                  </h4>
+              </div>
+              <div id="library" class="mar-top60  pad-top100">
+                <h1 class="slogan">Object Library </h1>
+                <div class="align-center mar-bot35">
+                <img src="./img/icon/LibraryDrawing2.png" alt="Objects" width="60%"/></div>
+                <h4 class="align-justify line-ht2">
+                  The Object Library protects and supports management of Knowledge Objects, making it easy to access and deploy them.<br>
+                  <br>
+        The Object Library is built upon a Fedora-based repository, supported by SOLR for search and FUSEKI for reporting. It includes a Model Layer that helps encode Knowledge Objects. The Model Layer calls on EZID to mint unique identifiers for every Knowledge Object. The Object Library also has a Gateway Layer supporting two APIs. The Discovery API provides a capability to find and access Knowledge Objects. The Management API provides a capability to store and manage Knowledge Objects.
+                </h4>
+              </div>
+              <div id="activator" class="mar-top60 pad-top100">
+                <h1 class="slogan">Object Activators</h1>
+                <div class="align-center mar-bot35">
+                <img src="./img/icon/ActivatorDrawing1.png" alt="Objects" width="60%"/></div>
+                <h4 class="align-justify line-ht2">
+                  The Activators are systems for deploying Knowledge Objects to process health data.
 
+        Activators provide scalable means to put Knowledge Objects to work in the real world. Activators may specifically run payload code in one or more forms or languages.  When Knowledge Objects are moved from the Object Library to an Activator, they automatically become webservices that can process health data and generate messages of advice.
+                  </h4>
+              </div>
+              <div id="object" class="mar-top60 pad-top100">
+                <h1 class="slogan">Knowledge Objects</h1>
+                <div class="align-center mar-bot35">
+                <img src="./img/icon/ObjectDrawing1.png" alt="Objects" width="60%"/></div>
+                <h4 class="align-justify line-ht2">
+                  Knowledge Objects represent knowledge in a modular, computer-processable form.<br>
+        <br>
+        Knowledge Objects combine a knowledge payload – encoded in any computer language or format – with a detailed description and an interface. <br>
+        <br>
+        Making knowledge computer-processable involves methods for representing health knowledge as rules, graphs, assertions, and probabilities. Once these methods are applied to actionable knowledge, a knowledge payload results. This payload is encapsulated in a Knowledge Object. Examples of Knowledge Object payloads include predictive models, computable guidelines, questionnaires, computable phenotypes, and rule sets.
+                          </h4>
+              </div>
+
+
+
+
+
+
+
+
+            </div>
 				</div>
 			</div>
 
