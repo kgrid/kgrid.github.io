@@ -276,6 +276,9 @@ a:hover {
 .pad-left35 {
 		padding-left: 35px;
 }
+.pad-right35 {
+		padding-right: 35px;
+}
 /* ---- margin --- */
 .mar-left5 { margin-left: 5px; }
 .mar-left10 { margin-left: 10px; }
@@ -352,6 +355,9 @@ a:hover {
 .mar-bot35 {
 	margin-bottom: 35px;
 }
+.mar-bot40 {
+	margin-bottom: 40px;
+}
 .mar-bot60 {
 	margin-bottom: 60px;
 }
@@ -372,7 +378,23 @@ hr {
 	display: block;
 }
 .more span {
-		border-bottom: 1px solid #333333;
+		color: #d3d3d3;
+		border-bottom: 1px solid #d3d3d3;
+		transition: all 1s ease;
+}
+
+.more span:hover {
+	color: #333333;
+	border-bottom: 1px solid #333333;
+}
+
+h3.toollink, h2.toollink {
+	color: #587abc;
+	transition: color 0.5s ease;
+}
+
+a:hover h3.toollink, a:hover h2.toollink {
+	color: #00274c;
 }
 /*===========================
   --- Sections ----
@@ -463,6 +485,7 @@ padding-bottom: 25px;
 	padding-bottom: 10px;
 }
 .navbar .navbar-nav > li> a >span {
+	padding-bottom: 2px;
 	border-bottom: 2px solid transparent;
 	transition border-bottom 0.8s ease;
 }
@@ -1142,7 +1165,7 @@ Media queries
 		padding-top: 100px;
 	}
 	section#footer .school img {
-		height: 2.3em;
+		height: 2.1em;
 	}
 	section#footer .dept img {
 		margin-top: 15px;
@@ -1278,4 +1301,7 @@ transition: visibility 0s 1.5s, opacity 1.5s linear;
 }
 .bs-docs-sidenav>li.active>a {
 	    border-left: 2px solid #00274c;
+}
+li.nav2 {
+	display: none;
 }
