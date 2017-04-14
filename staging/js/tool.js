@@ -4,22 +4,24 @@
 
 		$.force_appear();
 	  //Manage button
-			$('.navbar-collapse').on('hidden.bs.collapse', function () {
+		$('.navbar-collapse').on('hidden.bs.collapse', function () {
 			  $("button.navbar-toggle>span").addClass("fa-bars");
 				$("button.navbar-toggle>span").removeClass("fa-times");
-			});
-			$('.navbar-collapse').on('show.bs.collapse', function () {
+		});
+
+		$('.navbar-collapse').on('show.bs.collapse', function () {
 				$("button.navbar-toggle>span").removeClass("fa-bars");
 				$("button.navbar-toggle>span").addClass("fa-times");
-			});
+		});
 
-	jQuery('.bs-docs-sidenav li:first-child').addClass('active');
+		jQuery('.sidenav li:first-child').addClass('active');
+
 	//scroll menu
-	jQuery('.appear').appear();
-	jQuery(".appear").on("appear", function(data) {
+		jQuery('.appear').appear();
+		jQuery(".appear").on("appear", function(data) {
 			var id = $(this).attr("id");
-			jQuery('.bs-docs-sidenav li').removeClass('active');
-			jQuery(".bs-docs-sidenav a[href='#" + id + "']").parent().addClass("active");
-	});
+			jQuery('.sidenav li').removeClass('active');
+			jQuery(".sidenav a[href='#" + id + "']").parent().addClass("active");
+		});
 
 })(jQuery);
