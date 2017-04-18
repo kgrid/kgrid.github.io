@@ -22,14 +22,14 @@
 
     <body>
 		<section id="header" class="appear"><h3 class='customheading'>header</h3>
-		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px;" data-300="line-height:60px; height:60px;">
+		<div class="navbar navbar-fixed-top" role="navigation" data-0="	box-shadow: 0 2px 2px rgba(0, 0, 0, 0);" data-60="	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);">
 			 <div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="fa fa-bars um-blue"></span>
 					</button>
 	          <div id="kgridlogo"  class="row" >
-            <div class="col-md-offset-1 col-md-3  col-sm-offset-1 col-sm-3 col-xs-offset-1 col-xs-2 align-center" >
+            <div class="col-md-offset-1 col-md-3  col-sm-offset-1 col-sm-3 col-xs-offset-0 col-xs-2 align-center" >
               <div id="logowrapper">
                 <div id="blogo" class="hidden-lg hidden-md hidden-xs hidden-sm">
                   <img src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID"/>
@@ -43,9 +43,9 @@
 				</div>
 				<div class="navbar-collapse collapse no-transition" >
 					<ul class="nav navbar-nav pad-top10" >
-            <li><a href="#section-story"><span>Story</span></a></li>
-						<li><a href="#section-tools"><span>Tools</span></a></li>
-            <li><a href="#section-docs"><span>Docs</span></a></li>
+            <li><a href="#section-story" data-toggle="collapse" data-target=".navbar-collapse"><span>Story</span></a></li>
+						<li><a href="#section-tools" data-toggle="collapse" data-target=".navbar-collapse"><span>Tools</span></a></li>
+            <li><a href="#section-docs" data-toggle="collapse" data-target=".navbar-collapse"><span>Docs</span></a></li>
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
@@ -73,14 +73,14 @@
     <h3  class='customheading'> Story </h3>
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 pad-left0">
+        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10">
         <h3>Users do three things </h3>
       </div>
     </div>
     <div class="row align-left mar-bot15 mar-top35">
       <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
         <div class='row'>
-          <div class="col-md-4 pad-left35 pad-right35 mar-bot35">
+          <div class="col-md-4 brd-t-d7 pad-top25 mar-bot40">
             <div class="use-case">
               <div class="use-detail mar-bot25">
                 <h3 class="mar-bot25">Add</h3>
@@ -91,7 +91,7 @@
               <a href="#" data-toggle="modal" data-target="#story-add"><span>Read the story</span></a>
           </div>
         </div>
-        <div class="col-md-4 pad-left35 pad-right35 mar-bot35">
+        <div class="col-md-4  brd-t-d7 mar-right15 pad-top25 mar-bot40">
           <div class="use-case">
             <div class="use-detail mar-bot25">
               <h3 class="mar-bot25">Activate </h3>
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 pad-left35 pad-right35 mar-bot35">
+      				  <div class="col-md-3  brd-t-d7 mar-left25 pad-top25 mar-bot40">
           <div class="use-case">
             <div class="use-detail mar-bot25">
             <h3 class="mar-bot25">Benefit</h3>
@@ -122,17 +122,17 @@
     <h3  class='customheading'> USES </h3>
   	<div class="container">
       <div class="row mar-bot35">
-        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 pad-left0">
+        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 ">
 							<h3>Stakeholders are many and diverse</h3>
 		     </div>
 				</div>
         <div class="row align-left mar-bot15 mar-top35">
           <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
             <div class='row'>
-              <div class="col-md-4 pad-left35 mar-bot40">
+              <div class="col-md-4 brd-t-d7 pad-top25 mar-bot40">
                 <div class="use-case">
                   <div class="use-folk">
-                    <h3 class="pad-bot15">Who adds</h3>
+                    <h3 class="pad-bot15">Those Who Add</h3>
 									<span> Researchers<br>
                   Publishers<br>
                   Medical Associations <br>
@@ -141,10 +141,10 @@
 								</div>
 							</div>
 						</div>
-            <div class="col-md-4 pad-left35 mar-bot40">
+            <div class="col-md-4  brd-t-d7 mar-right15 pad-top25 mar-bot40">
               <div class="use-case">
                 <div class="use-folk">
-									<h3 class="pad-bot15">Who activates </h3>
+									<h3 class="pad-bot15">Those Who Activate </h3>
 									<span>Hospitals<br>
                   Health IT<br>
                   Tech Firms<br>
@@ -153,10 +153,10 @@
 								</div>
 							</div>
 						</div>
-						  <div class="col-md-4 pad-left35 mar-bot40">
+						  <div class="col-md-3  brd-t-d7 mar-left25 pad-top25 mar-bot40">
 							<div class="use-case">
 								<div class="use-folk">
-								<h3 class="pad-bot15">Who benefits</h3>
+								<h3 class="pad-bot15">Those Who Benefit</h3>
 									<span>Providers<br>
                     Hospitals<br>
                   Consumers<br>
@@ -174,7 +174,7 @@
           <h3  class='customheading'> Technology </h3>
           <div class="container">
            <div class="row mar-bot35">
-             <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 pad-left0">
+             <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 ">
                 <h3>Tools </h3>
             </div>
           </div>
@@ -223,7 +223,7 @@
     <section id="section-docs" data-appear-top-offset='0' class="section appear clearfix bg-white">
       <div class="container">
         <div class="row pad-bot30 pad-left0">
-          <div class="col-md-offset-1 col-md-3 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 pad-left0">
+          <div class="col-md-offset-1 col-md-3 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10">
             <div class="align-left">
               <h2>Read about how it works. </h2>
             </div>
@@ -272,7 +272,7 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-times um-blue"></span></button>
             </div>
             <div class="modal-body">
               <div class="align-center mar-bot35">
@@ -292,7 +292,7 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-times um-blue"></span></button>
             </div>
             <div class="modal-body">
               <div class="align-center mar-bot35">
@@ -313,7 +313,7 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-times um-blue"></span></button>
             </div>
             <div class="modal-body">
               <div class="align-center mar-bot35">
@@ -338,6 +338,7 @@
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 	<script src="js/stellar.js"></script>
+  	<script src="js/skrollr.min.js"></script>
   <script src="js/lodash.js"></script>
 	<script src="js/jquery.appear.js"></script>
   <script src="js/main.js"></script>
