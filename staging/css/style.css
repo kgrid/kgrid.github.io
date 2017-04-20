@@ -552,11 +552,22 @@ section.featured {
 	color: #fdfdfd;
 }
 
-section.featured .slogan {
+section.featured h1.slogan {
 	line-height: 1.5em;
 	text-align: justify;
+	font-weight: 600;
 }
 
+h3.slogan {
+	line-height: 1.5em;
+	text-align: justify;
+	font-size: 18px;
+	font-weight: 600;
+}
+span.sectitle{
+	font-size: 24px;
+	font-weight:600;
+}
 section.featured .slogan span.italic{
 	font-style: italic;
 }
@@ -693,17 +704,39 @@ section#section-pres {
 .sidenav>li>a {
 	padding-top: 0px;
 	padding-bottom:0px;
-	border-left: 2px solid #fff;
-	transition: all 0.8s ease;
+	font-weight:600;
+	/*border-left: 2px solid #fff;*/
+	/*transition: all 0.8s ease;*/
 }
 .sidenav>li {
 	padding-top: 10px;
 	padding-bottom:10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height:40px;
+	line-height:40px;
+	background-color: #e7e7e7;
+	border:none;
+	transition: all 1s linear;
 }
-.sidenav>li.active>a {
-	    border-left: 2px solid #00274c;
+.sidenav>li.active {
+
+					background-color: #fff;
+}
+
+.sidenav>li span.stub {
+	display: block;
+	position: absolute;
+	bottom:0;
+	margin: auto;
+	height: 0px;
+	width: 2px;
+	background: transparent;
+	/*transition: height .5s ease;*/
+}
+.sidenav>li.active span.stub {
+background: #00274c;
+height:40px;
 }
 li.nav2 {
 	display: none;

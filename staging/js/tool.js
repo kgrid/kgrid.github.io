@@ -42,4 +42,25 @@
 			jQuery(".sidenav a[href='#" + id + "']").parent().addClass("active");
 		});
 
+		$(window).scroll(_.throttle(function(){
+				var st = $(window).scrollTop();
+				var id = $(".sidenav>li.active:first>a").attr("href");
+				var pos = $(id).offset();
+				var h = $(id).outerHeight();
+				var ratio = (pos.top+h-st)/h;
+				if(ratio<0) {
+					ratio=0;
+				}if(ratio>1){
+						ratio=1;
+				}
+
+				var stub_h= 40*ratio;
+				console.log("Window:"+st+" "+ id+ " T:"+pos.top+" H:"+h+"R:"+ratio);
+
+
+				 $(".sidenav>li.active>span.stub").css("height",stub_h+"px");
+
+
+		},50))
+
 })(jQuery);
