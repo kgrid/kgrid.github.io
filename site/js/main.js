@@ -3,10 +3,14 @@
 		$("html").niceScroll({cursorwidth: '10', zindex: 9999,cursorcolor: "#e7e7e7", cursorborder:"1px solid #e7e7e7", cursorborderradius: "10px",autohidemode: false, zindex: 999 });
 
 		$.force_appear();
+		$('.navbar-collapse').on('hidden.bs.collapse', function () {
+			  $(".navbar-toggle").removeClass("active");
+			});
 
-		$(".navbar-toggle").on("click", function () {
-	 				    $(this).toggleClass("active");
-	 			  });
+			$('.navbar-collapse').on('show.bs.collapse', function () {
+				$(".navbar-toggle").addClass("active");
+			});
+
 		onload = onresize = function() {
 			var viewport_width = $(window).width();
 

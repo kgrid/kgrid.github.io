@@ -24,9 +24,13 @@
 					});
 			}
 
-			$(".navbar-toggle").on("click", function () {
-		 				    $(this).toggleClass("active");
-		 			  });
+			$('.navbar-collapse').on('hidden.bs.collapse', function () {
+				  $(".navbar-toggle").removeClass("active");
+				});
+
+				$('.navbar-collapse').on('show.bs.collapse', function () {
+					$(".navbar-toggle").addClass("active");
+				});
 	//scroll menu
 		jQuery('.appear').appear();
 		jQuery(".appear").on("appear", function(data) {
