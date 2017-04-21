@@ -44,10 +44,11 @@
 
 		$(window).scroll(_.throttle(function(){
 				var st = $(window).scrollTop();
+				var wh= $(window).height();
 				var id = $(".sidenav>li.active:first>a").attr("href");
 				var pos = $(id).offset();
 				var h = $(id).outerHeight();
-				var ratio = (pos.top+h-st)/h;
+				var ratio = (pos.top+h -st-wh+200)/h;
 				if(ratio<0) {
 					ratio=0;
 				}if(ratio>1){
@@ -55,7 +56,7 @@
 				}
 
 				var stub_h= 40*ratio;
-				console.log("Window:"+st+" "+ id+ " T:"+pos.top+" H:"+h+"R:"+ratio);
+				console.log("Window:"+st+" "+ id+ " T:"+pos.top+" H:"+h+" R:"+ratio);
 
 
 				 $(".sidenav>li.active>span.stub").css("height",stub_h+"px");

@@ -15,7 +15,15 @@
 		});
 
 		onload = onresize = function() {
-			jQuery('#amid-parent').height(jQuery('#amid-side').outerHeight());
+			var viewport_width = $(window).width();
+
+			if(viewport_width>991){
+				console.log("LG"+viewport_width);
+				jQuery('#amid-parent').height(jQuery('#amid-side').outerHeight());
+			}else{
+				console.log("SM"+viewport_width);
+				jQuery('#amid-parent').height(jQuery('#amid-parent .align-mid').outerHeight()+50);
+			}
 			var maxHeight = 0;
 			$(".use-detail").each(function() {
   			if ($(this).outerHeight() > maxHeight) {

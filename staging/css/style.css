@@ -268,13 +268,14 @@ a, a:hover, a:active, a:visited, a:focus {
 		padding-right: 35px;
 }
 /* ---- margin --- */
+.mar-left0 { margin-left: 0px; }
 .mar-left5 { margin-left: 5px; }
 .mar-left10 { margin-left: 10px; }
 .mar-left15 { margin-left: 15px; }
 .mar-left20 { margin-left: 20px; }
 .mar-left25 { margin-left: 25px; }
 .mar-left30 { margin-left: 30px; }
-
+.mar-right0 { margin-right: 0px; }
 .mar-right5 { margin-right: 5px; }
 .mar-right10 { margin-right: 10px; }
 .mar-right15 { margin-right: 15px; }
@@ -588,10 +589,12 @@ section#section-tech {
 	color: #00274c;
 	font-size: 21px;
 	margin-bottom: 15px;
+
 }
-
-
-
+.use-detail {
+padding-left: 0px;
+padding-right: 25px;
+}
 section#section-tech a {
 	color: #fff;
 	text-transform: uppercase;
@@ -751,11 +754,27 @@ Media queries
 ========================================= */
 
 @media only screen and (min-width : 1200px) {
-
+	.border-pos {
+		border-top: 1px solid #d7d7d7;
+		border-left: none;
+		margin-bottom: 40px;
+		padding-bottom: 0px;
+	}
+	.margin-pos {
+		margin-top: 0px;
+	}
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px)  {
-
+	.border-pos {
+		border-top: 1px solid #d7d7d7;
+		border-left: none;
+		margin-bottom: 40px;
+		padding-bottom: 0px;
+	}
+	.margin-pos {
+		margin-top: 0px;
+	}
 }
 
 
@@ -763,7 +782,15 @@ Media queries
 	.navbar-nav {
 		margin-top: 2px;
 	}
-
+	.border-pos {
+		border-left: 1px solid #d7d7d7;
+		border-top: none;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+	}
+	.margin-pos {
+		margin-top: 40px;
+	}
 }
 
 @media only screen and (min-width: 576px) and  (max-width: 767px) {
@@ -780,11 +807,23 @@ Media queries
 		margin: 0px;
 	}
 
+	.border-pos {
+		border-left: 1px solid #d7d7d7;
+		border-top: none;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+	}
+	.margin-pos {
+		margin-top: 40px;
+	}
+
 	section.section {
 		margin:0;
 		padding: 50px 20px 30px 20px;
 	}
-
+	section.featured {
+	    padding-top: 85px;
+	}
 			section#footer .school img {
 			height: 1.8em;
 		}
@@ -823,9 +862,21 @@ Media queries
 		margin:0;
 		padding: 30px 20px 0px 20px;
 	}
-
+	section.featured {
+	    padding-top: 85px;
+	}
 	section#footer .school img {
 		height: 2.1em;
+	}
+
+	.border-pos {
+		border-left: 1px solid #d7d7d7;
+		border-top: none;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+	}
+	.margin-pos {
+		margin-top: 40px;
 	}
 
 }
