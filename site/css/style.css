@@ -51,9 +51,7 @@ h5 { font-size: 16px; }
 .brd-t-d7{
 	border-top: 1px solid #d7d7d7;
 }
-.brd-l-d7{
-	border-left: 1px solid #d7d7d7;
-}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
 }
@@ -520,26 +518,6 @@ section .container{
 	text-align: left;
 }
 
-
-/*.navbar-collapse.in {
-	background-color: #e7e7e7;
-	/*margin-top: -3px !important;*/
-	/*margin-left: -30px;
-	overflow-y: visible;
-	padding-right:0px;
-	max-height:100%;
-	height:100%;
-}*/
-.nav-brand {
-	position:absolute;
-	top:0;
-	left:0;
-	height: 60px;
-}
-#blogo {
-	z-index:10000;
-}
-
 /*===========================
   --- Featured section ----
 =========================== */
@@ -574,10 +552,7 @@ section.featured.inner {
 	background: #eee;
 	padding: 150px 0 50px;
 }
-section#section-tech {
-	padding-top:25px;
-	padding-bottom: 25px;
-}
+
 /* --- Revolution slider --- */
 
 .use-detail h4, section h4.text-bold{
@@ -591,13 +566,7 @@ section#section-tech {
 padding-left: 0px;
 padding-right: 25px;
 }
-section#section-tech a {
-	color: #fff;
-	text-transform: uppercase;
-}
-section#section-tech a span {
-	font-size: 16px;
-}
+
 .modal-content {
 	border: none;
 	border-radius: 0px;
@@ -662,16 +631,12 @@ h3.customheading {
 	display: none;
 }
 
-section#section-pres {
-	display: none;
-}
-
 .navbar-header{
 	height: 60px;
 }
-.nav-spacer {
+/*.nav-spacer {
 	float:right;
-}
+}*/
 
 /* Overlay */
 .modal-header {
@@ -689,12 +654,7 @@ section#section-pres {
 }
 
 /*Sidebar navigation*/
-.nav1 {
-	padding-left: 20px;
-}
-.nav2 {
-	padding-left: 40px;
-}
+
 .fixed {
 	position: fixed;
 }
@@ -736,9 +696,6 @@ section#section-pres {
 .sidenav>li.active span.stub {
 background: #00274c;
 height:40px;
-}
-li.nav2 {
-	display: none;
 }
 
 section.featured {
@@ -837,9 +794,6 @@ Media queries
 			height: 1.8em;
 		}
 
-    section#section-tech a span {
-    	font-size: 14px;
-    }
 
 }
 
@@ -857,9 +811,7 @@ Media queries
 	.modal-dialog {
 		margin: 0px;
 	}
-  section#section-tech a span {
-  	font-size: 14px;
-  }
+
 
 		div#kgridlogo img {
 		height: 20px;
@@ -927,6 +879,11 @@ transform: rotate(-45deg);
     font-size: 30px;
 }
 
+button.close {
+	width:40px;
+	height:40px;
+
+}
 /*Toggle Button*/
 
 .navbar-toggle {
@@ -946,26 +903,29 @@ transform: rotate(-45deg);
 .navbar-toggle .icon-bar:nth-of-type(3) {
   	top: 2px;
 }
-.icon-bar {
-	background-color: #00274c;
 
-}
-.navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar, .close .icon-bar {
 	  position: relative;
 		width: 28px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #00274c;
+		display: block;
 	  transition: all 500ms ease-in-out;
 }
-
-.navbar-toggle.active .icon-bar:nth-of-type(1) {
+.close .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1), .close .icon-bar:nth-of-type(1) {
 	  top: 6px;
 	  transform: rotate(45deg);
 }
 
-.navbar-toggle.active .icon-bar:nth-of-type(2) {
+.navbar-toggle.active .icon-bar:nth-of-type(2), .close .icon-bar:nth-of-type(2){
 	  background-color: transparent;
 }
 
-.navbar-toggle.active .icon-bar:nth-of-type(3) {
+.navbar-toggle.active .icon-bar:nth-of-type(3), .close .icon-bar:nth-of-type(3) {
 	  top: -6px;
 	  transform: rotate(-45deg);
 }
