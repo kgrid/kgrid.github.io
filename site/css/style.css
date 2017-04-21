@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,h2,h3,h4,h5,h6 {
 	font-style: normal;
-	margin: 0 0 10px 0;
+	margin: 0 0 15px 0;
 }
 h1 { font-size: 40px; line-height: 30px; }
 h2 { font-size: 28px; line-height: 1.25em;}
@@ -46,7 +46,13 @@ h5 { font-size: 16px; }
 	font-weight: 900;
 }
 .brd-d7{
-	border-bottom: 2px solid #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
+}
+.brd-t-d7{
+	border-top: 1px solid #d7d7d7;
+}
+.brd-l-d7{
+	border-left: 1px solid #d7d7d7;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
@@ -255,17 +261,21 @@ a, a:hover, a:active, a:visited, a:focus {
 .pad-left35 {
 		padding-left: 35px;
 }
+.pad-right0 {
+		padding-right: 0px;
+}
 .pad-right35 {
 		padding-right: 35px;
 }
 /* ---- margin --- */
+.mar-left0 { margin-left: 0px; }
 .mar-left5 { margin-left: 5px; }
 .mar-left10 { margin-left: 10px; }
 .mar-left15 { margin-left: 15px; }
 .mar-left20 { margin-left: 20px; }
 .mar-left25 { margin-left: 25px; }
 .mar-left30 { margin-left: 30px; }
-
+.mar-right0 { margin-right: 0px; }
 .mar-right5 { margin-right: 5px; }
 .mar-right10 { margin-right: 10px; }
 .mar-right15 { margin-right: 15px; }
@@ -354,9 +364,10 @@ hr {
 .more {
 	cursor: pointer;
 	font-size: 12px;
-	display: block;
+	position: relative;
+	display: inline-block;
 }
-.more span {
+/*.more span {
 		color: #d3d3d3;
 		border-bottom: 1px solid #d3d3d3;
 		transition: all 1s ease;
@@ -365,15 +376,25 @@ hr {
 .more span:hover {
 	color: #333333;
 	border-bottom: 1px solid #333333;
-}
+}*/
 
-h3.toollink, h2.toollink {
+a.toollink, .more span {
 	color: #587abc;
-	transition: color 0.5s ease;
+	transition: color 0.8s ease;
+	padding-left:10px;
+	font-weight: 700;
+	font-size: 14px;
 }
 
-a:hover h3.toollink, a:hover h2.toollink {
+a.toollink:hover, .more span:hover  {
 	color: #00274c;
+}
+
+
+div#kgridlogo img {
+	height: 20px;
+	margin:0;
+	padding:0;
 }
 /*===========================
   --- Sections ----
@@ -401,11 +422,18 @@ section.section {
 }
 
 section > .container{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+section .container{
 	max-width: 1200px;
 	width:100%;
 	margin: 0 auto;
-	padding-top: 25px;
-padding-bottom: 25px;
+}
+
+.navbar .fa-bars, .navbar .fa-times, .modal .fa-times {
+	font-size: 36px;
 }
 /*===========================
   --- Header & menu ----
@@ -419,79 +447,93 @@ padding-bottom: 25px;
 	text-align: center;
 	margin-bottom: 0;
 	padding-bottom:0;
-	border-bottom: 2px solid #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
 }
 
 .navbar .navbar-collapse {
+	border-top:none;
 	margin-bottom: 0;
 	padding-bottom:0;
+	max-height:460px;
 }
 
 .nav li {
-	height: 100%;
-	line-height: 100%;
-	margin-bottom: 0;
-	padding-bottom:0;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
 }
-
-.nav li:hover {
+.collapse li {
+	border-bottom: 1px solid #c7c7c7;
 }
+/*.collapse li>a {
+	padding-top:18px;
+}*/
 
 .nav>li>a {
 	display: table-cell;
 	height: 100%;
-	line-height: 100%;
+	line-height: 20px;
 	vertical-align: middle;
 	color: #333333;
 	font-weight: 500;
 	font-size: 14px;
 	/*letter-spacing: .1em;*/
 	/*text-transform: uppercase;*/
-	padding-top: 10px;
+	padding-top: 14px;
 	padding-bottom: 10px;
 }
 .navbar .navbar-nav > li> a >span {
 	padding-bottom: 2px;
 	border-bottom: 2px solid transparent;
-	transition border-bottom 0.8s ease;
 }
-.navbar .navbar-nav > li.active > a >span, .navbar .navbar-nav > li.current > a >span {
-	border-bottom: 2px solid #00274c;
+
+.nav li>a>span:after {
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top:4px;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
 }
-.navbar .navbar-nav > li:hover> a >span {
-	border-bottom: 2px solid #00274c;
-	transition border-bottom 0.8s ease;
+.nav li.active>a>span:after, .nav li:hover>a>span:after {
+	width: 100%;
+	background: #00274c;
 }
 
 .navbar-nav {
 	float: right;
 	margin-bottom: 0;
 	padding-bottom:0;
-	padding-right: 40px;
 }
-
+.navbar-nav-m {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-bottom:0;
+	background-color: #e7e7e7;
+}
 .navbar .navbar-nav > .active, .navbar .navbar-nav > .active >a {
 	color: #fff;
 	text-align: left;
 }
 
-.navbar-toggle {
-	position: absolute;
-	right:0px;
-	border: none;
-	padding: 0;
-	margin: 0;
-	width: 80px;
-}
 
-.navbar-collapse.in {
+/*.navbar-collapse.in {
 	background-color: #e7e7e7;
 	/*margin-top: -3px !important;*/
-	margin-left: -30px;
+	/*margin-left: -30px;
 	overflow-y: visible;
 	padding-right:0px;
+	max-height:100%;
+	height:100%;
+}*/
+.nav-brand {
+	position:absolute;
+	top:0;
+	left:0;
+	height: 60px;
 }
-
 #blogo {
 	z-index:10000;
 }
@@ -505,11 +547,22 @@ section.featured {
 	color: #fdfdfd;
 }
 
-section.featured .slogan {
+section.featured h1.slogan {
 	line-height: 1.5em;
 	text-align: justify;
+	font-weight: 600;
 }
 
+h3.slogan {
+	line-height: 1.5em;
+	text-align: justify;
+	font-size: 18px;
+	font-weight: 600;
+}
+span.sectitle{
+	font-size: 24px;
+	font-weight:600;
+}
 section.featured .slogan span.italic{
 	font-style: italic;
 }
@@ -530,10 +583,12 @@ section#section-tech {
 	color: #00274c;
 	font-size: 21px;
 	margin-bottom: 15px;
+
 }
-
-
-
+.use-detail {
+padding-left: 0px;
+padding-right: 25px;
+}
 section#section-tech a {
 	color: #fff;
 	text-transform: uppercase;
@@ -541,7 +596,10 @@ section#section-tech a {
 section#section-tech a span {
 	font-size: 16px;
 }
-
+.modal-content {
+	border: none;
+	border-radius: 0px;
+}
 /*=========================
   Footer
  ================= */
@@ -606,128 +664,9 @@ section#section-pres {
 	display: none;
 }
 
-
-/* ========================================
-Media queries
-========================================= */
-
-@media only screen and (min-width : 1200px) {
-	div#kgridlogo img {
-		height: 24px;
-		margin:0;
-		padding:0;
-	}
-	section.featured {
-		padding-top: 100px;
-	}
+.navbar-header{
+	height: 60px;
 }
-
-@media only screen and (min-width : 992px) and (max-width : 1199px)  {
-
-	div#kgridlogo img {
-		height: 24px;
-		margin:0;
-		padding:0;
-	}
-
-	section.featured {
-		padding-top: 100px;
-	}
-
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.navbar-nav {
-		margin-top: 2px;
-	}
-
-	div#kgridlogo img {
-		height: 24px;
-		margin:0;
-		padding:0;
-	}
-	section.featured {
-		padding-top: 120px;
-	}
-
-}
-
-@media only screen and (min-width: 576px) and  (max-width: 767px) {
-		.navbar .navbar-collapse ul.nav {
-		border: none;
-		width: 100%;
-		float: none;
-		margin:0;
-		padding:0;
-		box-shadow: none;
-	}
-	.navbar .navbar-collapse ul.nav li {
-		border-bottom: none;
-	}
-
-	div#kgridlogo img {
-		height: 24px;
-		margin:0;
-		padding:0;
-	}
-
-	section.section {
-		margin:0;
-		padding: 50px 20px 30px 20px;
-	}
-
-		section.featured {
-			padding-top: 100px;
-		}
-
-		section#footer .school img {
-			height: 1.8em;
-		}
-
-    section#section-tech a span {
-    	font-size: 14px;
-    }
-
-}
-
-@media only screen  and  (max-width: 575px) {
-
-	.navbar .navbar-collapse ul.nav {
-		border: none;
-		width: 100%;
-		float: none;
-		margin:0;
-		padding:0;
-		box-shadow: none;
-	}
-	.navbar .navbar-collapse ul.nav li {
-		border-bottom: none;
-	}
-
-  section#section-tech a span {
-  	font-size: 14px;
-  }
-
-		div#kgridlogo img {
-		height: 24px;
-		margin:0;
-		padding:0;
-	}
-
-	section.section {
-		margin:0;
-		padding: 30px 20px 0px 20px;
-	}
-	section.featured {
-		padding-top: 100px;
-	}
-	section#footer .school img {
-		height: 2.1em;
-	}
-
-}
-
 .nav-spacer {
 	float:right;
 }
@@ -762,18 +701,269 @@ Media queries
 .sidenav>li>a {
 	padding-top: 0px;
 	padding-bottom:0px;
-	border-left: 2px solid #fff;
-	transition: all 0.8s ease;
+	font-weight:600;
+	/*border-left: 2px solid #fff;*/
+	/*transition: all 0.8s ease;*/
 }
 .sidenav>li {
 	padding-top: 10px;
 	padding-bottom:10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height:40px;
+	line-height:40px;
+	background-color: #e7e7e7;
+	border:none;
+	transition: all 0.5s linear;
 }
-.sidenav>li.active>a {
-	    border-left: 2px solid #00274c;
+.sidenav>li.active {
+
+					background-color: #fff;
+}
+
+.sidenav>li span.stub {
+	display: block;
+	position: absolute;
+	bottom:0;
+	margin: auto;
+	height: 0px;
+	width: 2px;
+	background: transparent;
+	/*transition: height .5s ease;*/
+}
+.sidenav>li.active span.stub {
+background: #00274c;
+height:40px;
 }
 li.nav2 {
 	display: none;
+}
+
+section.featured {
+	padding-top: 85px;
+}
+
+/* ========================================
+Media queries
+========================================= */
+
+@media only screen and (min-width : 1200px) {
+	.border-pos {
+		border-top: 1px solid #d7d7d7;
+		border-left: none;
+		margin-bottom: 40px;
+		padding-bottom: 0px;
+	}
+	.margin-pos {
+		margin-top: 0px;
+	}
+	.nav>li>a {
+		padding-top: 4px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+	.border-pos {
+		border-top: 1px solid #d7d7d7;
+		border-left: none;
+		margin-bottom: 40px;
+		padding-bottom: 0px;
+	}
+	.margin-pos {
+		margin-top: 0px;
+	}
+	.nav>li>a {
+		padding-top: 4px;
+		padding-bottom: 10px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-nav {
+		margin-top: 2px;
+	}
+	.border-pos {
+		border-left: 1px solid #d7d7d7;
+		border-top: none;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+	}
+	.margin-pos {
+		margin-top: 40px;
+	}
+	.nav>li>a {
+		padding-top: 4px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width: 576px) and  (max-width: 767px) {
+	/*.navbar .navbar-collapse ul.nav {
+		border: none;
+		width: 100%;
+		float: none;
+		margin:0;
+		padding:0;
+		box-shadow: none;
+	}*/
+
+	.modal-dialog {
+		margin: 0px;
+	}
+
+	.border-pos {
+		border-left: 1px solid #d7d7d7;
+		border-top: none;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+	}
+	.margin-pos {
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+
+	section.section {
+		margin:0;
+		padding: 10px 20px 10px 20px;
+	}
+	section.featured {
+	    padding-top: 85px;
+	}
+			section#footer .school img {
+			height: 1.8em;
+		}
+
+    section#section-tech a span {
+    	font-size: 14px;
+    }
+
+}
+
+@media only screen  and  (max-width: 575px) {
+
+	/*.navbar .navbar-collapse ul.nav {
+		border: none;
+		width: 100%;
+		float: none;
+		margin:0;
+		padding:0;
+		box-shadow: none;
+	}*/
+
+	.modal-dialog {
+		margin: 0px;
+	}
+  section#section-tech a span {
+  	font-size: 14px;
+  }
+
+		div#kgridlogo img {
+		height: 20px;
+		margin:0;
+		padding:0;
+	}
+
+	section.section {
+		margin:0;
+		padding: 30px 20px 0px 20px;
+	}
+	section.featured {
+	    padding-top: 85px;
+	}
+	section#footer .school img {
+		height: 2.1em;
+	}
+
+	.border-pos {
+		border-left: 1px solid #d7d7d7;
+		border-top: none;
+		margin-bottom: 0px;
+		padding-bottom: 40px;
+	}
+	.margin-pos {
+		margin-top: 40px;
+	}
+
+}
+.size170 {
+	width: 170px;
+	height: 170px;
+	padding: 15px;
+}
+.size100 {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+.avaicon {
+	position: relative;
+	display: inline-block;
+}
+.icon-brd-tr, .icon-brd-bl {
+	position:absolute;
+	top:0;
+	left:0;
+
+	background-color:transparent;
+	border-radius:50%;
+	border: 1px solid #fff;
+	 border-radius: 50%;
+border-right-color: #00274c;border-left-color: #00274c;
+-ms-transform: rotate(-45deg); /* IE 9 */
+-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+transform: rotate(-45deg);
+}
+
+
+.avatar-md {
+	border-radius:50%;
+	border: 3px solid #fff;
+}
+.glyphicon.glyphicon-remove {
+    font-size: 30px;
+}
+
+/*Toggle Button*/
+
+.navbar-toggle {
+	position: absolute;
+	right:0px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: 60px;
+	height:60px;
+	padding-bottom:6px;
+}
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+.icon-bar {
+	background-color: #00274c;
+
+}
+.navbar-toggle .icon-bar {
+	  position: relative;
+		width: 28px;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
 }

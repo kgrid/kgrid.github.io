@@ -22,33 +22,43 @@
 
     <body>
 		<section id="header" class="appear"><h3 class='customheading'>header</h3>
-		<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px;" data-300="line-height:60px; height:60px;">
+		<div class="navbar navbar-fixed-top" role="navigation" data-0="box-shadow: 0 2px 2px rgba(0, 0, 0, 0);" data-60="	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);">
 			 <div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="fa fa-bars um-blue"></span>
+
+        <div class="row">
+          <button type="button" class="navbar-toggle" id="menu-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+            <!-- <span class="fa fa-bars um-blue"></span> -->
 					</button>
-	          <div id="kgridlogo"  class="row" >
-            <div class="col-md-offset-1 col-md-3  col-sm-offset-1 col-sm-3 col-xs-offset-1 col-xs-2 align-center" >
-              <div id="logowrapper">
-                <div id="blogo" class="hidden-lg hidden-md hidden-xs hidden-sm">
-                  <img src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID"/>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-8 col-xs-6 col-sm-6 align-left nest" >
-              <img id="logo"  src="./img/logo/KG_SpelledOut.png" alt="KNOWLEDGE GRID"/>
+          <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-1 align-left">
+	          <div id="kgridlogo">
+              <a href="./index.html">
+                <img id="logo"  src="./img/logo/KG_SpelledOut.png" alt="KNOWLEDGE GRID"/>
+              </a>
             </div>
           </div>
-				</div>
-				<div class="navbar-collapse collapse no-transition" >
-					<ul class="nav navbar-nav pad-top10" >
-            <li><a href="#section-story"><span>Story</span></a></li>
-						<li><a href="#section-tools"><span>Tools</span></a></li>
-            <li><a href="#section-docs"><span>Docs</span></a></li>
-					</ul>
+          <div class="col-md-7 col-sm-6 pad-right0 hidden-xs" >
+				        <div class="nav" >
+					             <ul class="nav navbar-nav pad-top10" >
+                         <li ><a href="#section-story" ><span>Story</span></a></li>
+						             <li ><a href="#section-tools"><span>Tools</span></a></li>
+                         <li ><a href="#section-docs" ><span>Docs</span></a></li>
+					             </ul>
+				        </div><!--/.navbar-collapse -->
+        	</div>
+        </div>
+        <div class="navbar-collapse collapse" >
+					<ul class="nav navbar-nav-m" >
+            <li class="hidden-lg hidden-md  hidden-sm"><a href="#section-story" data-toggle="collapse" data-target=".navbar-collapse"><span>Story</span></a></li>
+						<li class="hidden-lg hidden-md  hidden-sm"><a href="#section-tools" data-toggle="collapse" data-target=".navbar-collapse"><span>Tools</span></a></li>
+            <li class="hidden-lg hidden-md  hidden-sm"><a href="#section-docs" data-toggle="collapse" data-target=".navbar-collapse"><span>Docs</span></a></li>
+				</ul>
 				</div><!--/.navbar-collapse -->
-			</div>
+
+
+
 		</div>
 </section>
 		<section id="section-featured" class="featured section">
@@ -57,15 +67,17 @@
     </h3>
     <div class="container">
 			<div class="row">
-        <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 col-xs-offset-1 col-xs-10 align-center">
-          <img src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID" width="80%"/>
+        <div class="col-md-offset-1 col-md-10">
+          <div class="row">
+        <div class="col-md-4 col-md-offset-0 col-sm-3 col-xs-offset-1 col-xs-10 align-left">
+          <img src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID" width="100%"/>
         </div>
-				<div class="col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10 align-left">
+				<div class="col-md-8 col-md-offset-0 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10 pad-top25 align-justify">
 					<h1 class="slogan">Activate Knowledge for Health</h1>
 					<h3 class="slogan">
           Convert study findings into coded forms and compute useful advice from any health data.
         </h3>
-				</div>
+      </div></div></div>
 			</div>
 		</div>
 	</section>
@@ -73,46 +85,67 @@
     <h3  class='customheading'> Story </h3>
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 pad-left0">
-        <h3>Users do three things </h3>
+        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12">
+        <span class="sectitle">Users Do Three Things </span>
       </div>
     </div>
-    <div class="row align-left mar-bot15 mar-top35">
-      <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
-        <div class='row'>
-          <div class="col-md-4 pad-left35 pad-right35 mar-bot35">
+    <div class="row align-left mar-bot15 mar-top15">
+      <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12" >
+        <div class='row align-justify'>
+          <div class="col-md-4 border-pos pad-top25 mar-bot40">
             <div class="use-case">
               <div class="use-detail mar-bot25">
-                <h3 class="mar-bot25">Add</h3>
+                <h3 class="slogan mar-bot25">Add</h3>
               <p>Take actionable knowledge, make it machine-ready, and manage it.</p>
             </div>
           </div>
-            <div class="more align-right">
+          <div class="row mar-left0">
+          <div class='avaicon size100'>
+            <div class="icon-brd-tr size100"></div>
+            <div class="icon-brd-bl size100"></div>
+            <img class="avatar-md" src="./img/avatar/CEO.png" alt="CEO" width="80px">
+          </div>
+            <div class="more">
               <a href="#" data-toggle="modal" data-target="#story-add"><span>Read the story</span></a>
           </div>
         </div>
-        <div class="col-md-4 pad-left35 pad-right35 mar-bot35">
+        </div>
+        <div class="col-md-4 border-pos pad-top25 mar-bot40">
           <div class="use-case">
             <div class="use-detail mar-bot25">
-              <h3 class="mar-bot25">Activate </h3>
+              <h3 class="slogan mar-bot25">Activate </h3>
               <p>Deploy the “added” knowledge to generate health advice.</p>
             </div>
-            <div class="more align-right">
-              <a href="#" data-toggle="modal" data-target="#story-activate"><span>Read the story</span></a>
+                      <div class="row mar-left0">
+            <div class='avaicon size100'>
+              <div class="icon-brd-tr size100"></div>
+              <div class="icon-brd-bl size100"></div>
+              <img class="avatar-md" src="./img/avatar/Garcia.png" alt="Health IT" width="80px">
             </div>
+            <div class="more">
+              <a href="#" data-toggle="modal" data-target="#story-activate"><span>Read the story</span></a>
+            </div></div>
           </div>
         </div>
-        <div class="col-md-4 pad-left35 pad-right35 mar-bot35">
+          <div class="col-md-4 pad-right0 mar-bot40 margin-pos">
+            <div class="row mar-right0">
+      				  <div class="col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 border-pos pad-top25 mar-bot40">
           <div class="use-case">
             <div class="use-detail mar-bot25">
-            <h3 class="mar-bot25">Benefit</h3>
+            <h3 class="slogan mar-bot25">Benefit</h3>
               <p>Apply the health advice to real-world decisions for better outcomes.</p>
             </div>
-            <div class="more align-right">
+                      <div class="row mar-left0">
+            <div class='avaicon size100'>
+              <div class="icon-brd-tr size100"></div>
+              <div class="icon-brd-bl size100"></div>
+              <img class="avatar-md" src="./img/avatar/familyDoctor.png" alt="provider" width="80px">
+            </div>
+            <div class="more">
               <a href="#" data-toggle="modal" data-target="#story-bene"><span>Read the story</span></a>
             </div>
-          </div>
-        </div>
+          </div></div>
+        </div></div></div>
       </div>
 </div>
 </div>
@@ -121,18 +154,18 @@
 		<section id="section-uses" data-appear-top-offset='150' class="section bg-white clearfix">
     <h3  class='customheading'> USES </h3>
   	<div class="container">
-      <div class="row mar-bot35">
-        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 pad-left0">
-							<h3>Stakeholders are many and diverse</h3>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12 ">
+							<span class="sectitle">Stakeholders Are Many & Diverse</span>
 		     </div>
 				</div>
-        <div class="row align-left mar-bot15 mar-top35">
+        <div class="row align-left mar-bot15 mar-top15">
           <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
             <div class='row'>
-              <div class="col-md-4 pad-left35 mar-bot40">
+              <div class="col-md-4 border-pos pad-top25 mar-bot40">
                 <div class="use-case">
                   <div class="use-folk">
-                    <h3 class="pad-bot15">Who adds</h3>
+                    <h3 class="slogan pad-bot15">Those Who Add</h3>
 									<span> Researchers<br>
                   Publishers<br>
                   Medical Associations <br>
@@ -141,10 +174,10 @@
 								</div>
 							</div>
 						</div>
-            <div class="col-md-4 pad-left35 mar-bot40">
+            <div class="col-md-4 border-pos pad-top25 mar-bot40">
               <div class="use-case">
                 <div class="use-folk">
-									<h3 class="pad-bot15">Who activates </h3>
+									<h3 class="slogan pad-bot15">Those Who Activate </h3>
 									<span>Hospitals<br>
                   Health IT<br>
                   Tech Firms<br>
@@ -153,10 +186,12 @@
 								</div>
 							</div>
 						</div>
-						  <div class="col-md-4 pad-left35 mar-bot40">
+            <div class="col-md-4 pad-right0 margin-pos">
+              <div class="row ">
+                  				  <div class="col-md-11 col-md-offset-1 border-pos pad-top25 mar-bot40">
 							<div class="use-case">
 								<div class="use-folk">
-								<h3 class="pad-bot15">Who benefits</h3>
+								<h3 class="slogan pad-bot15">Those Who Benefit</h3>
 									<span>Providers<br>
                     Hospitals<br>
                   Consumers<br>
@@ -164,68 +199,67 @@
                   Public Health</span>
 								</div>
 							</div>
-						</div>
+						</div></div></div>
 					</div>
 </div>
 </div>
 		</div>
 		</section>
     <section id="section-tools"  data-appear-top-offset='-150' class="section appear bg-white clearfix">
-          <h3  class='customheading'> Technology </h3>
-          <div class="container">
-           <div class="row mar-bot35">
-             <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 brd-d7 pad-left0">
-                <h3>Tools </h3>
-            </div>
-          </div>
-         <div class="row align-left mar-bot15 mar-top60">
-               <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
+      <h3  class='customheading'> Technology </h3>
+      <div class="container">
+       <div class="row">
+         <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12">
+           <span class="sectitle">Tools
+           </span>
+         </div>
+       </div>
+       <div class="row align-left mar-bot15 mar-top15">
+         <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
                  <div class='row'>
-                   <div class="col-md-4 pad-left35" id="amid-parent">
-                     <div class="align-mid">
-                   <a href="./tools.html#platform" >
-                    <h2 class="toollink">Platform</h2>
-                   <span> Three interconnected tools encode study findings and produce health advice</span>
-                 </a></div>
-                 <div>
+                   <div class="col-md-4 brd-t-d7 pad-top25" id="amid-parent">
+                     <div class="align-mid align-justify">
+                    <h3 class="slogan">Platform
+                    </h3>
+                   <span class="align-justify">Three interconnected tools encode study findings and produce health advice.
+                   <a class="toollink" href="./tools.html#platform" ><span>Learn More</span></a> </span>
+                </div>
                  </div>
-                 </div>
-                 <div class="col-md-8 pad-left35" id="amid-side">
+                 <div class="col-md-8  brd-t-d7 pad-top25" id="amid-side">
                    <div class="row mar-bot35 pad-left15">
-                      <a href="./tools.html#object">
-                        <h3  class="toollink">Knowledge Objects</h3>
-                        <span> Modular computer-processable knowledge</span>
-                      </a>
+
+                        <h3 class="slogan" >Knowledge Objects</h3>
+                        <span> Modular computer-processable knowledge.</span>
+                        <a class="toollink" href="./tools.html#object" ><span>Learn More</span></a>
+
                     </div>
                     <div class="row mar-bot35 pad-left15">
-                      <a href="./tools.html#library">
-                        <h3  class="toollink">Object Library</h3>
-                        <span>Digital repository for storing and managing Knowledge Objects</span>
-                  </a>
+
+                        <h3 class="slogan" >Object Library</h3>
+                        <span>Digital repository for storing and managing Knowledge Objects.</span>
+                        <a class="toollink" href="./tools.html#library" ><span>Learn More</span></a>
+
                   </div>
                   <div class="row pad-left15">
-                    <a href="./tools.html#activator">
-                      <h3  class="toollink">Object Activators</h3>
-                    <span>Systems for deploying Knowledge Objects to process health data</span>
-                  </a>
+
+                      <h3  class="slogan">Object Activators</h3>
+                    <span>Systems for deploying Knowledge Objects to process health data.</span>
+                    <a class="toollink" href="./tools.html#activator" ><span>Learn More</span></a>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row pad-left0">
-            <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 align-left line">
-              <hr>
-            </div>
-          </div>
+
         </div>
       </section>
-    <section id="section-docs" data-appear-top-offset='0' class="section appear clearfix bg-white">
+    <section id="section-docs" data-appear-top-offset='0' class="section appear clearfix bg-grey">
       <div class="container">
-        <div class="row pad-bot30 pad-left0">
-          <div class="col-md-offset-1 col-md-3 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10 pad-left0">
+        <div class="row pad-bot15 pad-top35">
+          <div class="col-md-offset-1 col-md-3 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-xs-10">
             <div class="align-left">
-              <h2>Read about how it works. </h2>
+              <span class="sectitle">Read about how it works. </span>
             </div>
           </div>
           <div class="col-md-7 col-md-offset-0 col-xs-offset-1 col-xs-10 pad-bot30">
@@ -272,14 +306,18 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-times um-blue"></span></button>
             </div>
             <div class="modal-body">
               <div class="align-center mar-bot35">
-                <img class="avatar-md" src="./img/avatar/CEO.png" alt="Physician" height="140px">
-              </div>
+                <div class='avaicon size170'>
+                  <div class="icon-brd-tr size170"></div>
+                  <div class="icon-brd-bl size170"></div>
+                  <img class="avatar-md" src="./img/avatar/CEO.png" alt="CEO" width="140px">
+                </div>              </div>
               <div class="brd-d7 mar-bot25">
-                <h3> Use Case: Adding Knowledge</h3>
+                <h4> Use Case</h4>
+                <h3>Adding Knowledge</h3>
               </div>
                 <p class="align-justify line-ht2" >Tammy is the CEO of the “Heart Health Association”, which leads the development of several predictive analytics and heart care toolkits. Thanks to Knowledge Grid, it has been easy to create, manage, and update a collection of digital knowledge objects that carry their most recent findings in computer-processable form. This makes it convenient to share their knowledge, understand how it is used in the real world, and generate new revenue.</p>
             </div>
@@ -292,11 +330,16 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
             </div>
             <div class="modal-body">
+
               <div class="align-center mar-bot35">
-                <img class="avatar-md" src="./img/avatar/Garcia.png" alt="Health IT" height="140px">
+                <div class='avaicon size170'>
+                  <div class="icon-brd-tr size170"></div>
+                  <div class="icon-brd-bl size170"></div>
+                  <img class="avatar-md" src="./img/avatar/Garcia.png" alt="Health IT" width="140px">
+                </div>
               </div>
               <div class="brd-d7 mar-bot25">
                 <h4> Use Case</h4>
@@ -313,11 +356,15 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa fa-times um-blue"></span></button>
             </div>
             <div class="modal-body">
               <div class="align-center mar-bot35">
-                <img class="avatar-md" src="./img/avatar/familyDoctor.png" alt="Physician" height="140px">
+                <div class='avaicon size170'>
+                  <div class="icon-brd-tr size170"></div>
+                  <div class="icon-brd-bl size170"></div>
+                  <img class="avatar-md" src="./img/avatar/familyDoctor.png" alt="Physician" width="140px">
+                </div>
               </div>
               <div class="brd-d7 mar-bot25">
                 <h4> Use Case </h4><h3>Benefiting from Knowledge</h3>
@@ -338,6 +385,7 @@
 	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
 	<script src="js/stellar.js"></script>
+  	<script src="js/skrollr.min.js"></script>
   <script src="js/lodash.js"></script>
 	<script src="js/jquery.appear.js"></script>
   <script src="js/main.js"></script>
