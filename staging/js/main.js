@@ -15,7 +15,7 @@
 			var viewport_width = $(window).width();
 			var viewport_height = $(window).height();
 
-			if(viewport_width>991){
+			if(viewport_width>767){
 				jQuery('#amid-parent').height(jQuery('#amid-side').outerHeight());
 			}else{
 				$(".navbar-nav-m").height(viewport_height-60);
