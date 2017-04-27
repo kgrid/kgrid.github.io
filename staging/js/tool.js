@@ -4,7 +4,14 @@
 		$(window).scrollTop(100);
 
 		$.force_appear();
-
+		$('a').on('click touchend', function(e) {
+			$(".customizedanchor").removeClass("customizedanchor");
+			var el = $(this);
+			var link = el.attr('href');
+			if(link!="#"){
+				$(link).addClass("customizedanchor");
+			}
+		});
 		jQuery('.sidenav li:first-child').addClass('active');
 
 		if (Modernizr.mq("screen and (max-width:1024px)")) {

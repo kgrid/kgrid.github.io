@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/style.css">
 		<!-- skin -->
-		<link rel="stylesheet" href="skin/default.css">
+		<!-- <link rel="stylesheet" href="skin/default.css"> -->
     <title>Knowledge Grid</title>
     </head>
 
@@ -67,12 +67,12 @@
     </h3>
     <div class="container">
 			<div class="row">
-        <div class="col-md-offset-1 col-md-10">
+        <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
           <div class="row">
-        <div class="col-md-4 col-md-offset-0 col-sm-offset-1 col-sm-3 col-xs-offset-3 col-xs-6">
+        <div class="col-md-4 col-md-offset-0 col-sm-offset-0 col-sm-4 banner-pad-i col-xs-offset-3 col-xs-6">
           <img src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID" width="100%"/>
         </div>
-				<div class="col-md-8 col-md-offset-0 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12 pad-top25 align-alt">
+				<div class="col-md-8 col-md-offset-0 col-sm-offset-0 col-sm-8 col-xs-offset-0 col-xs-12 banner-pad align-alt">
 					<h1 class="slogan">Activate Knowledge for Health</h1>
 					<h3 class="slogan">
           Convert study findings into coded forms and compute useful advice from any health data.
@@ -81,7 +81,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="section-story" data-appear-top-offset='100' class="section appear pad-bot0 bg-white">
+	<section id="section-story" data-appear-top-offset='100' class="appear pad-bot0 bg-white">
     <h3  class='customheading'> Story </h3>
     <div class="container">
       <div class="row">
@@ -92,12 +92,13 @@
     <div class="row align-left mar-bot15 mar-top15">
       <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12" >
         <div class='row align-justify'>
-          <div class="col-md-4 col-sm-4 brd-t-d7 pad-top25">
+          <div class="col-md-4 col-sm-4 brd-t-d7 pad-top20">
             <div class="use-case">
-              <div class="use-detail mar-bot15 align-alt">
-                <h3 class="slogan mar-bot25">Add</h3>
+              <div class="use-detail mar-bot15 align-alt pad-right">
+                <h3 class="slogan mar-bot20">Add</h3>
                 <p>Take actionable knowledge, make it machine-ready, and manage it.</p>
               </div>
+              <a href="#" data-toggle="modal" data-target="#story-add">
               <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12 align-alt pad-top10 pad-bot10">
                   <div class='avaicon size100'>
@@ -108,18 +109,20 @@
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12 align-alt more-parent">
                   <div class="more align-mid">
-                    <a href="#" data-toggle="modal" data-target="#story-add"><span>Read the story</span></a>
+                    <a href="#" data-toggle="modal" data-target="#story-add"><span>Read the story</span>
                   </div>
                 </div>
               </div>
+            </a>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4 border-pos pad-top25">
+          <div class="col-md-4 col-sm-4 border-pos pad-top20">
             <div class="use-case">
-              <div class="use-detail mar-bot15 align-alt">
-                <h3 class="slogan mar-bot25">Activate </h3>
+              <div class="use-detail mar-bot15 align-alt pad-right">
+                <h3 class="slogan mar-bot20">Activate </h3>
                 <p>Deploy the “added” knowledge to generate health advice.</p>
               </div>
+              <a href="#" data-toggle="modal" data-target="#story-activate">
               <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12 align-alt pad-top10 pad-bot10">
                   <div class='avaicon size100'>
@@ -130,21 +133,24 @@
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12 align-alt more-parent">
                   <div class=" align-mid  more">
-                    <a href="#" data-toggle="modal" data-target="#story-activate"><span>Read the story</span></a>
+                    <span>Read the story</span>
                   </div>
                 </div>
               </div>
+            </a>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 pad-right0 ">
             <div class="row mar-right0">
-      				  <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12 brd-t-d7 pad-top25 mar-bot40">
+      				  <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12 brd-t-d7 pad-top20 mar-bot40">
           <div class="use-case">
-            <div class="use-detail mar-bot15 align-alt">
-            <h3 class="slogan mar-bot25">Benefit</h3>
+            <div class="use-detail mar-bot15 align-alt pad-right">
+            <h3 class="slogan mar-bot20">Benefit</h3>
               <p>Apply the health advice to real-world decisions for better outcomes.</p>
             </div>
           </div>
+          <a href="#" data-toggle="modal" data-target="#story-bene">
+
                       <div class="row">
                         <div class="col-md-5 col-sm-12 col-xs-12 align-alt pad-top10 pad-bot10">
             <div class='avaicon size100'>
@@ -154,9 +160,12 @@
             </div></div>
             <div class="col-md-7 col-sm-12 col-xs-12 align-alt more-parent">
             <div class="more align-mid">
-              <a href="#" data-toggle="modal" data-target="#story-bene"><span>Read the story</span></a>
+              <!-- <a href="#" data-toggle="modal" data-target="#story-bene"> -->
+                <span>Read the story</span>
+              <!-- </a> -->
             </div></div>
           </div>
+        </a>
         <!-- </div> -->
         </div></div></div>
       </div>
@@ -164,7 +173,7 @@
 </div>
   			</div>
     </section>
-		<section id="section-uses" data-appear-top-offset='150' class="section bg-white clearfix">
+		<section id="section-uses" data-appear-top-offset='150' class="bg-white clearfix">
     <h3  class='customheading'> USES </h3>
   	<div class="container">
       <div class="row">
@@ -175,10 +184,10 @@
         <div class="row align-left mar-bot15 mar-top15">
           <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
             <div class='row'>
-              <div class="col-md-4 col-sm-4 brd-t-d7 pad-top25 mar-bot40">
+              <div class="col-md-4 col-sm-4 brd-t-d7 pad-top20 mar-bot40">
                 <div class="use-case">
-                  <div class="align-alt">
-                    <h3 class="slogan pad-bot15">Those Who Add</h3>
+                  <div class="align-alt pad-right">
+                    <h3 class="slogan">Those Who Add</h3>
 									<span> Researchers<br>
                   Publishers<br>
                   Medical Associations <br>
@@ -187,10 +196,10 @@
 								</div>
 							</div>
 						</div>
-            <div class="col-md-4 col-sm-4 border-pos pad-top25 mar-bot40">
+            <div class="col-md-4 col-sm-4 border-pos pad-top20 mar-bot40">
               <div class="use-case">
-                <div class="align-alt">
-									<h3 class="slogan pad-bot15">Those Who Activate </h3>
+                <div class="align-alt pad-right">
+									<h3 class="slogan">Those Who Activate </h3>
 									<span>Hospitals<br>
                   Health IT<br>
                   Tech Firms<br>
@@ -201,10 +210,10 @@
 						</div>
             <div class="col-md-4 col-sm-4 pad-right0">
               <div class="row margin-right0">
-                  				  <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12 brd-t-d7 pad-top25 mar-bot40">
+                  				  <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12 brd-t-d7 pad-top20 mar-bot40">
 							<div class="use-case">
-								<div class="align-alt">
-								<h3 class="slogan pad-bot15 ">Those Who Benefit</h3>
+								<div class="align-alt pad-right">
+								<h3 class="slogan">Those Who Benefit</h3>
 									<span>Providers<br>
                     Hospitals<br>
                   Consumers<br>
@@ -218,7 +227,7 @@
 </div>
 		</div>
 		</section>
-    <section id="section-tools"  data-appear-top-offset='-150' class="section appear bg-white clearfix">
+    <section id="section-tools"  data-appear-top-offset='-150' class="appear bg-white clearfix">
       <h3  class='customheading'> Technology </h3>
       <div class="container">
        <div class="row">
@@ -230,7 +239,7 @@
        <div class="row align-left mar-bot15 mar-top15">
          <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
                  <div class='row'>
-                   <div class="col-md-4 col-sm-4 col-xs-12 brd-t-d7 pad-right" id="amid-parent">
+                   <div class="col-md-4 col-sm-4 col-xs-12 brd-t-d7 pad-right-c" id="amid-parent">
                      <div class="align-mid align-alt">
                     <h3 class="slogan">Platform
                     </h3>
@@ -258,7 +267,6 @@
                       <h3  class="slogan">Object Activators</h3>
                     <span>Systems for deploying Knowledge Objects to process health data.</span><br>
                     <div class="linkwrapper"><a class="toollink" href="./tools.html#activator" ><span>Learn More</span></a></div>
-
                   </div>
                 </div>
               </div>
@@ -267,24 +275,25 @@
 
         </div>
       </section>
-    <section id="section-docs" data-appear-top-offset='0' class="section appear clearfix bg-grey">
+    <section id="section-docs" data-appear-top-offset='0' class="appear clearfix bg-grey">
       <div class="container">
         <div class="row align-left mar-bot15 mar-top15">
           <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
 
-        <div class="row pad-bot15 pad-top15">
-          <div class="col-md-offset-0 col-md-4 col-sm-3 col-sm-offset-0 col-xs-offset-2 col-xs-8">
-            <div class="align-alt-l pad-top15 pad-bot15">
-              <span class="sectitle">Read about <br> how it works. </span>
+        <div class="row pad-bot15 pad-top0">
+          <div class="col-md-offset-0 col-md-4 col-sm-4 col-sm-offset-0 col-xs-offset-2 col-xs-8">
+            <div class="align-alt-l pad-top10">
+              <span class="sectitle hidden-xs">Read about <br> how it works. </span>
+                <span class="sectitle hidden-sm hidden-md hidden-lg">Read about how it works. </span>
             </div>
           </div>
-          <div class="col-md-7 col-sm-7 col-md-offset-0 col-xs-offset-0 col-xs-12">
+          <div class="col-md-8 col-sm-8 col-md-offset-0 col-xs-offset-0 col-xs-12">
             <div class="row">
-              <div class="col-md-5 align-center col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
-                <div class='primary'><a href="https://kgrid.gitbooks.io/authoring-ii/"><span>Authoring<br> Knowledge Objects</span></a></div>
+              <div class="col-md-6 align-center col-sm-6 col-sm-offset-0 col-xs-offset-1 col-xs-10 extra-pad-right">
+                <div class='primary'><a href="https://kgrid.gitbooks.io/authoring-ii/"><span>Authoring Knowledge Objects</span></a></div>
               </div>
-              <div class="col-md-5 align-center col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
-                <div class='primary' ><a href="https://kgrid.gitbooks.io/execution-manual/"><span>Using<br> Knowledge Objects</span></a></div>
+              <div class="col-md-6 align-center col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-offset-1 col-xs-10 extra-pad-right">
+                <div class='primary' ><a href="https://kgrid.gitbooks.io/execution-manual/"><span>Using Knowledge Objects</span></a></div>
               </div>
             </div>
           </div>
