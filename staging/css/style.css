@@ -1024,7 +1024,7 @@ Media queries
 			height: 1.8em;
 		}
 		.pad-left {
-			padding-left: 60px;
+			padding-left: 15px;
 		}
 		.pad-right, .pad-right-c {
 			padding-right: 15px;
@@ -1102,7 +1102,7 @@ Media queries
 		margin: 0px;
 	}
 	.pad-left {
-		padding-left: 15px;
+		padding-left: 0px;
 	}
 	.pad-right {
 		padding-right: 0px;
