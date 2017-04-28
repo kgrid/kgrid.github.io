@@ -938,10 +938,10 @@ Media queries
 		padding-left: 60px;
 	}
 	.pad-right {
-		padding-right: 0px;
+		padding-right: 15px;
 	}
 	.pad-right-c{
-		padding-right: 15px;
+		padding-right: 25px;
 	}
 	.size170 {
 		width: 170px;
