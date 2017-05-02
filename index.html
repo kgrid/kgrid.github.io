@@ -1,13 +1,422 @@
-<html>
-<head>
-<title>The Knowledge Grid</title>
-<meta http-equiv="refresh" content="0; URL=/site">
-<meta name="keywords" content="automatic redirection">
-</head>
-<body>
-If your browser doesn't automatically go there within a few seconds, 
-you may want to go to 
-<a href="/site">the destination</a> 
-manually.
-</body>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+		<!-- BASICS -->
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    	crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+		<!-- skin -->
+		<!-- <link rel="stylesheet" href="skin/default.css"> -->
+    <title>Knowledge Grid</title>
+    </head>
+
+    <body>
+		<section id="header" class="appear"><h3 class='customheading'>header</h3>
+		<div class="navbar navbar-fixed-top" role="navigation" data-0="box-shadow: 0 2px 2px rgba(0, 0, 0, 0);" data-60="	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);">
+			 <div class="nav-container">
+
+        <div class="row">
+          <button type="button" class="navbar-toggle" id="menu-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+            <!-- <span class="fa fa-bars um-blue"></span> -->
+					</button>
+          <div class="col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-0 align-left">
+	          <div id="kgridlogo" class="pad-left20">
+              <a href="./index.html">
+                <img id="logo"  src="./img/logo/KG_SpelledOut_v2.png" alt="KNOWLEDGE GRID"/>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-6 pad-right0 hidden-xs" >
+				        <div class="nav" >
+					             <ul class="nav navbar-nav pad-top15" >
+                         <li ><a href="#section-story" ><span>Story</span></a></li>
+						             <li ><a href="#section-tools"><span>Tools</span></a></li>
+                         <li ><a href="#section-docs" ><span>Docs</span></a></li>
+					             </ul>
+				        </div><!--/.navbar-collapse -->
+        	</div>
+        </div>
+        <div class="navbar-collapse collapse pad-left35 pad-right35" >
+					<ul class="nav hidden-lg hidden-md hidden-sm navbar-nav-m" >
+            <li class="hidden-lg hidden-md  hidden-sm"><a href="#section-story" data-toggle="collapse" data-target=".navbar-collapse"><span>Story</span></a></li>
+						<li class="hidden-lg hidden-md  hidden-sm"><a href="#section-tools" data-toggle="collapse" data-target=".navbar-collapse"><span>Tools</span></a></li>
+            <li class="hidden-lg hidden-md  hidden-sm"><a href="#section-docs" data-toggle="collapse" data-target=".navbar-collapse"><span>Docs</span></a></li>
+				</ul>
+				</div><!--/.navbar-collapse -->
+
+
+
+		</div>
+</section>
+		<section id="section-featured" class="featured section">
+    <h3 class='customheading'>
+      Feature
+    </h3>
+    <div class="container">
+			<div class="row">
+        <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
+          <div class="row">
+        <div class="col-md-4 col-md-offset-0 col-sm-offset-0 col-sm-4 banner-pad-i col-xs-offset-3 col-xs-6">
+          <img src="./img/logo/KG_Logo_DarkBlue.png" alt="KGRID" width="100%"/>
+        </div>
+				<div class="col-md-8 col-md-offset-0 col-sm-offset-0 col-sm-8 col-xs-offset-0 col-xs-12 banner-pad align-alt">
+					<h1 class="slogan">Activate Knowledge for Health</h1>
+					<h3 class="slogan">
+          Convert study findings into coded forms and compute useful advice from any health data.
+        </h3>
+      </div></div></div>
+			</div>
+		</div>
+	</section>
+	<section id="section-story" data-appear-top-offset='100' class="appear pad-bot0 bg-white">
+    <h3  class='customheading'> Story </h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12  align-alt">
+        <span class="sectitle">Users Do Three Things </span>
+      </div>
+    </div>
+    <div class="row align-left mar-bot15 mar-top15">
+      <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12" >
+        <div class='row align-left'>
+          <div class="col-md-4 col-sm-4 brd-t-d7 pad-bot40 pad-top20">
+            <div class="use-case">
+              <div class="use-detail mar-bot15 align-alt pad-right">
+                <h3 class="slogan mar-bot20">Add</h3>
+                <p>Take actionable knowledge, make it machine-ready, and manage it.</p>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#story-add">
+              <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12 align-alt pad-top10 pad-bot10">
+                  <div class='avaicon size100'>
+                    <div class="icon-brd-tr size100"></div>
+                    <div class="icon-brd-bl size100"></div>
+                    <img class="avatar-md" src="./img/avatar/CEO.png" alt="CEO" width="80px">
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 align-alt more-parent">
+                  <div class="more align-mid">
+                    <span>Read the story</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 border-pos pad-top20">
+            <div class="use-case">
+              <div class="use-detail mar-bot15 align-alt pad-right">
+                <h3 class="slogan mar-bot20">Activate </h3>
+                <p>Deploy the “added” knowledge to generate health advice.</p>
+              </div>
+              <a href="#" data-toggle="modal" data-target="#story-activate">
+              <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12 align-alt pad-top10 pad-bot10">
+                  <div class='avaicon size100'>
+                    <div class="icon-brd-tr size100"></div>
+                    <div class="icon-brd-bl size100"></div>
+                    <img class="avatar-md" src="./img/avatar/Garcia.png" alt="Health IT" width="80px">
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 align-alt more-parent">
+                  <div class=" align-mid  more">
+                    <span>Read the story</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 pad-right0 ">
+            <div class="row mar-right0">
+      				  <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12 brd-t-d7 pad-top20 mar-bot40">
+          <div class="use-case">
+            <div class="use-detail mar-bot15 align-alt">
+            <h3 class="slogan mar-bot20">Benefit</h3>
+              <p>Apply the health advice to real-world decisions for better outcomes.</p>
+            </div>
+
+          <a href="#" data-toggle="modal" data-target="#story-bene">
+
+                      <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12 align-alt pad-top10 pad-bot10">
+            <div class='avaicon size100'>
+              <div class="icon-brd-tr size100"></div>
+              <div class="icon-brd-bl size100"></div>
+              <img class="avatar-md" src="./img/avatar/familyDoctor.png" alt="provider" width="80px">
+            </div></div>
+            <div class="col-md-7 col-sm-7 col-xs-12 align-alt more-parent">
+            <div class="more align-mid">
+                <span>Read the story</span>
+            </div></div>
+          </div>
+        </a>
+        </div></div></div>
+      </div>
+</div>
+</div>
+  			</div>
+    </section>
+		<section id="section-uses" data-appear-top-offset='150' class="bg-white clearfix">
+    <h3  class='customheading'> USES </h3>
+  	<div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12 align-alt">
+							<span class="sectitle">Stakeholders Are Many & Diverse</span>
+		     </div>
+				</div>
+        <div class="row align-left mar-bot15 mar-top15">
+          <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
+            <div class='row'>
+              <div class="col-md-4 col-sm-4 brd-t-d7 pad-top20 mar-bot40">
+                <div class="use-case">
+                  <div class="align-alt pad-right">
+                    <h3 class="slogan">Those Who Add</h3>
+									<span> Researchers<br>
+                  Publishers<br>
+                  Medical Associations <br>
+                  Tech firms<br>
+                  Quality Improvement</span>
+								</div>
+							</div>
+						</div>
+            <div class="col-md-4 col-sm-4 border-pos pad-top20 mar-bot40">
+              <div class="use-case">
+                <div class="align-alt pad-right">
+									<h3 class="slogan">Those Who Activate </h3>
+									<span>Hospitals<br>
+                  Health IT<br>
+                  Tech Firms<br>
+                  Health Insurers<br>
+                  Government</span>
+								</div>
+							</div>
+						</div>
+            <div class="col-md-4 col-sm-4 pad-right0">
+              <div class="row margin-right0">
+                  				  <div class="col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-12 brd-t-d7 pad-top20 mar-bot40">
+							<div class="use-case">
+								<div class="align-alt">
+								<h3 class="slogan">Those Who Benefit</h3>
+									<span>Providers<br>
+                    Hospitals<br>
+                  Consumers<br>
+                  Health Insurers<br>
+                  Public Health</span>
+								</div>
+							</div>
+						</div></div></div>
+					</div>
+</div>
+</div>
+		</div>
+		</section>
+    <section id="section-tools"  data-appear-top-offset='-150' class="appear bg-white clearfix">
+      <h3  class='customheading'> Technology </h3>
+      <div class="container">
+       <div class="row">
+         <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1 col-xs-12 align-alt">
+           <span class="sectitle">Tools
+           </span>
+         </div>
+       </div>
+       <div class="row align-left mar-bot15 mar-top15">
+         <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
+                 <div class='row'>
+                   <div class="col-md-4 col-sm-4 col-xs-12 brd-t-d7 pad-right-c" id="amid-parent">
+                     <div class="align-mid align-alt">
+                    <h3 class="slogan">Platform
+                    </h3>
+                   <span class="align-left line-ht25">Three interconnected tools encode study findings and produce health advice.</span><br>
+                   <div class="linkwrapper pad-top5"><a class="toollink" href="./tools.html#platform" ><span>Learn More</span></a></div>
+                </div>
+                 </div>
+                 <div class="col-md-8 col-sm-8 col-xs-12 brd-t-d7 pad-top55 pad-bot30" id="amid-side">
+                   <div class="row mar-bot55 pad-left15 pad-right15 align-alt">
+
+                        <h3 class="slogan" >Knowledge Objects</h3>
+                        <span class="line-ht25"> Modular computer-processable knowledge.</span><br>
+                        <div class="linkwrapper pad-top5"><a class="toollink" href="./tools.html#object" ><span>Learn More</span></a></div>
+
+                    </div>
+                    <div class="row mar-bot55 pad-left15 pad-right15 align-alt">
+
+                        <h3 class="slogan" >Object Library</h3>
+                        <span class="line-ht25">Digital repository for storing and managing Knowledge Objects.</span><br>
+                        <div class="linkwrapper pad-top5"><a class="toollink" href="./tools.html#library" ><span>Learn More</span></a></div>
+
+                  </div>
+                  <div class="row pad-left15 pad-right15 align-alt">
+
+                      <h3  class="slogan">Object Activators</h3>
+                    <span class="line-ht25">Systems for deploying Knowledge Objects to process health data.</span><br>
+                    <div class="linkwrapper pad-top5"><a class="toollink" href="./tools.html#activator" ><span>Learn More</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    <section id="section-docs" data-appear-top-offset='0' class="appear clearfix bg-grey">
+      <div class="container">
+        <div class="row align-left mar-bot15 mar-top15">
+          <div class="col-md-offset-1 col-md-10 col-sm-10 col-sm-offset-1" >
+
+        <div class="row pad-bot15 pad-top0">
+          <div class="col-md-offset-0 col-md-4 col-sm-4 col-sm-offset-0 col-xs-offset-1 col-xs-10 pad-bot-xs20">
+            <div class="align-alt-l pad-top10">
+              <span class="sectitle hidden-xs">Read about <br> how it works. </span>
+                <span class="sectitle hidden-sm hidden-md hidden-lg fs-m22s20">Read about how it works. </span>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-8 col-md-offset-0 col-xs-offset-0 col-xs-12">
+            <div class="row">
+              <div class="col-md-6 align-center col-sm-6 col-sm-offset-0 col-xs-offset-1 col-xs-10 extra-pad-right">
+                <div class='primary'><a href="https://kgrid.gitbooks.io/authoring-ii/"><span>Authoring Knowledge Objects</span></a></div>
+              </div>
+              <div class="col-md-6 align-center col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-offset-1 col-xs-10 extra-pad-right">
+                <div class='primary' ><a href="https://kgrid.gitbooks.io/execution-manual/"><span>Using Knowledge Objects</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div></div></div>
+      </div>
+    </section>
+	<section id="footer" class="section footer bg-white">
+    <h3  class='customheading'>Footer</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-5 align-alt-l">
+          <p>Supported By</p>
+        </div>
+      </div>
+      <div class="row align-alt-l">
+        <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-4 mar-bot15">
+      <a href="http://lhs.medicine.umich.edu/">
+			<div class="row copyright school">
+					<img src="./img/logo/MedicalSchoolLogo.png" alt="UofM Medical School" height="100%"/>
+      </div>
+        </a>
+			</div>
+      <div class=" col-md-1 col-sm-1">
+    <a href="http://fedorarepository.org/">
+    <div class="row copyright fedora mar-bot15">
+        <img src="./img/logo/fedoraLogo.png" alt="Fedora" height="100%"/>
+    </div>
+    </a>
+    </div>
+    </div>
+    </div>
+	</section>
+<!-- Overlays -->
+<div class="modal fade" tabindex="-1" role="dialog" id="story-add">
+  <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+            </div>
+            <div class="modal-body">
+              <div class="align-center mar-bot35">
+                <div class='avaicon size170'>
+                  <div class="icon-brd-tr size170"></div>
+                  <div class="icon-brd-bl size170"></div>
+                  <img class="avatar-mo" src="./img/avatar/CEO.png" alt="CEO" >
+                </div>              </div>
+              <div class="brd-d7 mar-bot25">
+                <h4> Use Case</h4>
+                <h3>Adding Knowledge</h3>
+              </div>
+                <p class="align-left line-ht2" >Tammy is the CEO of the “Heart Health Association”, which leads the development of several predictive analytics and heart care toolkits. Thanks to Knowledge Grid, it has been easy to create, manage, and update a collection of digital knowledge objects that carry their most recent findings in computer-processable form. This makes it convenient to share their knowledge, understand how it is used in the real world, and generate new revenue.</p>
+            </div>
+            <div class="modal-footer">
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="story-activate">
+  <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="align-center mar-bot35">
+                <div class='avaicon size170'>
+                  <div class="icon-brd-tr size170"></div>
+                  <div class="icon-brd-bl size170"></div>
+                  <img class="avatar-mo" src="./img/avatar/Garcia.png" alt="Health IT">
+                </div>
+              </div>
+              <div class="brd-d7 mar-bot25">
+                <h4> Use Case</h4>
+                <h3> Activating Knowledge</h3>
+              </div>
+                <p class="align-left line-ht2">As Senior VP for Innovation for “Valiant”, Thomas seeks new ways to improve the Valiant Electronic Health Record system. Thanks to Knowledge Grid he can rapidly add large amounts of trusted, up-to-date, health knowledge from expert sources to the Valiant EHR. Valiant clients now benefit from knowledge that is automatically applied when needed and in context, such as the predictive analytics and toolkits from the “Heart Health Association”</p>
+            </div>
+            <div class="modal-footer">
+        </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="story-bene">
+  <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+            </div>
+            <div class="modal-body">
+              <div class="align-center mar-bot35">
+                <div class='avaicon size170'>
+                  <div class="icon-brd-tr size170"></div>
+                  <div class="icon-brd-bl size170"></div>
+                  <img class="avatar-mo" src="./img/avatar/familyDoctor.png" alt="Physician">
+                </div>
+              </div>
+              <div class="brd-d7 mar-bot25">
+                <h4> Use Case </h4><h3>Benefiting from Knowledge</h3>
+              </div>
+                <p class="align-left line-ht2">Charles is a primary care physician who takes care of a large group of patients. He needs to keep up with the latest evidence for a range of health issues. Thanks to Knowledge Grid, his "Valiant" EHR software provides him useful medical advice in many disease areas. It uses the "Heart Health Association" predictive analytics to determine which patients are at higher risk of heart disease, helping him to improve patient outcomes and cut costs from unnecessary treatment.</p>
+            </div>
+            <div class="modal-footer">
+        </div>
+    </div>
+  </div>
+</div>
+
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<!-- <script src="js/stellar.js"></script> -->
+  	<script src="js/skrollr.min.js"></script>
+  <script src="js/lodash.js"></script>
+	<script src="js/jquery.appear.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
 </html>
