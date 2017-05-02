@@ -51,6 +51,9 @@ h5 { font-size: 16px; }
 .brd-t-d7{
 	border-top: 1px solid #d7d7d7;
 }
+.line-ht25{
+	line-height: 2.5em;
+}
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
@@ -135,7 +138,7 @@ a, a:hover, a:active, a:visited, a:focus {
  transform: translateY(-50%);
 }
 .align-justify {
-	text-align: justify;
+	text-align: left;
 }
 .line-ht2 {
 	line-height: 2em;
@@ -168,6 +171,9 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .pad-top40 {
 	padding-top: 40px;
+}
+.pad-top55 {
+	padding-top:55px;
 }
 .pad-top80 {
 	padding-top: 80px;
@@ -205,6 +211,9 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .pad-bot40 {
 	padding-bottom: 40px;
+}
+.pad-bot55 {
+	padding-bottom:55px;
 }
 .pad-left0 {
 	padding-left: 0px;
@@ -322,6 +331,9 @@ a, a:hover, a:active, a:visited, a:focus {
 .mar-bot40 {
 	margin-bottom: 40px;
 }
+.mar-bot55 {
+	margin-bottom: 55px;
+}
 .mar-bot60 {
 	margin-bottom: 60px;
 }
@@ -347,6 +359,7 @@ div#kgridlogo img {
 	height: 20px;
 	margin:0;
 	padding:0;
+	opacity:0.95;
 }
 /*===========================
   --- Sections ----
@@ -500,8 +513,8 @@ section.featured h1.slogan {
 }
 
 h3.slogan {
-	line-height: 1.5em;
-
+	line-height: 2em;
+	margin-bottom: 0px;
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -572,7 +585,7 @@ div.primary {
 	font-weight: 400;
 	padding: 10px 10px;
 	width: 100%;
-	margin: 10px 0px 10px 0px;
+	margin: 10px auto;
 	transition: background-color 0.5s linear;
 }
 div.primary:hover{
@@ -739,12 +752,20 @@ section.featured {
 }
 .tool-detail0 img {
 	width: 80%;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 /* ========================================
 Media queries
 ========================================= */
 
 @media only screen and (min-width : 1200px) {
+	div.primary {
+		max-width: 300px;
+	}
+	.pad-bot-xs20{
+		padding-bottom: 0px;
+	}
 	.banner-pad-i{
 		padding: 50px;
 	}
@@ -762,7 +783,7 @@ Media queries
 		height: 120px;
 	}
 	.align-alt{
-		text-align: justify;
+		text-align: left;
 	}
 	section .container, section .nav-container{
 		max-width: 1200px;
@@ -782,6 +803,7 @@ Media queries
 	}
 	.fs-m18s16 {
 		font-size:18px;
+
 	}
 	.pad-left {
 		padding-left: 60px;
@@ -802,6 +824,12 @@ Media queries
 }
 
 @media only screen and (min-width : 992px) and (max-width : 1199px)  {
+	div.primary {
+		max-width: 300px;
+	}
+	.pad-bot-xs20{
+		padding-bottom: 0px;
+	}
 	.banner-pad-i{
 		padding: 40px;
 	}
@@ -810,6 +838,8 @@ Media queries
 	}
 	.tool-detail img {
 		width: 60%;
+		margin-top:20px;
+		margin-bottom:20px;
 	}
 	.linkwrapper{
 		width: auto;
@@ -819,7 +849,7 @@ Media queries
 		height: 120px;
 	}
 	.align-alt{
-		text-align: justify;
+		text-align: left;
 	}
 	.align-alt-l{
 		text-align: left;
@@ -848,6 +878,9 @@ Media queries
 	}
 	.fs-m18s16 {
 		font-size:18px;
+	}
+	.fs-m22s20 {
+		font-size: 22px;
 	}
 	.pad-left {
 		padding-left: 60px;
@@ -878,6 +911,12 @@ Media queries
 	/*.navbar-toggle {
 		display: block;
 	}*/
+	div.primary {
+		max-width: 210px;
+	}
+	.pad-bot-xs20{
+		padding-bottom: 0px;
+	}
 	section.featured h1.slogan {
     font-size: 28px;
 }
@@ -889,19 +928,27 @@ Media queries
 	}
 	.tool-detail img{
 		width: 70%;
+		margin-top:20px;
+		margin-bottom:20px;
 	}
 	.tool-detail0 img {
 		width: 100%;
+		margin-top:20px;
+		margin-bottom:20px;
 	}
 	.linkwrapper{
 		width: auto;
 		margin: 0 auto;
 	}
 	.more-parent {
-		height: 30px;
+		height: 70px;
+		padding-right: 0px;
+	}
+	.use-case .more span {
+		font-size: 12px;
 	}
 	.align-alt{
-		text-align: justify;
+		text-align: left;
 	}
 	.align-alt-l{
 		text-align: left;
@@ -949,16 +996,25 @@ Media queries
 		padding: 15px;
 	}
 	.size100 {
-		width: 100px;
-		height: 100px;
-		padding: 10px;
+		width: 70px;
+		height: 70px;
+		padding: 5px;
 	}
 	div.primary span {
 		font-size: 12px;
 		}
+		.avatar-md {
+			width: 60px;
+		}
 }
 
 @media only screen and (min-width: 576px) and  (max-width: 767px) {
+	div.primary {
+		max-width: 210px;
+	}
+	.pad-bot-xs20{
+		padding-bottom: 20px;
+	}
 	section.featured h1.slogan {
 		font-size: 28px;
 }
@@ -985,6 +1041,7 @@ Media queries
 		max-width: 576px;
 		width:100%;
 		margin: 0 auto;
+		padding: 25px 80px 5px 80px;
 	}
 	section#section-featured .container {
 		padding-top: 0px;
@@ -1048,6 +1105,9 @@ Media queries
 }
 
 @media only screen  and  (max-width: 575px) {
+	.pad-bot-xs20{
+		padding-bottom: 20px;
+	}
 	.banner-pad-i{
 		padding: 10px;
 	}
@@ -1056,6 +1116,8 @@ Media queries
 	}
 	.tool-detail img, .tool-detail0 img {
 		width: 100%;
+		margin-top:0px;
+		margin-bottom:0px;
 	}
 
 	.linkwrapper{
@@ -1092,6 +1154,7 @@ Media queries
 	.fs-m18s16 {
 		font-size:16px;
 	}
+
 	.extra-pad-left {
 		padding-left: 20px;
 	}
@@ -1118,10 +1181,6 @@ Media queries
 		margin:0;
 		padding:0;
 	}
-	.avatar-md {
-
-		width: 50px;
-	}
 	section.section {
 		margin:0;
 		padding: 00px 20px 0px 20px;
@@ -1146,12 +1205,18 @@ Media queries
 		padding: 15px;
 	}
 	.size100 {
-		width: 60px;
-		height: 60px;
+		width: 70px;
+		height: 70px;
 		padding: 5px;
+	}
+	span.sectitle.fs-m22s20 {
+		font-size: 18px;
 	}
 	div.primary span {
 		font-size: 12px;
+		}
+		.avatar-md {
+			width: 60px;
 		}
 }
 
