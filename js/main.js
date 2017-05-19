@@ -32,7 +32,13 @@
 			 			maxHeight = $(this).outerHeight();
 	  			}
 				}).height(maxHeight);
-
+				var maxHeight1=0;
+				$(".component-title").each(function() {
+					$(this).css("height","auto");
+					if ($(this).outerHeight() > maxHeight1) {
+						maxHeight1 = $(this).outerHeight();
+					}
+				}).height(maxHeight1);
 			}else{
 				$(".use-detail").each(function() {
 					$(this).css("height","auto");
