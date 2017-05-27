@@ -478,8 +478,12 @@ section > .container{
 	max-height:none;
 	background-color: #e7e7e7;
 }
-
-.nav li {
+.nav-m {
+	padding-left:0;
+	margin-bottom:0;
+	list-style: none;
+}
+.nav li, .nav-m li{
 	height: 60px;
 	line-height: 60px;
 	vertical-align: middle;
@@ -505,11 +509,16 @@ section > .container{
 .collapse li {
 	border-bottom: 1px solid #c7c7c7;
 }
+.collapse li.cluster-li {
+	height: 48px;
+	border-bottom: none;
+}
+
 /*.collapse li>a {
 	padding-top:18px;
 }*/
 
-.nav>li>a {
+.nav>li>a, .nav-m>li>a{
 	display: block;
 	height: 100%;
 	line-height: 20px;
@@ -522,7 +531,7 @@ section > .container{
 	padding-top: 18px;
 	padding-bottom: 10px;
 }
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a:focus, .nav>li>a:hover,.nav-m>li>a:focus, .nav-m>li>a:hover{
     text-decoration: none;
     background-color: transparent;
 }
@@ -531,7 +540,7 @@ section > .container{
 	border-bottom: 2px solid transparent;
 	line-height: 1.4em;
 }
-.nav li >a >span {
+.nav-m li >a >span , .nav li >a >span {
 	float: left;
 }
 .nav li>a>span:after {
@@ -885,6 +894,9 @@ Media queries
 	.pad-hlogo {
 		padding-left:13px;
 	}
+	.pad-btitle{
+		padding-bottom: 0px;
+	}
 	.more-parent {
 		height: 120px;
 	}
@@ -949,6 +961,9 @@ Media queries
 	}
 	.pad-hlogo {
 		padding-left:13px;
+	}
+	.pad-btitle{
+		padding-bottom: 0px;
 	}
 	section.featured h1.slogan {
     font-size: 24px;
@@ -1038,7 +1053,7 @@ section.featured h3.slogan {
 		padding-bottom: 20px;
 	}
 	.banner-pad-i{
-		padding: 10px;
+		padding: 30px 10px 25px 10px;
 	}
 	.banner-pad {
 		padding-top: 20px;
@@ -1051,7 +1066,9 @@ section.featured h3.slogan {
 	.pad-hlogo {
 		padding-left:28px;
 	}
-
+.pad-btitle{
+	padding-bottom: 30px;
+}
 		section.featured h1.slogan {
 			font-size: 24px;
 		}section.featured h3.slogan {
@@ -1113,7 +1130,7 @@ section.featured h3.slogan {
 	}
 	section.featured {
 	    padding-top: 20px;
-			padding-bottom: 40px;
+			padding-bottom: 35px;
 	}
 	section#footer .school img {
 		height: 1.8em;
