@@ -435,7 +435,7 @@ section.section {
 	background-color: #fff;
 }
 .bg-grey{
-		background-color: #f5f5f5;
+		background-color: #e4e1df;
 }
 .bg-darkgrey {
 	background-color:#555555;
@@ -620,7 +620,7 @@ section.featured h1.slogan {
 h3.slogan {
 	line-height: 2em;
 	margin-bottom: 0px;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 500;
 }
 span.sectitle{
