@@ -872,17 +872,19 @@ Media queries
 		padding-bottom: 0px;
 	}
 	.banner-pad-i{
-		padding: 40px;
+		padding: 80px 40px 80px 10px;
 	}
 	.banner-pad {
-		padding-top: 35px;
+		padding-top: 90px;
 	}
 	.tool-detail img {
 		width: 60%;
 		margin-top:20px;
 		margin-bottom:20px;
 	}
-
+	.pad-hlogo {
+		padding-left:13px;
+	}
 	.more-parent {
 		height: 120px;
 	}
@@ -945,17 +947,20 @@ Media queries
 	.pad-bot-xs20{
 		padding-bottom: 0px;
 	}
+	.pad-hlogo {
+		padding-left:13px;
+	}
 	section.featured h1.slogan {
     font-size: 24px;
 }
 section.featured h3.slogan {
-	font-size: 16px;
+	font-size: 14px;
 }
 	.banner-pad-i{
-		padding: 30px;
+		padding: 60px 30px 60px 10px;
 	}
 	.banner-pad {
-		padding-top: 20px;
+		padding-top: 60px;
 	}
 	.tool-detail img{
 		width: 70%;
@@ -1043,7 +1048,9 @@ section.featured h3.slogan {
 		margin-top:0px;
 		margin-bottom:0px;
 	}
-
+	.pad-hlogo {
+		padding-left:28px;
+	}
 
 		section.featured h1.slogan {
 			font-size: 24px;
