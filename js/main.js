@@ -13,10 +13,12 @@
 		});
 		$('.navbar-collapse').on('hidden.bs.collapse', function () {
 			  $(".navbar-toggle").removeClass("active");
+					$('body').css('overflow', 'scroll');
 			});
 
 			$('.navbar-collapse').on('show.bs.collapse', function () {
 				$(".navbar-toggle").addClass("active");
+					$('body').css('overflow', 'hidden');
 			});
 
 		onload = onresize = function() {
