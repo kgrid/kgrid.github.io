@@ -14,11 +14,13 @@
 		$('.navbar-collapse').on('hidden.bs.collapse', function () {
 			  $(".navbar-toggle").removeClass("active");
 					$('body').css('overflow', 'scroll');
+					$('body').css('position', 'relative');
 			});
 
 			$('.navbar-collapse').on('show.bs.collapse', function () {
 				$(".navbar-toggle").addClass("active");
 					$('body').css('overflow', 'hidden');
+					$('body').css('position', 'fixed');
 			});
 
 		onload = onresize = function() {
