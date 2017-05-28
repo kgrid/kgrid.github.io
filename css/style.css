@@ -1,5 +1,5 @@
 /* ==== Google font ==== */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:500italic,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:500italic,300,400,500,600,700,800,900');
 
 @import url('animate.css');
 /*==========================================================================
@@ -317,7 +317,12 @@ a, a:hover, a:active, a:visited, a:focus {
 	position: relative;
 	display: inline-block;
 }
-
+.pad-hlogo span{
+	color: #656565;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+}
 a.toollink, .more span {
 	color: #00274c;
 
@@ -367,7 +372,7 @@ section#section-tech p, section#section-story p {
 	padding-top: 0px;
 }
  .secheader h2 {
-	font-size:24px;
+	font-size:21px;
 	font-weight: 600;
 	margin-bottom: 0px;
 	line-height: 3.1em;
@@ -500,7 +505,7 @@ section > .container{
 .dropdown-menu li {
 	height: 56px;
 	line-height: 56px;
-	text-align:right;
+	text-align:left;
 }
 .dropdown-menu > li > a {
 	padding: 0px 20px;
@@ -620,10 +625,11 @@ section.featured {
 }
 
 section.featured h1.slogan {
+	color: #656565;
 	line-height: 1.8em;
 	font-weight: 600;
 /*padding-bottom: 12px;*/
-	    letter-spacing: 1px;
+	    /*letter-spacing: -0.05em;*/
 }
 
 h3.slogan {
@@ -953,6 +959,9 @@ Media queries
 	/*.navbar-toggle {
 		display: block;
 	}*/
+	.secheader h2 {
+    font-size: 18px;
+	}
 	div.primary {
 		max-width: 210px;
 	}
@@ -1056,6 +1065,18 @@ section.featured h3.slogan {
 	}
 	.kgrid-component#k-object {
 		background-position: 16px -3px;
+	}
+	.kgrid-component#k-library{
+			/*background-size: 480px 100px;*/
+			background-position: -246px 0px;
+	}
+	.kgrid-component#k-activator{
+			/*background-size: 510px 112px;*/
+			background-position: -510px 0px;
+	}
+	.kgrid-component#k-service{
+			/*background-size: 600px 120px;*/
+			background-position: -743px 0px;
 	}
 	.pad-bot-xs20{
 		padding-bottom: 20px;
