@@ -395,6 +395,8 @@ section#section-tech h3 {
 .secheader {
 
 	line-height: 60px;
+	margin-left:0px;
+	margin-right:0px;
 }
 .secheader h3 {
 	line-height: 2.9em;
@@ -1045,6 +1047,9 @@ section.featured h3.slogan {
 	}
 	.pad-right {
 		padding-right: 15px;
+	}
+	.pad-right-a {
+		padding-right: 0px;
 	}
 	.pad-right-c{
 		padding-right: 25px;
