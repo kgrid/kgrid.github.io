@@ -1,6 +1,5 @@
 (function ($) {
 
-		// $("html").niceScroll({cursorwidth: '10', zindex: 9999,cursorcolor: "#e7e7e7", cursorborder:"1px solid #e7e7e7", cursorborderradius: "10px",autohidemode: false, zindex: 999 });
 		$(window).scrollTop(100);
 		$(document).on('click', 'a[href^="#"]', function(event){
 		    event.preventDefault();
@@ -9,14 +8,7 @@
 		    }, 600);
 		});
 		$.force_appear();
-		// $('a[href^="#"]').on('click touchend', function(e) {
-		// 	$(".customizedanchor").removeClass("customizedanchor");
-		// 	var el = $(this);
-		// 	var link = el.attr('href');
-		// 	if(link!="#"){
-		// 		$(link).addClass("customizedanchor");
-		// 	}
-		// });
+
 		jQuery('.sidenav li:first-child').addClass('active');
 		$('.dropdown').on('show.bs.dropdown', function(e){
 		  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
