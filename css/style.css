@@ -193,6 +193,7 @@ a, a:hover, a:active, a:visited, a:focus {
 .pad-top55 {	padding-top:55px;}
 .pad-top80 {	padding-top: 80px;}
 .pad-top60 {	padding-top: 60px;}
+.pad-top65 {	padding-top:65px;}
 .pad-top100 {	padding-top: 100px;}
 /* bottom */
 .pad-bot0 {	padding-bottom: 0; }
@@ -366,6 +367,10 @@ right: -15px;
 }
 .component-title{
 	margin-bottom: 20px;
+}
+
+div.spacer {
+	height: 80px;
 }
 /*===========================
   --- Sections ----
@@ -628,7 +633,10 @@ section.featured {
 	background: #fff;
 	color: #fdfdfd;
 }
-
+section#section-main .container {
+	padding-top:0px;
+	padding-bottom:0px;
+}
 section.featured h1.slogan {
 	color: #656565;
 	line-height: 1.8em;
@@ -877,9 +885,6 @@ height:40px;
 	margin-bottom:20px;
 }
 
-.tool-detail0, .tool-detail {
-	padding-bottom: 60px;
-}
 /* ========================================
 Media queries
 ========================================= */
