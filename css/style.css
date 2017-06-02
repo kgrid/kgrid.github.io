@@ -107,6 +107,11 @@ a, a:hover, a:active, a:visited, a:focus {
 	outline: none;
 }
 
+ul.contact-list {
+	list-style: none;
+padding-left: 0px;
+margin-top: -10px;
+}
 /*==========================================================================
   Misc & Adjust
  ========================================================================== */
@@ -372,6 +377,19 @@ section#section-tech h3 {
 	border: none;
 			background-size:360px 80px;
 }
+.manual{
+	background-color:#fff;
+	background-image: none;
+	width: 80px;
+	height: 80px;
+	margin: 40px auto;
+	font-size:60px;
+	border-radius: 0px;
+	background-repeat: no-repeat;
+	border: none;
+			background-size:360px 80px;
+}
+
 .kgrid-component#k-object{
 		/*background-size:360px 80px;*/
 		background-position: 6px -3px;
