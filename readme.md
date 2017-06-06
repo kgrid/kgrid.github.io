@@ -104,8 +104,6 @@ If you will have multiple pages for the repository, a brief description can be a
 
 #### Step 3. Create additional pages
 
-## Markdown files
-
 You can add as many additional markdown files and organize them in subfolders as needed.
 
 At the beginning of the md file, make sure include the following segment for Jekyll build instruction
