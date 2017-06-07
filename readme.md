@@ -53,6 +53,7 @@ The file of `_config.yml` contains the configuration data for the site. A smaple
 title: KGRID REPO DOCUMENTATION
 author: KGrid Development Team
 email: dlhs.knowledge.grid@umich.edu
+multipage: true
 description: > # this means to ignore newlines until "baseurl:"
   Knowledge Grid Documents Cover Page
 
@@ -70,7 +71,7 @@ exclude:
 
 
 ```
-You will need to modify two parts in the file for your repository. `title` will show the text in the header nav bar; `description` will contain the text briefly describing the project. Both title and description will be used as front page if applicable. For the repos with only one markdown file, the customized layout will not have the side bar navigation.
+You will need to modify three parts in the file for your repository. `title` will show the text in the header nav bar; `multipage` will determine if the sidebar navigation is generated and displayed; `description` will contain the text briefly describing the project. Both title and description will be used as front page if applicable. For the repos with `multipage` set at `false`, the customized layout will not have the side bar navigation.
 
 The file of `index.md` will be the default landing page when needed and should remain as is.
 
@@ -111,7 +112,7 @@ At the beginning of the md file, make sure include the following segment for Jek
 ```
 ---
 layout: page
-title: Get Started
+navtitle: Get Started
 level: 1
 permalink: /getting_started/
 ---
@@ -119,7 +120,7 @@ permalink: /getting_started/
 
 `layout` should stay with `page`;
 
-`title` will supply the text used in the navigation menu for this page;
+`navtitle` will supply the text used in the navigation menu for this page;
 
 `level` indicates the indent level. 0 for no indent while higher number for more indent (currently 2 is the highest possible);
 
