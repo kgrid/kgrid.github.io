@@ -19,7 +19,7 @@
 
 ## Fedora Commons repositories
 
-**sandbox repo** (stable): https://dlhs-fedora-dev.med.umich.edu/fcrepo/rest
+**sandbox repo** (stable): https://dlhs-fedora.med.umich.edu/fcrepo/rest
   * contains all the objects used for demos
   * should be creating objects with naan = 99999? 67043? 
 
