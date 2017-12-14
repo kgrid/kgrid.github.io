@@ -1,3 +1,6 @@
+---
+layout: page
+---
 # Roadmap 2018
 
 ## Platform Products and Components (technical roadmap)
