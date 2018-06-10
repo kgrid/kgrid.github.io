@@ -1,12 +1,12 @@
 
 
-###Knowledge Object Developer
+### KGrid Knowledge Object Developer
 
 
-###KGrid Application Integrator
-As 
+### KGrid Application Integrator
 
+#### Deploying KGrid Activator
 
-###KGrid Core Platform Developer
+### KGrid Core Platform Developer
 
 - http://kgrid.org/kgrid-activator/
