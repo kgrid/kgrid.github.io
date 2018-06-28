@@ -10,7 +10,7 @@ If you are creating, altering or working with knowledge objects these guides cou
 
 ### KGrid Application Integrator
 If you are for integrating, maintianing and/or admistrating the activator or library the following guides will be useful
-*  [Deploying KGrid Activator](http://kgrid.org/kgrid-activator/02-deploy.html)
+*  [Deploying KGrid Activator](http://kgrid.org/kgrid-activator)
 
 ### KGrid Core Platform Developer
 If you are are contributing to the core KGrid components the following guides will be useful
