@@ -9,7 +9,7 @@ These guides will give you a quick start into the KGrid environment.  The guides
 
 If you are creating, altering or working with knowledge objects these guides could be useful.
 
-#### Command-line Tool Kit for Knowledge Object Development
+#### Command-line Tool Kit
 
 #### Knowledge Object Adapters
 Adapters provide a common interface to load & execute code. The KGrid Activator uses the adapters to provide access to an environment & a way to load KOs.
@@ -21,7 +21,7 @@ Adapters provide a common interface to load & execute code. The KGrid Activator 
 If you are for integrating, maintianing and/or admistrating the activator or library the following guides will be useful
 *  [Deploying KGrid Activator](http://kgrid.org/kgrid-activator)
 
-:pencil: Information about developing and building the activator component can be found @ KGrid Activator in [GitHub](https://github.com/kgrid/kgrid-activator)
+Information about developing and building the activator component can be found @ KGrid Activator in [GitHub](https://github.com/kgrid/kgrid-activator)
 
 
 ### KGrid Core Platform Developer
