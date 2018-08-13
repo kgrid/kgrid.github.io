@@ -50,7 +50,7 @@
 	// local scroll
 	 	jQuery('.navbar').localScroll({hash:true, offset: {top: 0},duration: 800, easing:'easeInOutExpo'});
 
-		jQuery('.navbar-nav>li:first-child').addClass('active');
+		// jQuery('.navbar-nav>li:first-child').addClass('active');
 
 		if (Modernizr.mq("screen and (max-width:1024px)")) {
 					jQuery("body").toggleClass("body");
