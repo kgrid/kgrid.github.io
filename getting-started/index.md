@@ -5,11 +5,8 @@ layout: page
 
 These guides will give you a quick start into the KGrid environment.  The guides are arranged based on KGrid personnas.
 
-### KGrid Knowledge Object Developer
+### [Getting Started Developing Knowledge Objects](./developing-kos)
 
-If you are creating, altering or working with knowledge objects these guides could be useful.  
-The [KGrid CLI](https://github.com/kgrid/kgrid-cli) makes it easy to get started as an knowledge 
-object development.
 
 ### KGrid Application Integrator
 
