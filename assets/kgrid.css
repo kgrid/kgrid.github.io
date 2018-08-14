@@ -68,3 +68,9 @@ ul#markdown-toc {
 ul#markdown-toc li {
   list-style: none;
 }
+
+.post-content > h2, h3, h4 {
+  margin-top: 1em; }
+.post-content > h2 {
+  border-bottom: 1px dotted;
+}
