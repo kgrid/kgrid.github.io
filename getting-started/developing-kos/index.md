@@ -4,7 +4,9 @@ layout: page
 
 # Getting Started Developing Knowledge Objects
 
-The Knowledge Grid consists of Libraries, Activators, and collections of Knowledge Objects. Knowledge Object (or KOs) are wrappers around a bit of code that implements some piece of computable biomedical knowledge.
+The **Knowledge Grid** consists of **Libraries**, **Activators**, and collections of **Knowledge Objects**. Knowledge Objects (or **KOs**) are wrappers around a bit of code that implements some piece of computable biomedical knowledge. The **Library** is a place for keeping KOs once they are ready for use. **Activators** bring to life the KOs in the Knowledge Grid.
+
+We will focus on **KOs** and **Activators**  here, and you'll be working with code, metadata files, programming editors, and the command line to test, change, and create new **Knowledge Objects**.  
 
 This guide starts from simple KO examples and shows how to extend, build, test, and deploy them. We will install an Activator for deploying and running KOs, download example KOs and add them to the Activator's "shelf", make changes, and see the results in the running Activator. We will also talk about how to save our new versions of a KO to a Kgrid Library. 
                                                                                              
