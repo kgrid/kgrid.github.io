@@ -2,22 +2,22 @@
 layout: page
 ---
 
-# Getting Started Developing Knowledge Objects
+## Getting Started Developing Knowledge Objects
 
-The **Knowledge Grid** consists of **Libraries**, **Activators**, and collections of **Knowledge Objects**. Knowledge Objects (or **KOs**) are wrappers around a bit of code that implements some piece of computable biomedical knowledge. The **Library** is a place for keeping KOs once they are ready for use. **Activators** bring to life the KOs in the Knowledge Grid.
+The **Knowledge Grid** consists of **Libraries**, **Activators**, and collections of **Knowledge Objects**. Knowledge Objects (or **KOs**) are wrappers around a bit of code that implements some piece of computable biomedical knowledge. The **Library** is a place for keeping *KOs* once they are ready for use. **Activators** bring to life the KOs in the Knowledge Grid.
 
-We will focus on **KOs** and **Activators**  here, and you'll be working with code, metadata files, programming editors, and the command line to test, change, and create new **Knowledge Objects**.  
+We will focus on **KOs** and **Activators**  here, and you'll be working with Javascript code, metadata files, programming editors, and the command line to test, change, and create new **Knowledge Objects**.  
 
-This guide starts from simple KO examples and shows how to extend, build, test, and deploy them. We will install an Activator for deploying and running KOs, download example KOs and add them to the Activator's "shelf", make changes, and see the results in the running Activator. We will also talk about how to save our new versions of a KO to a Kgrid Library. 
+This guide starts from simple KO examples and shows how to extend, build, test, and deploy them. We will install an Activator for deploying and running KOs, download example KOs and add them to the Activator's "shelf", make changes, and see the results in the running Activator. We will also talk about how to [save our new versions of a KO to a Kgrid Library](managing-kos-in-a-library). 
                                                                                              
 
-# Quick Start
+## Quick Start
 
-Download and install an [Activator](http://kgrid.org/kgrid-activator/). The Activator is a framwork for "activator" and exposing the code in a KO as a simple RESTful API. 
+Download and install an [Activator](http://kgrid.org/kgrid-activator/). The Activator is a framework for "activation" and exposing the code in a KO as a simple RESTful API. 
 
 The Activator getting started guide includes testing deploying using a "hello world" KO. 
 
-# Introduction to Knowledge Objects
+## Introduction to Knowledge Objects
 
 Knowledge Objects themselves are a simple collection of files and metadata. The core elements are **KO-level metadata**, **model metadata**, a **service description**, and **the code** itself. For the simple file system shelf we will be using with the Activator everything is in files and folders, the metadata is in JSON format, the Service Description is a YAML formatted file, and the code is in a Javascript file. 
 
@@ -49,7 +49,7 @@ Navigate to the `v0.0.1` directory and open up the `metadata.json` file. It'll l
 }
 ```
 
-The `"model": "model"` element points to the folder containing the codefile(s), and the ` "service":"model/service/servicedescriptor.yaml"` points the the service description file.
+The `"model": "model"` element points to the folder containing the code file(s), and the `"service":"model/service/servicedescriptor.yaml"` points to the service description file.
 
 In the `/model` folder there is an additional `metadata.json` file containing details for the Activator on how to deploy and activate the code as REST endpoints (specified in the `servicedescriptor.yaml` file in the `service` directory.):
 
@@ -80,25 +80,30 @@ try pasting this into your browser:
 
 ```http request
 https://editor.swagger.io/?url=http://localhost:8080/hello/world/v0.0.1/service
-```
+```   
 
-# Next Steps
+## Next Steps
 
-## Change "Hello, world!" to "Goodbye, world!"
+> **Developing _real_ Knowledge Objects**
+>
+>In a real world scenario you would be keeping your KO source code (metadata, service descriptions, etc.) in a source control system like GitHub, you'd be locking versions when they are deposited in a Library, you'd testing and committing changes over time and deciding when to release a newer version to the Knowledge Grid.
 
-## Developing _real_ Knowledge Objects
+### Change "Hello, world!" to "Hello, galaxy!"
 
-In a real world scenario you would be keeping your KO source code (metadata, service descriptions, etc.) in a source control system like GitHub, you'd be locking versions when they are deposited in a Library, you'd testing and committing changes over time and deciding when to release a newer version to the Knowledge Grid.
+> Limitations of the current Javascript environment
 
-# More things to try
+## More things to try
 
-## Change the service description
+### Change the service description
 
-### Use a different endpoint name
+#### Use a different endpoint name
 
 ...
 
-### Change the input and output schema
+#### Change the input and output schema
 
-## Change the metadata for your object
+### Change the metadata for your object
 
+### Create a new version
+
+> Some additional tools to try (testing frameworks, jjs, git, linking objects, kgrid cli)
