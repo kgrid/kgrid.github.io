@@ -1,16 +1,16 @@
 ## We're Hiring!
 
-### *Great team, new stuff, do cool things, ~~free~~ cheap lunch!*
+#### *Great team, new stuff, do cool things, ~~free~~ cheap lunch!*
 
 
-#### Senior Software Developer
+### Senior Software Developer
 
 
 This position is targeted at Senior Developers with broad experience, good coding skills, and pairing experience (or the right person with less experience who can learn and grow). 
 
 (The actual [job posting](http://careers.umich.edu/job_detail/161713/app_programmeranalyst_sr) is here. Use that link to apply. We're happy to answer questions and talk informally. You can reach us at [kgrid-jobs@umich.edu](mailto:kgrid-jobs@umich.edu).)
 
-### Who we are & what we are looking for
+#### Who we are & what we are looking for
 
 We are the [Department of Learning Health Sciences, Division of Learning and Knowledge Systems](https://medicine.umich.edu/dept/lhs/research/learning-knowledge-systems-research). The project we are working on is called the Knowledge Grid ([kgrid.org](https://kgrid.org)). We are effectively an academic startup, trying to change the world, with talented people and cool technology in the works. Our team is a small (two pizza) team of developers, UX designers, and information scientists.
 
