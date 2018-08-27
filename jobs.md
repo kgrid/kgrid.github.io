@@ -18,7 +18,7 @@ We are highly collaborative and rely on good pairing and team skills, and a bit 
 
 The Knowledge Grid is a platform-as-a-service designed to make computable biomedical knowledge significantly easier to create, organize, and apply. Our customers are various organizations, institutions, and service providers who will use our platform to create, organize, and deliver computable biomedical knowledge. 
 
-That said, we do develop lots of prototype clients and use the Kgrid platform outselves to help demo, promote, and train our customers. 
+That said, we do develop lots of prototype clients and use the Kgrid platform ourselves to help demo and promote our product, and to train users and service providers. 
  
 #### The technology
 
@@ -28,5 +28,5 @@ The component APIs are mostly a small set of Spring Boot-based microservices—l
 
 In short, it is a large, open source, microservice-based, heterogeneous technology stack, with evolving feature set, and a strategic dependence on developing both a large developer community and connections to a wide variety of health-related partners.
 
-**If you think you might be a good fits for us, or just want to learn more** contact us at [kgrid-jobs@umich.edu](mailto:kgrid-jobs@umich.edu) or apply at [the University of Michigan career site](http://careers.umich.edu/job_detail/161713/app_programmeranalyst_sr)
+**If you think you might be a good fit for us, or just want to learn more** contact us at [kgrid-jobs@umich.edu](mailto:kgrid-jobs@umich.edu) or apply at [the University of Michigan career site](http://careers.umich.edu/job_detail/161713/app_programmeranalyst_sr).
 
