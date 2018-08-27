@@ -1,8 +1,12 @@
-### We're Hiring!
+## We're Hiring!
+
+### *Great team, new stuff, do cool things, ~~free~~ cheap lunch!*
+
 
 #### Senior Software Developer
 
-This position is targeted at Senior Developers with broad experience, and good coding and pairing skills (or the right person with less experience who can learn and grow). 
+
+This position is targeted at Senior Developers with broad experience, good coding skills, and pairing experience (or the right person with less experience who can learn and grow). 
 
 (The actual [job posting](http://careers.umich.edu/job_detail/161713/app_programmeranalyst_sr) is here. Use that link to apply. We're happy to answer questions and talk informally. You can reach us at [kgrid-jobs@umich.edu](mailto:kgrid-jobs@umich.edu).)
 
@@ -10,7 +14,7 @@ This position is targeted at Senior Developers with broad experience, and good c
 
 We are the [Department of Learning Health Sciences, Division of Learning and Knowledge Systems](https://medicine.umich.edu/dept/lhs/research/learning-knowledge-systems-research). The project we are working on is called the Knowledge Grid ([kgrid.org](https://kgrid.org)). We are effectively an academic startup, trying to change the world, with talented people and cool technology in the works. Our team is a small (two pizza) team of developers, UX designers, and information scientists.
 
-At the moment, we’re keen on finding another full-stack Java developer, especially if you've got experience with testing,  devops goodness, cloud and container deployment, and maybe some front-end/SPA/Javascript/Node.js under your belt. Youll be slinging lots of code, designing APIs and wiring up a variety of heterogeneous technologies. 
+At the moment, we’re keen on finding another full-stack Java developer, especially if you've got experience with testing, devops goodness, cloud and container deployment, and maybe some front-end/SPA/Javascript/Node.js under your belt. You'll be slinging lots of code, designing APIs and wiring up a variety of heterogeneous technologies. 
  
 We are highly collaborative and rely on good pairing and team skills, and a bit of deep thinking about the hard problems we are trying to solve. We learn lots of new things.
  
@@ -22,7 +26,7 @@ That said, we do develop lots of prototype clients and use the Kgrid platform ou
  
 #### The technology
 
-One part of the work we do is developing models and standards, the base platform, and reference implementations for the services. The reference components and core infrastructure platform are written in Java, with a couple of significant front-end pieces written in HTML/Javascript/reactive frameworks. There is also a significant chunk of technology required for the backend repository, based on the RDF container/linked-data Fedora Commons project. No relational models here, it's graph-based, triple-store, SOLR-indexed resources underneath the Java API layer.
+One part of the work we do is developing models and standards. The base platform provides reference implementations of standards in a set of services. The reference components and core infrastructure platform are written in Java, with a couple of significant front-end pieces written in HTML/Javascript/reactive frameworks. There is also a sizeable chunk of technology required for the backend repository, based on the RDF container/linked-data Fedora Commons project. No relational models here, it's graph-based, triple-store, SOLR-indexed resources underneath the Java API layer.
  
 The component APIs are mostly a small set of Spring Boot-based microservices—library, publisher, activator, etc. These microservices and APIs are almost finished being split out from an original prototype monolith application. 
 
