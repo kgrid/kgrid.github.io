@@ -4,11 +4,11 @@
 
 Rather than pushing job description boilerplate, lets just run down some of the basics. This position is targeted at Senior Developers with broad experience, and good coding and pairing skills (or the right person with less experience who can learn and grow). 
 
-(The actual [Job posting](http://careers.umich.edu/job_detail/161713/app_programmeranalyst_sr) is here. Use that link to apply. We're happy to answer questions and talk informally. You can reach us at [kgrid-jobs@umich.edu](mailto:kgrid-jobs@umich.edu).)
+(The actual [job posting](http://careers.umich.edu/job_detail/161713/app_programmeranalyst_sr) is here. Use that link to apply. We're happy to answer questions and talk informally. You can reach us at [kgrid-jobs@umich.edu](mailto:kgrid-jobs@umich.edu).)
 
 ### Who we are & what we are looking for
 
-We are the Department of Learning Health Sciences, Division of Learning and Knowledge Systems, and the project we are working on is called the Knowledge Grid ([kgrid.org](https://kgrid.org)). We are effectively an academic startup, trying to change the world, with talented people and cool technology in the works. Our team is a small (two pizza) team of developers, UX designers, and information scientists.
+We are the [Department of Learning Health Sciences, Division of Learning and Knowledge Systems](https://medicine.umich.edu/dept/lhs/research/learning-knowledge-systems-research), and the project we are working on is called the Knowledge Grid ([kgrid.org](https://kgrid.org)). We are effectively an academic startup, trying to change the world, with talented people and cool technology in the works. Our team is a small (two pizza) team of developers, UX designers, and information scientists.
 
 At the moment, we’re keen on finding another full-stack Java developer, especially if you've got experience with testing,  devops goodness, cloud and container deployment, and maybe some front-end/SPA/Javascript/Node.js under your belt. Youll be slinging lots of code, designing APIs and wiring up a variety of heterogeneous technologies. 
  
