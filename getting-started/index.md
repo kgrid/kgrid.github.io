@@ -5,8 +5,6 @@ layout: page
 
 These guides will give you a quick start into the KGrid environment.  The guides are arranged based on KGrid persona.
 
-![](../assets/img/persona.png)
-
 ### Knowledge Object Developer
 
 If you are interesting in understanding the anatomy of Knowledge Objects and how to develop new
