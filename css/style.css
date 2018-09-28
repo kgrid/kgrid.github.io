@@ -563,7 +563,7 @@ section > .container{
 	background: transparent;
 }
 .navbar-nav {
-	float: right;
+	/* float: right; */
 	margin-bottom: 0;
 	padding-bottom:0;
 }
