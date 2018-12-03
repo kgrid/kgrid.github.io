@@ -113,16 +113,26 @@ https://editor.swagger.io/?url=http://localhost:8080/hello/world/v0.0.1/service
 
 Take a look at the objects in the [example-collection](https://github.com/kgrid-objects/example-collection) and find the `new-hello` object in the `collection` directory.
 
-There will be three version of a KO from very simple to complex. All the objects come with a `package.json` file and scripts to build, test and package the KO for distribution to the Knowledge Grid.
+There will be three versions of a KO from very simple to complex. All the objects come with a `package.json` file and scripts to build, test and package the KO for distribution to the Knowledge Grid.
 
-The first contains a single function called `welcome` that accepts a name property, `{name: "Bob"}`, and returns a greeting, `Welcome to the Knowledge Grid, Bob`. This KO is written in ES5 to be deployable in teh Activator's Nashorn script engine.
+**The simple KO** contains a single function called `welcome` that accepts a name property, `{name: "Bob"}`, and returns a greeting, `Welcome to the Knowledge Grid, Bob`. This KO is written in ES5 to be deployable in teh Activator's Nashorn script engine.
 
-The second builds the same object, using Babel and Webpack, into a bundled artifact. The `index.js` file is written in ES6, transpiled to ES5 using Babel, and bundled into a `main.js` file in the `dist` directory. 
+**The second KO** builds the same object, using Babel and Webpack, into a bundled artifact. The `index.js` file is written in ES6, transpiled to ES5 using Babel, and bundled into a `main.js` file in the `dist` directory. 
 
-The third builds a somewhat more complex object and bundles all the necessary files into a single Javascipt file, again `main.js` so that the `npm run package` command can zip it up into a distributable KO.
+**The complex, multifile KO** builds a somewhat more advanced object from multiple source files and bundles all the necessary files into a single Javascipt file, again `main.js`, so that the `npm run package` command can zip it up into a distributable KO.
 
 ### Good practices
+
+Coming soon
  
 ### Gotchas
 
+Coming soon
+
 ### Tests
+
+Coming soon
+
+#### Running in Nashorn vs. running in Nodejs
+
+Coming soon
