@@ -9,7 +9,11 @@ If you would like to contribute to the core KGrid components the following will 
 * [KGrid Adapter](http://kgrid.org/kgrid-adapter/)
 * [KGrid Self](http://kgrid.org/kgrid-shelf/)
 
-### Delivery Pipeline
+### Usefull Links
+* [KGrid Developer Wiki](https://github.com/kgrid/kgrid.github.io/wiki)
+
+### KGrid Instances
+There are a few instances in our delivery pipeline, each stage in the sequence tests the code from a different perspective. Each successive stage becomes more production-like in its testing and provides more confidence in the code as it progresses through the pipeline.
 
 #### Integration (Heroku)
 The goal of the Integration environment is to combine and validate the work of the entire project team so 
@@ -18,7 +22,6 @@ CircleCI deploys to the heroku environment with each commit.
 
 * [Library](https://kgrid-library.herokuapp.com/)
 * [Activator](https://kgrid-activator.herokuapp.com)
-
 
 Further details of the Test (Hippo) instance can be found at [Integration (Heroku)](https://github.com/kgrid/kgrid.github.io/wiki/test)
 
@@ -48,3 +51,5 @@ The goal of the Reference environment is to showcase KGrid application framework
 
 
 Further details of the Test (Hippo) instance can be found at [Reference)](https://github.com/kgrid/kgrid.github.io/wiki/Reference)
+
+
