@@ -21,7 +21,7 @@ building the activator component can be found at KGrid Activator in [GitHub](htt
 * [KGrid Library](http://kgrid.org/kgrid-library).  Information about developing and 
 building the activator component can be found at KGrid Library in [GitHub](https://github.com/kgrid/kgrid-library)
 
-### Knowledge Core Platform Developer
+### Knowledge Grid Core Platform Developer
 
-If you would like to contribute to the core KGrid components see [Knowledge Core Platform Developer](./core-developers)
+If you would like to contribute to the core KGrid components see [Knowledge KGrid Core Platform Developer](./core-developers)
 
