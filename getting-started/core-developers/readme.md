@@ -7,7 +7,7 @@ If you would like to contribute to the core KGrid components the following will 
 * [KGrid Libary](http://kgrid.org/kgrid-library/)
 * [KGrid Activator](http://kgrid.org/kgrid-activator/)
 * [KGrid Adapter](http://kgrid.org/kgrid-adapter/)
-* [KGrid Self](http://kgrid.org/kgrid-shelf/)
+* [KGrid Self](https://github.com/kgrid/kgrid-shelf)
 
 ### Usefull Links
 * [KGrid Developer Wiki](https://github.com/kgrid/kgrid.github.io/wiki)
