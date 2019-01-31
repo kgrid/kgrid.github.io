@@ -32,7 +32,7 @@ The Knowledge Object metadata is JSON-LD defined by Knowledge Object Implementat
 The Knowledge Object Implementation Ontology (KOIO) is a formal, standardized representational 
 framework spanning what exists and is implemented in the form of Knowledge Objects.  
                                                             
-KOIO is defined by KOIO JSON-LD Context (, which has these elements:
+KOIO is defined by KOIO JSON-LD Context, which has these elements:
 
 - [Knowledge Object](http://kgrid.org/koio/contexts/knowledgeobject.jsonld) - is an Information Artifact capable of serving a role as the atomic unit of 
 computable knowledge and therefore comprised of at least one Knowledge Object Implementation. 
