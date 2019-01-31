@@ -34,10 +34,10 @@ framework spanning what exists and is implemented in the form of Knowledge Objec
                                                             
 KOIO is defined by KOIO JSON-LD Context (, which has these elements:
 
-- [Knowledge Object]("http://kgrid.org/koio/contexts/knowledgeobject.jsonld) - is an Information Artifact capable of serving a role as the atomic unit of 
+- [Knowledge Object](http://kgrid.org/koio/contexts/knowledgeobject.jsonld) - is an Information Artifact capable of serving a role as the atomic unit of 
 computable knowledge and therefore comprised of at least one Knowledge Object Implementation. 
 
-- [Knowledge Object Implementation]("http://kgrid.org/koio/contexts/implementation.jsonld) - an Information Artifact that describes a functional instance of the Knowledge Object. 
+- [Knowledge Object Implementation](http://kgrid.org/koio/contexts/implementation.jsonld) - an Information Artifact that describes a functional instance of the Knowledge Object. 
     - Implementation Service Specification is an Information Artifact that describes a computational 
     service that is enabled by a KnowledgeObject
     - Implementation Deployment Specification** a relation that holds between a whole KnowledgeObject 
