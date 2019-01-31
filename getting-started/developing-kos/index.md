@@ -40,15 +40,15 @@ computable knowledge and therefore comprised of at least one Knowledge Object Im
 - [Knowledge Object Implementation](http://kgrid.org/koio/contexts/implementation.jsonld) - an Information Artifact that describes a functional instance of the Knowledge Object. 
     - Implementation Service Specification is an Information Artifact that describes a computational 
     service that is enabled by a KnowledgeObject
-    - Implementation Deployment Specification** a relation that holds between a whole KnowledgeObject 
+    - Implementation Deployment Specification a relation that holds between a whole KnowledgeObject 
     and its Deployment Instruction parts
     - Implementation Payload - Computable Knowledge Resource represented in manner that is machine-interpretable 
     
 For the simple file system shelf we will be using with the Activator everything is in files and folders, 
-the metadata is in JSON format, the Service and Deployment Specification is in YAML formatted file, and the code is in a Javascript file. 
+the metadata is in JSON format, the Service and Deployment Specification are in YAML formatted file, and the code is in a Javascript file. 
 
 Each version of a KO is uniquely identified by it's Ark Id (naan-name) and it's Implementation identifier. 
-So, in our file system layout we will start from `name-name/version` (in our **hello-world** example:
+So, in our file system layout we will start from `name-name/implementation` (in our **hello-world** example:
  inside `../shelf` we find `hello-world/koio.v1`)
 
 ```
