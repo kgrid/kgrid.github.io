@@ -25,24 +25,24 @@ The Activator getting started guide includes testing deploying using a "hello wo
 ## Introduction to Knowledge Objects
 
 Knowledge Objects themselves are a simple collection of files and metadata. The core elements are 
-**Knowledge Object**, **Knowledge Object Implementation**, a **Implementation Service Specification**, 
-Implementation Deployment Specification and **the code** itself. 
+_Knowledge Object_, _Knowledge Object Implementation,_ a _Implementation Service Specification_, 
+_Implementation Deployment Specification_ and the _code_ itself. 
 
 The Knowledge Object metadata is JSON-LD defined by Knowledge Object Implementation Ontology (KOIO). 
 The Knowledge Object Implementation Ontology (KOIO) is a formal, standardized representational 
 framework spanning what exists and is implemented in the form of Knowledge Objects.  
                                                             
-KOIO is defined by KOIO JSON-LD Context which has these elements:
+KOIO is defined by KOIO JSON-LD Context (, which has these elements:
 
-- **Knowledge Object** - is an Information Artifact capable of serving a role as the atomic unit of 
+- [Knowledge Object]("http://kgrid.org/koio/contexts/knowledgeobject.jsonld) - is an Information Artifact capable of serving a role as the atomic unit of 
 computable knowledge and therefore comprised of at least one Knowledge Object Implementation. 
 
-- **Knowledge Object Implementation** - an Information Artifact that describes a functional instance of the Knowledge Object. 
-    - **Implementation Service Specification** is an Information Artifact that describes a computational 
+- [Knowledge Object Implementation]("http://kgrid.org/koio/contexts/implementation.jsonld) - an Information Artifact that describes a functional instance of the Knowledge Object. 
+    - Implementation Service Specification is an Information Artifact that describes a computational 
     service that is enabled by a KnowledgeObject
-    - **Implementation Deployment Specification** a relation that holds between a whole KnowledgeObject 
+    - Implementation Deployment Specification** a relation that holds between a whole KnowledgeObject 
     and its Deployment Instruction parts
-    - **Implementation Payload** - Computable Knowledge Resource represented in manner that is machine-interpretable 
+    - Implementation Payload - Computable Knowledge Resource represented in manner that is machine-interpretable 
     
 For the simple file system shelf we will be using with the Activator everything is in files and folders, 
 the metadata is in JSON format, the Service and Deployment Specification is in YAML formatted file, and the code is in a Javascript file. 
@@ -109,7 +109,6 @@ It'll look something like this:
 These four files are the core of the Knowledge Object. Together they allow the Activator to create a 
 REST endpoint that can accept and process messages using the code that implements a particular model of computable biomedical knowledge.
 
-> You don't have to organize your code and service description in folders like `../model/service` or `../model/resource`. Within the `/model` folder you can organize however you want, as long as the metadata paths for `"service": ` and `"resource: ` point to the right files.
 
 ### The standard KO result 
 
