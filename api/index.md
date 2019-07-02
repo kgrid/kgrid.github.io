@@ -8,8 +8,9 @@ You can use the KGrid API to evaluate the status of the Activator or Library, im
 discovery Knowledge Object services and interact with Knowledge Object services.
 
 ### KGrid Activator API
-KGrid Activator API provides access to the Knowledge Object Endpoints, Knowledge Objects and
-KGrid Activator server endpoints. The API is defined in a OpenApi specification and can accessed at
+KGrid Activator API provides access to the [Knowledge Object Endpoints](https://kgrid.org/api/swagger/#/Knowledge%20Object%20Endpoint),
+[Knowledge Objects](https://kgrid.org/api/swagger/#/Knowledge%20Object%20Read/Update/Delete) and
+[KGrid Activator server endpoints](https://kgrid.org/api/swagger/#/KGrid%20Activator%20Server). The API is defined in a OpenApi specification and can accessed at
 [KGrid Activator API](./swagger)
 
 ### KGrid Library API
