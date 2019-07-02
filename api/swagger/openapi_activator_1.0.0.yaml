@@ -10,17 +10,17 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.0
 servers:
-- url: https://kgrid-activator.herokuapp.com
-  description: Integration Activator
-- url: https://monkey-activator.kgrid.org
-  description: Sandbox Activator
-- url: http://localhost:8080
-  description: Local Instance
+  - url: https://kgrid-activator.herokuapp.com
+    description: Integration Activator
+  - url: https://monkey-activator.kgrid.org
+    description: Sandbox Activator
+  - url: http://localhost:8080
+    description: Local Instance
 paths:
   /health:
     get:
       tags:
-      - KGrid Activator Server
+        - KGrid Activator Server
       summary: Returns health of the KGrid Activator
       description: |
         Returns a collection of endpoints
@@ -36,7 +36,7 @@ paths:
   /activate:
     get:
       tags:
-      - KGrid Activator Server
+        - KGrid Activator Server
       summary: Finds all knowledge object endpoints
       description: |
         Returns a collection of endpoints
@@ -52,7 +52,7 @@ paths:
   /info:
     get:
       tags:
-      - KGrid Activator Server
+        - KGrid Activator Server
       summary: Finds all knowledge object endpoints
       description: |
         Returns a collection of endpoints
@@ -68,7 +68,7 @@ paths:
   /endpoints:
     get:
       tags:
-      - Knowledge Object Endpoint
+        - Knowledge Object Endpoint
       summary: Finds all knowledge object endpoint resources
       description: |
         Returns a collection of endpoints
@@ -84,48 +84,48 @@ paths:
   /endpoints/{naan}/{name}/{implementation}/{endpoint}:
     get:
       tags:
-      - Knowledge Object Endpoint
+        - Knowledge Object Endpoint
       summary: Finds a knowledge object's endpoint resource
       description: |
         Returns the Endpoint Resource which has access to the knowledge object implementation, the service description in the form of an Open Api specification, etc
       operationId: findkoendpoint
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
-      - name: implementation
-        in: path
-        description: Specific Implementation of the KO
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: v0.1.0
-      - name: endpoint
-        in: path
-        description: Specific endpoint path as defined in the OpenApi spec
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: welcome
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
+        - name: implementation
+          in: path
+          description: Specific Implementation of the KO
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: v0.1.0
+        - name: endpoint
+          in: path
+          description: Specific endpoint path as defined in the OpenApi spec
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: welcome
       responses:
         200:
           description: KO Endpoint
@@ -137,48 +137,48 @@ paths:
   /{naan}/{name}/{implementation}/{endpoint}:
     post:
       tags:
-      - Knowledge Object Endpoint
+        - Knowledge Object Endpoint
       summary: Executes the service provide by the Knowledge Object Implementation
       description: |
         Executes the service provide by the Knowledge Object Implementation as defined in the Knowledge Object Implementation’s Open Api specification
       operationId: serverendpoint
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
-      - name: implementation
-        in: path
-        description: Specific Implementation of the KO
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: v0.1.0
-      - name: endpoint
-        in: path
-        description: Specific endpoint path as defined in the OpenApi spec
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: welcome
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
+        - name: implementation
+          in: path
+          description: Specific Implementation of the KO
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: v0.1.0
+        - name: endpoint
+          in: path
+          description: Specific endpoint path as defined in the OpenApi spec
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: welcome
       responses:
         200:
           description: KO Endpoint
@@ -190,7 +190,7 @@ paths:
   /kos:
     get:
       tags:
-      - Knowledge Object Read/Update/Delete
+        - Knowledge Object Read/Update/Delete
       summary: Finds all knowledge objects
       description: |
         Returns a collection of knowledge objects in the from of a JSON array. The JSON
@@ -213,11 +213,11 @@ paths:
                     description: 'Test Hello World '
                     keywords: test hello world
                     hasImplementation:
-                    - hello-world/v0.1.0
-                    - hello-world/v0.2.0
-                    - hello-world/v0.3.0
+                      - hello-world/v0.1.0
+                      - hello-world/v0.2.0
+                      - hello-world/v0.3.0
                     '@context':
-                    - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                      - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
                   ark:/score/calc:
                     '@id': score-calc
                     '@type': koio:KnowledgeObject
@@ -227,17 +227,17 @@ paths:
                     contributors: KGRID TEAM
                     description: SCORE risk calculation.
                     citations:
-                    - https://academic.oup.com/eurheartj/article/24/11/987/427645
+                      - https://academic.oup.com/eurheartj/article/24/11/987/427645
                     keywords: SCORE, ten-year, Cardiovascular risk, calculation
                     hasImplementation:
-                    - score-calc/v0.1.0
-                    - score-calc/v0.2.0
-                    - score-calc/v0.3.0
+                      - score-calc/v0.1.0
+                      - score-calc/v0.2.0
+                      - score-calc/v0.3.0
                     '@context':
-                    - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                      - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
     post:
       tags:
-      - Knowledge Object Import
+        - Knowledge Object Import
       summary: Imports a packaged Knowledge Object as a zip file
       description: Takes a packaged Knowledge Object as a zip file in a ko form field
       operationId: depositKnowledgeObjectUsingPOST
@@ -245,7 +245,7 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/body'
+              $ref: '#/components/schemas/importKO'
       responses:
         201:
           description: Created
@@ -258,29 +258,29 @@ paths:
   /kos/{naan}/{name}:
     get:
       tags:
-      - Knowledge Object Read/Update/Delete
-      - Knowledge Object Export
+        - Knowledge Object Read/Update/Delete
+        - Knowledge Object Export
       summary: Find Knowledge Object based on
       operationId: findko
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
       responses:
         200:
           description: OK
@@ -290,19 +290,8 @@ paths:
                 type: object
                 format: json
                 example:
-                  '@id': hello-world
-                  '@type': koio:KnowledgeObject
-                  identifier: ark:/hello/world
-                  title: Hello World Title
-                  contributors: Kgrid Team
-                  description: 'Test Hello World '
-                  keywords: test hello world
-                  hasImplementation:
-                  - hello-world/v0.1.0
-                  - hello-world/v0.2.0
-                  - hello-world/v0.3.0
-                  '@context':
-                  - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                  KnowledgeObject:
+                    $ref: '#/components/examples/KnowledgeObject'
             application/zip:
               schema:
                 type: string
@@ -313,28 +302,28 @@ paths:
           description: Unexpected error.
     put:
       tags:
-      - Knowledge Object Read/Update/Delete
+        - Knowledge Object Read/Update/Delete
       summary: Update Knowledge Object
       operationId: updateko
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
       requestBody:
         description: Knowledge Object
         content:
@@ -342,19 +331,8 @@ paths:
             schema:
               type: object
               example:
-                '@id': hello-world
-                '@type': koio:KnowledgeObject
-                identifier: ark:/hello/world
-                title: Hello World Title
-                contributors: Kgrid Team
-                description: 'Test Hello World '
-                keywords: test hello world
-                hasImplementation:
-                - hello-world/v0.1.0
-                - hello-world/v0.2.0
-                - hello-world/v0.3.0
-                '@context':
-                - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                KnowledgeObject:
+                  $ref: '#/components/examples/KnowledgeObject'
         required: true
       responses:
         200:
@@ -365,43 +343,32 @@ paths:
                 type: object
                 format: jspn
                 example:
-                  '@id': hello-world
-                  '@type': koio:KnowledgeObject
-                  identifier: ark:/hello/world
-                  title: Hello World Title
-                  contributors: Kgrid Team
-                  description: 'Test Hello World '
-                  keywords: test hello world
-                  hasImplementation:
-                  - hello-world/v0.1.0
-                  - hello-world/v0.2.0
-                  - hello-world/v0.3.0
-                  '@context':
-                  - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                  KnowledgeObject:
+                    $ref: '#/components/examples/KnowledgeObject'
     delete:
       tags:
-      - Knowledge Object Read/Update/Delete
+        - Knowledge Object Read/Update/Delete
       summary: Delete Knowledge Object
       operationId: deleteko
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
       responses:
         200:
           description: OK
@@ -411,54 +378,44 @@ paths:
                 type: object
                 format: json
                 example:
-                  '@id': hello-world
-                  '@type': koio:KnowledgeObject
-                  identifier: ark:/hello/world
-                  title: Hello World Title
-                  contributors: Kgrid Team
-                  description: 'Test Hello World '
-                  keywords: test hello world
-                  hasImplementation:
-                  - hello-world/v0.1.0
-                  - hello-world/v0.2.0
-                  - hello-world/v0.3.0
-                  '@context':
-                  - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                  KnowledgeObject:
+                    $ref: '#/components/examples/KnowledgeObject'
+
   /kos/{naan}/{name}/{implementation}:
     get:
       tags:
-      - Knowledge Object Implementation Read/Update/Delete
-      - Knowledge Object Export
+        - Knowledge Object Implementation Read/Update/Delete
+        - Knowledge Object Export
       summary: Find Knowledge Object based on
       operationId: findkoimplementation
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
-      - name: implementation
-        in: path
-        description: Specific Implementation of the KO
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: v0.1.0
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
+        - name: implementation
+          in: path
+          description: Specific Implementation of the KO
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: v0.1.0
       responses:
         200:
           description: OK
@@ -468,56 +425,45 @@ paths:
                 type: object
                 format: json
                 example:
-                  '@id': hello-world
-                  '@type': koio:KnowledgeObject
-                  identifier: ark:/hello/world
-                  title: Hello World Title
-                  contributors: Kgrid Team
-                  description: 'Test Hello World '
-                  keywords: test hello world
-                  hasImplementation:
-                  - hello-world/v0.1.0
-                  - hello-world/v0.2.0
-                  - hello-world/v0.3.0
-                  '@context':
-                  - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                  KnowledgeObjectImplementation:
+                    $ref: '#/components/examples/KnowledgeObjectImplementation'
             application/zip:
               schema:
                 type: string
                 format: binary
     put:
       tags:
-      - Knowledge Object Implementation Read/Update/Delete
+        - Knowledge Object Implementation Read/Update/Delete
       summary: Update Knowledge Object
       operationId: updatekoimplementation
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
-      - name: implementation
-        in: path
-        description: Specific Implementation of the KO
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: v0.1.0
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
+        - name: implementation
+          in: path
+          description: Specific Implementation of the KO
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: v0.1.0
       requestBody:
         description: Knowledge Object
         content:
@@ -525,14 +471,8 @@ paths:
             schema:
               type: object
               example:
-                '@id': v0.1.0
-                '@type': koio:Implementation
-                identifier: ark:/hello/world/v0.1.0
-                title: Implementation koio v1 of Hello World
-                hasServiceSpecification: v0.1.0/service.yaml
-                hasPayload: v0.1.0/welcome.js
-                '@context':
-                - http://kgrid.org/koio/contexts/implementation.jsonld
+                KnowledgeObjectImplementation:
+                  $ref: '#/components/examples/KnowledgeObjectImplementation'
         required: true
       responses:
         200:
@@ -543,47 +483,41 @@ paths:
                 type: object
                 format: json
                 example:
-                  '@id': v0.1.0
-                  '@type': koio:Implementation
-                  identifier: ark:/hello/world/v0.1.0
-                  title: Implementation koio v1 of Hello World
-                  hasServiceSpecification: v0.1.0/service.yaml
-                  hasPayload: v0.1.0/welcome.js
-                  '@context':
-                  - http://kgrid.org/koio/contexts/implementation.jsonld
+                  KnowledgeObjectImplementation:
+                    $ref: '#/components/examples/KnowledgeObjectImplementation'
     delete:
       tags:
-      - Knowledge Object Implementation Read/Update/Delete
+        - Knowledge Object Implementation Read/Update/Delete
       summary: Delete Knowledge Object Implementation
       operationId: deletekoimplementation
       parameters:
-      - name: naan
-        in: path
-        description: Name Assigning Authority unique number
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: hello
-      - name: name
-        in: path
-        description: Name Assigning Authority name
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: world
-      - name: implementation
-        in: path
-        description: Specific Implementation of the KO
-        required: true
-        style: simple
-        explode: false
-        schema:
-          type: string
-          example: v0.1.0
+        - name: naan
+          in: path
+          description: Name Assigning Authority unique number
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: hello
+        - name: name
+          in: path
+          description: Name Assigning Authority name
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: world
+        - name: implementation
+          in: path
+          description: Specific Implementation of the KO
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+            example: v0.1.0
       responses:
         200:
           description: OK
@@ -593,22 +527,40 @@ paths:
                 type: object
                 format: json
                 example:
-                  '@id': hello-world
-                  '@type': koio:KnowledgeObject
-                  identifier: ark:/hello/world
-                  title: Hello World Title
-                  contributors: Kgrid Team
-                  description: 'Test Hello World '
-                  keywords: test hello world
-                  hasImplementation:
-                  - hello-world/v0.1.0
-                  - hello-world/v0.2.0
-                  - hello-world/v0.3.0
-                  '@context':
-                  - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+                  KnowledgeObject:
+                    $ref: '#/components/examples/KnowledgeObject'
 components:
+
+  examples:
+    KnowledgeObject:
+      value:
+        '@id': hello-world
+        '@type': koio:KnowledgeObject
+        identifier: ark:/hello/world
+        title: Hello World Title
+        contributors: Kgrid Team
+        description: 'Test Hello World '
+        keywords: test hello world
+        hasImplementation:
+          - hello-world/v0.1.0
+          - hello-world/v0.2.0
+          - hello-world/v0.3.0
+        '@context':
+          - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+
+    KnowledgeObjectImplementation:
+      value:
+        '@id': v0.1.0
+        '@type': koio:Implementation
+        identifier: ark:/hello/world/v0.1.0
+        title: Implementation koio v1 of Hello World
+        hasServiceSpecification: v0.1.0/service.yaml
+        hasPayload: v0.1.0/welcome.js
+        '@context':
+          - http://kgrid.org/koio/contexts/implementation.jsonld
+
   schemas:
-    body:
+    importKO:
       type: object
       properties:
         ko:
