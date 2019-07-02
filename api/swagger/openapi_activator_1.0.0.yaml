@@ -77,10 +77,11 @@ paths:
         200:
           description: search results matching criteria
           content:
-            application/hal+json:
+            application/json:
               schema:
                 type: object
                 example: {}
+
   /endpoints/{naan}/{name}/{implementation}/{endpoint}:
     get:
       tags:
