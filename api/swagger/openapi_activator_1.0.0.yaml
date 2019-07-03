@@ -42,7 +42,7 @@ paths:
         Returns a collection of endpoints
       operationId: activate
       responses:
-        200:
+        '200':
           description: search results matching criteria
           content:
             application/json:
@@ -58,7 +58,7 @@ paths:
         Returns a collection of endpoints
       operationId: info
       responses:
-        200:
+        '200':
           description: search results matching criteria
           content:
             application/json:
@@ -74,13 +74,39 @@ paths:
         Returns a collection of endpoints
       operationId: findallendpoints
       responses:
-        200:
-          description: search results matching criteria
+        '200':
+          description: OK
           content:
             application/json:
               schema:
                 type: object
-                example: {}
+                format: json
+                example:
+                  _embedded:
+                    endpointResourceList:
+                      - title: Implementation bundle v1 of Hello World
+                        endpointPath: hello/world/v0.2.0/welcome
+                        servicePath: hello/world/v0.2.0/service
+                        activated: '2019-07-03T09:26:34.356'
+                        _links:
+                          self:
+                            href: 'http://localhost:8080/hello/world/v0.2.0/welcome'
+                          swagger_editor:
+                            href: 'https://editor.swagger.io?url=http://localhost:8080/hello/world/v0.2.0/service'
+                      - title: 'Ten-year Fatal Cardiovascular Risk Calculation based on SCORE project (Example KO - Bundled with data) '
+                        endpointPath: score/calc/v0.2.0/score
+                        servicePath: score/calc/v0.2.0/service
+                        activated: '2019-07-03T09:26:34.273'
+                        _links:
+                          self:
+                            href: 'http://localhost:8080/score/calc/v0.2.0/score'
+                          swagger_editor:
+                            href: 'https://editor.swagger.io?url=http://localhost:8080/score/calc/v0.2.0/service'
+                  _links:
+                    self:
+                      - href: 'http://localhost:8080'
+
+
 
   /endpoints/{naan}/{name}/{implementation}/{endpoint}:
     get:
@@ -128,13 +154,24 @@ paths:
             type: string
             example: welcome
       responses:
-        200:
-          description: KO Endpoint
+        '200':
+          description: OK
           content:
-            application/hal+json:
+            application/json:
               schema:
                 type: object
-                example: {}
+                format: json
+                example:
+                  title: Implementation koio v1 of Hello World
+                  endpointPath: hello/world/v0.1.0/welcome
+                  servicePath: hello/world/v0.1.0/service
+                  activated: '2019-07-03T09:26:34.355'
+                  _links:
+                    self:
+                      href: 'http://localhost:8080/hello/world/v0.1.0/welcome'
+                    swagger_editor:
+                      href: 'https://editor.swagger.io?url=http://localhost:8080/hello/world/v0.1.0/service'
+
   /{naan}/{name}/{implementation}/{endpoint}:
     post:
       tags:
