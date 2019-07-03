@@ -233,7 +233,7 @@ paths:
             application/json:
               schema:
                 type: object
-                example:
+              example:
                   result: 'Welcome to Knowledge Grid, George Jetson'
                   info:
                     ko:
@@ -402,7 +402,7 @@ paths:
               schema:
                 type: object
                 format: jspn
-            example:
+              example:
                   KnowledgeObject:
                     $ref: '#/components/examples/KnowledgeObject'
     delete:
