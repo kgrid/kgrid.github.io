@@ -32,7 +32,7 @@ paths:
             application/json:
               schema:
                 type: object
-                example: {}
+              example: {}
   /activate:
     get:
       tags:
@@ -48,7 +48,7 @@ paths:
             application/json:
               schema:
                 type: object
-                example: {}
+              example: {}
   /info:
     get:
       tags:
@@ -64,7 +64,7 @@ paths:
             application/json:
               schema:
                 type: object
-                example: {}
+              example: {}
   /endpoints:
     get:
       tags:
@@ -81,7 +81,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   _embedded:
                     endpointResourceList:
                       - title: Implementation bundle v1 of Hello World
@@ -125,7 +125,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: hello
+          example: hello
         - name: name
           in: path
           description: Name Assigning Authority name
@@ -134,7 +134,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: world
+          example: world
         - name: implementation
           in: path
           description: Specific Implementation of the KO
@@ -143,7 +143,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: v0.1.0
+          example: v0.1.0
         - name: endpoint
           in: path
           description: Specific endpoint path as defined in the OpenApi spec
@@ -152,7 +152,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: welcome
+          example: welcome
       responses:
         '200':
           description: OK
@@ -161,7 +161,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   title: Implementation koio v1 of Hello World
                   endpointPath: hello/world/v0.1.0/welcome
                   servicePath: hello/world/v0.1.0/service
@@ -313,7 +313,7 @@ paths:
             application/json:
               schema:
                 type: object
-                example:
+              example:
                   Added: hello-world
   /kos/{naan}/{name}:
     get:
@@ -331,7 +331,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: hello
+          example: hello
         - name: name
           in: path
           description: Name Assigning Authority name
@@ -340,7 +340,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: world
+          example: world
       responses:
         200:
           description: OK
@@ -349,7 +349,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   KnowledgeObject:
                     $ref: '#/components/examples/KnowledgeObject'
             application/zip:
@@ -374,7 +374,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: hello
+          example: hello
         - name: name
           in: path
           description: Name Assigning Authority name
@@ -383,14 +383,14 @@ paths:
           explode: false
           schema:
             type: string
-            example: world
+          example: world
       requestBody:
         description: Knowledge Object
         content:
           application/json:
             schema:
               type: object
-              example:
+            example:
                 KnowledgeObject:
                   $ref: '#/components/examples/KnowledgeObject'
         required: true
@@ -402,7 +402,7 @@ paths:
               schema:
                 type: object
                 format: jspn
-                example:
+            example:
                   KnowledgeObject:
                     $ref: '#/components/examples/KnowledgeObject'
     delete:
@@ -437,7 +437,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   KnowledgeObject:
                     $ref: '#/components/examples/KnowledgeObject'
 
@@ -457,7 +457,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: hello
+          example: hello
         - name: name
           in: path
           description: Name Assigning Authority name
@@ -466,7 +466,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: world
+          example: world
         - name: implementation
           in: path
           description: Specific Implementation of the KO
@@ -475,7 +475,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: v0.1.0
+          example: v0.1.0
       responses:
         200:
           description: OK
@@ -484,7 +484,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   KnowledgeObjectImplementation:
                     $ref: '#/components/examples/KnowledgeObjectImplementation'
             application/zip:
@@ -505,7 +505,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: hello
+          example: hello
         - name: name
           in: path
           description: Name Assigning Authority name
@@ -514,7 +514,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: world
+          example: world
         - name: implementation
           in: path
           description: Specific Implementation of the KO
@@ -523,14 +523,14 @@ paths:
           explode: false
           schema:
             type: string
-            example: v0.1.0
+          example: v0.1.0
       requestBody:
         description: Knowledge Object
         content:
           application/json:
             schema:
               type: object
-              example:
+            example:
                 KnowledgeObjectImplementation:
                   $ref: '#/components/examples/KnowledgeObjectImplementation'
         required: true
@@ -542,7 +542,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   KnowledgeObjectImplementation:
                     $ref: '#/components/examples/KnowledgeObjectImplementation'
     delete:
@@ -559,7 +559,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: hello
+          example: hello
         - name: name
           in: path
           description: Name Assigning Authority name
@@ -568,7 +568,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: world
+          example: world
         - name: implementation
           in: path
           description: Specific Implementation of the KO
@@ -577,7 +577,7 @@ paths:
           explode: false
           schema:
             type: string
-            example: v0.1.0
+          example: v0.1.0
       responses:
         200:
           description: OK
@@ -586,7 +586,7 @@ paths:
               schema:
                 type: object
                 format: json
-                example:
+              example:
                   KnowledgeObject:
                     $ref: '#/components/examples/KnowledgeObject'
 components:
