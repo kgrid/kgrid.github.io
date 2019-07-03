@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
-  title: Knowledge Object API
-  description: KGrid Activator API provides access to the Knowledge Object Endpoints,
-    Knowledge Object API and KGrid Activator server endpoints
+  title: KGrid Activator API
+  description: KGrid Activator API provides access to the Knowledge Objects, Endpoints and
+  KGrid Activator Server endpoints
   contact:
     email: kgrid-developers@umich.edu
   license:
