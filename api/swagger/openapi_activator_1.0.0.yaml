@@ -589,6 +589,41 @@ paths:
               example:
                   KnowledgeObject:
                     $ref: '#/components/examples/KnowledgeObject'
+
+  '/kos/manifest':
+    post:
+      tags:
+        -  Knowledge Object Import
+      summary: Imports packaged Knowledge Object based on url to artifact
+      description: |
+        Imports Knowledge Object based on a collectoin of urls that point to packaged Knowledge Object artifacts (zip file)
+      operationId: importmanifest
+      requestBody:
+        description: Import Manifest
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                manifest:
+                  - 'https://github.com/kgrid-objects/example-collection/releases/download/1.4.0/hello-world.zip'
+                  - 'https://github.com/kgrid-objects/example-collection/releases/download/1.4.0/ri-bmicalc.zip'
+                  - 'https://github.com/kgrid-objects/example-collection/releases/download/1.4.0/score-calc.zip'
+      responses:
+        '201':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                format: json
+                example:
+                  Added:
+                    - 'ark:/hello/world'
+                    - 'ark:/ri/bmicalc'
+                    - 'ark:/score/calc'
+
 components:
 
   examples:
@@ -606,7 +641,7 @@ components:
           - hello-world/v0.2.0
           - hello-world/v0.3.0
         '@context':
-          - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
+        - http://kgrid.org/koio/contexts/knowledgeobject.jsonld
 
     KnowledgeObjectImplementation:
       value:
@@ -617,7 +652,7 @@ components:
         hasServiceSpecification: v0.1.0/service.yaml
         hasPayload: v0.1.0/welcome.js
         '@context':
-          - http://kgrid.org/koio/contexts/implementation.jsonld
+        - http://kgrid.org/koio/contexts/implementation.jsonld
 
   schemas:
     importKO:
