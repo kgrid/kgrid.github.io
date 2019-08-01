@@ -1,10 +1,6 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:500italic,300,400,500,600,700,800,900');
 
-@import url('animate.css');
-/*==========================================================================
-  General
-  ========================================================================== */
 body {
 	color:#555555;
 	background: #fff;
@@ -46,52 +42,26 @@ body {
       background-color: #fff;
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
 
-
-
-.clear {
-	clear: both;
-}
-
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Open Sans';
-
 }
 h1, h2, h3, h4, h5, h6 {
 	color:#555555;
-}
-
-h1,h2,h3,h4,h5,h6 {
 	font-style: normal;
 	margin: 0 0 0px 0;
-	/*letter-spacing: 0.08em;*/
 }
+
 h1 { font-size: 40px; line-height: 30px; }
 h2 { font-size: 28px; line-height: 1.25em;}
 h3 { font-size: 21px; }
 h4 { font-size: 16px; }
-h5 { font-size: 16px; }
 
-.txt-light { font-weight: 300; }
-.txt-regular { font-weight: 400; }
-.txt-bold { font-weight: 700; }
-.text-bold {	font-weight: 900; }
 .brd-d7{
 	border-bottom: 1px solid #d7d7d7;
 }
-/*.brd-b-white {
-	border-bottom: 1px solid #fff;
-}
-.brd-t-d7{
-	border-top: 1px solid #d7d7d7;
-}*/
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
-}
-
-small {
-	font-size: 70%;
-	font-weight: 100;
 }
 
 a {
@@ -107,14 +77,6 @@ a, a:hover, a:active, a:visited, a:focus {
 	outline: none;
 }
 
-ul.contact-list {
-	list-style: none;
-padding-left: 0px;
-margin-top: -10px;
-}
-/*==========================================================================
-  Misc & Adjust
- ========================================================================== */
 .row {
 	z-index: 9999;
 }
@@ -127,11 +89,6 @@ margin-top: -10px;
 	z-index: 100;
 }
 
-/* --- float --- */
-.float-left {	float: left;}
-.float-right {	float: right;}
-
-/* --- align --- */
 .align-left {	text-align: left;}
 .align-right {	text-align: right;}
 .align-center {	text-align: center;}
@@ -143,34 +100,18 @@ margin-top: -10px;
  	transform: translateY(-50%);
 }
 .line-ht28 {	line-height: 2.8em;}
-/* ---- padding ---- */
-/* top */
+
 .pad-top0 {	padding-top: 0;}
-.pad-top5 {	padding-top: 5px;}
 .pad-top10 {	padding-top: 10px;}
 .pad-top15 {	padding-top: 15px;}
 .pad-top20 {	padding-top: 20px;}
-.pad-top25 {	padding-top: 25px;}
-.pad-top30 {	padding-top: 30px;}
-.pad-top35 {	padding-top: 35px;}
-.pad-top40 {	padding-top: 40px;}
-.pad-top55 {	padding-top:55px;}
-.pad-top80 {	padding-top: 80px;}
-.pad-top60 {	padding-top: 60px;}
-.pad-top65 {	padding-top:65px;}
-.pad-top100 {	padding-top: 100px;}
-/* bottom */
+
 .pad-bot0 {	padding-bottom: 0; }
-.pad-bot5 {	padding-bottom: 5px; }
 .pad-bot10 {	padding-bottom: 10px;}
 .pad-bot15 {	padding-bottom: 15px;}
 .pad-bot20 {	padding-bottom: 20px;}
-.pad-bot25 {	padding-bottom: 25px;}
-.pad-bot30 {	padding-bottom: 30px;}
-.pad-bot35 {	padding-bottom: 35px;}
 .pad-bot40 {	padding-bottom: 40px;}
-.pad-bot55 {	padding-bottom:55px;}
-/* left */
+
 .pad-left0 {	padding-left: 0px;}
 .pad-left5 {	padding-left: 5px;}
 .pad-left8 {	padding-left: 8px;}
@@ -182,14 +123,13 @@ margin-top: -10px;
 .pad-left35 {	padding-left: 35px;}
 .pad-left60 {	padding-left: 60px;}
 .pad-left140 {	padding-left: 140px;}
-/*right */
+
 .pad-right0 {	padding-right: 0px;}
 .pad-right15 {		padding-right: 15px;}
 .pad-right25{	padding-right: 25px;}
 .pad-right35 {		padding-right: 35px;}
 .pad-right60 {		padding-right: 60px;}
 
-/* ---- margin --- */
 .mar-right0 { margin-right: 0px; }
 .mar-top0 {	margin-top: 0;}
 .mar-top5 {	margin-top: 5px;}
@@ -203,14 +143,10 @@ margin-top: -10px;
 .mar-bot35 {	margin-bottom: 35px;}
 .mar-bot40 {	margin-bottom: 40px;}
 
-
 .font-fs14 {	font-size: 14px; }
 .font-fs18 {	font-size: 18px; }
 .font-fw6  {	font-weight: 600; }
 
-.ht60 {
-	height: 60px;
-}
 .more {
 	cursor: pointer;
 	font-size: 12px;
@@ -232,17 +168,6 @@ margin-top: -10px;
 	display: table-cell;
 }
 
-img#down {
-	padding-left: 5px;
-	transition: transform 0.8s ease;
-}
-.dropdown.open img#down{
-	-moz-transform: scaleY(-1);
-	-o-transform: scaleY(-1);
-	-webkit-transform: scaleY(-1);
-	transform: scaleY(-1);
-}
-
 .col-spacer {
 	position: absolute;
 	background-color:#fff;
@@ -257,12 +182,6 @@ right: -15px;
 	margin-bottom: 20px;
 }
 
-div.spacer {
-	height: 80px;
-}
-/*===========================
-  --- Sections ----
-=========================== */
 section#section-tech p, section#section-story p {
 	line-height: 2em;
 }
@@ -286,23 +205,11 @@ section#section-tech h3 {
 	margin-left:0px;
 	margin-right:0px;
 }
-.secheader h3 {
-	line-height: 2.9em;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
+
 .secheader .container {
 	padding: 0px 15px;
 }
 
-.seclabel {
-	line-height:50px;
-}
-.seclabel h3 {
-	line-height: 50px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
 .kgrid-component {
 	background-color:#fff;
 	background-image: url("../assets/img/PlatformDrawing4.png");
@@ -314,33 +221,17 @@ section#section-tech h3 {
 	border: none;
 			background-size:360px 80px;
 }
-.manual{
-	background-color:#fff;
-	background-image: none;
-	width: 80px;
-	height: 80px;
-	margin: 40px auto;
-	font-size:60px;
-	border-radius: 0px;
-	background-repeat: no-repeat;
-	border: none;
-			background-size:360px 80px;
-}
 
 .kgrid-component#k-object{
-		/*background-size:360px 80px;*/
 		background-position: 6px -3px;
 }
 .kgrid-component#k-library{
-		/*background-size: 480px 100px;*/
 		background-position: -99px 0px;
 }
 .kgrid-component#k-activator{
-		/*background-size: 510px 112px;*/
 		background-position: -205px 0px;
 }
 .kgrid-component#k-service{
-		/*background-size: 600px 120px;*/
 		background-position: -298px 0px;
 }
 section.section {
@@ -355,28 +246,12 @@ section.section {
 .bg-grey{
 		background-color: #e4e1df;
 }
-.bg-darkgrey {
-	background-color:#555555;
-}
-.opac6 {
-	opacity: 0.6;
-}
-/* --- section heading --- */
-.section-header {
-	text-align: center;
-}
-.section-header h2.section-heading {
-	/*text-transform: uppercase;*/
-	font-weight: 700;
-}
+
 section > .container{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
 
-/*===========================
-  --- Header & menu ----
-=========================== */
 .navbar {
 	line-height: 60px;
 	height: 60px;
@@ -406,24 +281,7 @@ section > .container{
 	line-height: 60px;
 	vertical-align: middle;
 }
-.nav li.dropdown {
-	height: 44px;
-	line-height: 44px;
-	vertical-align: middle;
 
-}
-.nav li.dropdown.open {
-		background-color:#fff;
-	}
-.dropdown-menu li {
-	height: 56px;
-	line-height: 56px;
-	text-align:left;
-}
-.dropdown-menu > li > a {
-	padding: 0px 20px;
-	line-height:inherit;
-}
 .collapse li {
 	border-bottom: 1px solid #c7c7c7;
 }
@@ -471,34 +329,12 @@ section > .container{
 	background: transparent;
 	transition: width .5s ease, background-color .5s ease;
 }
-.navbar-nav >li>.dropdown-menu {
-	padding:0px;
-	left: initial;
-	right: 10px;
-	margin-top: -12px;
-	box-shadow: none;
-	border-radius: 0px;
-}
- .more>a>span:after {
-	content: '';
-	display: block;
-	margin: auto;
-	margin-top:2px;
-	height: 2px;
-	width: 0px;
-	background: transparent;
-
-}
 
 .nav li.active>a>span:after, .nav li:hover>a>span:after {
 	width: 100%;
 	background: #00274c;
 }
 
- .more>a:hover>span:after {
-	width: 100%;
-	background: transparent;
-}
 .navbar-nav {
 	/* float: right; */
 	margin-bottom: 0;
@@ -514,20 +350,6 @@ section > .container{
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
 	background-color: #fff;
 }
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    background-color: #fff;
-    background-image: none;
-
-}
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-    color: #333;
-    text-decoration: none;
-    background-color: #fff;
-    outline: 0;
-}
-/*===========================
-  --- Featured section ----
-=========================== */
 
 section#spacer {
 	height: 60px;
@@ -536,10 +358,7 @@ section.featured {
 	background: #fff;
 	color: #fdfdfd;
 }
-section#section-main .container {
-	padding-top:0px;
-	padding-bottom:0px;
-}
+
 section.featured h1.slogan {
 	color: #656565;
 	line-height: 1.8em;
@@ -554,41 +373,15 @@ h3.slogan {
 	font-size: 14px;
 	font-weight: 500;
 }
-span.sectitle{
-	font-size: 24px;
-	font-weight:500;
-}
-section.featured .slogan span.italic{
-	font-style: italic;
-}
 
- /* inner heading */
-section.featured.inner {
-	background: #eee;
-	padding: 150px 0 50px;
-}
-
-/* --- Revolution slider --- */
-
-.use-detail h4, section h4.text-bold{
-	font-weight: 700;
-	color: #00274c;
-	font-size: 21px;
-	margin-bottom: 15px;
-
-}
 .use-detail {
-padding-left: 0px;
-/*padding-right: 25px;*/
+	padding-left: 0px;
 }
 
 .modal-content {
 	border: none;
 	border-radius: 0px;
 }
-/*=========================
-  Footer
- ================= */
 
 section#footer {
 	margin: 0;
@@ -624,25 +417,10 @@ section span {
 	line-height: 2em;
 }
 
-.no-transition {
-  -webkit-transition: height 0.01s;
-  -moz-transition: height 0.01s;
-  -ms-transition: height 0.01s;
-  -o-transition: height 0.01s;
-  transition: height 0.01s;
-}
 h3.customheading {
 	display: none;
 }
 
-.navbar-header{
-	height: 60px;
-}
-/*.nav-spacer {
-	float:right;
-}*/
-
-/* Overlay */
 .modal-header {
     padding: 10px;
     border-bottom: none;
@@ -651,53 +429,6 @@ h3.customheading {
     position: relative;
     padding: 30px 50px;
 }
-
-/*Sidebar navigation*/
-.fixed {
-	position: fixed;
-}
-
-.customizedanchor { padding-top: 20px; }
-
-.sidenav>li>a {
-	padding-top: 0px;
-	padding-bottom:0px;
-	padding-left:0px;
-	font-weight:500;
-	font-weight: 500;
-	color: #555555;
-		transition: all 0.3s ease;
-}
-.sidenav>li {
-	color: #555555;
-	padding-top: 10px;
-	padding-bottom:10px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	height:40px;
-	line-height:40px;
-	background-color: #fff;
-	border:none;
-}
-.sidenav>li.active>a{
-	font-weight: 600;
-	color: #00274c;
-}
-/*
-.sidenav>li span.stub {
-	display: block;
-	position: absolute;
-	bottom:0;
-	margin: auto;
-	height: 0px;
-	width: 2px;
-	background: transparent;
-	transition: height .5s ease;
-}
-.sidenav>li.active span.stub {
-background: #00274c;
-height:40px;
-}*/
 
 .avatar-md {
 	border-radius:50%;
@@ -757,11 +488,7 @@ height:40px;
 	  top: -4px;
 	  transform: rotate(-45deg);
 }
-.tool-detail0 img {
-	width: 80%;
-	margin-top:20px;
-	margin-bottom:20px;
-}
+
 
 /* ========================================
 Media queries
@@ -769,19 +496,11 @@ Media queries
 
 @media only screen and (min-width : 992px)   {
 
-	.pad-bot-xs20{
-		padding-bottom: 0px;
-	}
 	.banner-pad-i{
 		padding: 80px 40px 80px 10px;
 	}
 	.banner-pad {
 		padding-top: 90px;
-	}
-	.tool-detail img {
-		width: 60%;
-		margin-top:20px;
-		margin-bottom:20px;
 	}
 	.pad-hlogo {
 		padding-left:13px;
@@ -808,12 +527,6 @@ Media queries
 	.nav>li>a {
 		padding-top: 4px;
 		padding-bottom: 10px;
-	}
-	.extra-pad-left {
-		padding-left: 15px;
-	}
-	.extra-pad-right {
-		padding-right: 15px;
 	}
 
 	.pad-left {
@@ -842,16 +555,10 @@ Media queries
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	/*.navbar-toggle {
-		display: block;
-	}*/
 	.secheader h2 {
     font-size: 18px;
 	}
 .font-fs18 {	font-size: 16px; }
-	.pad-bot-xs20{
-		padding-bottom: 0px;
-	}
 	.pad-hlogo {
 		padding-left:13px;
 	}
@@ -869,16 +576,6 @@ section.featured h3.slogan {
 	}
 	.banner-pad {
 		padding-top: 60px;
-	}
-	.tool-detail img{
-		width: 70%;
-		margin-top:20px;
-		margin-bottom:20px;
-	}
-	.tool-detail0 img {
-		width: 100%;
-		margin-top:20px;
-		margin-bottom:20px;
 	}
 
 	.more-parent {
@@ -902,18 +599,11 @@ section.featured h3.slogan {
 	.navbar-nav {
 		margin-top: 0px;
 	}
-	.extra-pad-left {
-		padding-left: 20px;
-	}
-	.extra-pad-right {
-		padding-right: 0px;
-	}
 
 	.nav>li>a {
 		padding-top: 4px;
 		padding-bottom: 10px;
 	}
-
 	.pad-left {
 		padding-left: 60px;
 	}
@@ -936,13 +626,13 @@ section.featured h3.slogan {
 		height: 70px;
 		padding: 5px;
 	}
-
-		.avatar-md {
-			width: 60px;
-		}
+	.avatar-md {
+		width: 60px;
+	}
 }
 
 @media only screen  and  (max-width: 767px) {
+
 	.kgrid-component {
 		width: 200px;
 		height:200px;
@@ -952,19 +642,13 @@ section.featured h3.slogan {
 		background-position: 16px -3px;
 	}
 	.kgrid-component#k-library{
-			/*background-size: 480px 100px;*/
-			background-position: -246px 0px;
+		background-position: -246px 0px;
 	}
 	.kgrid-component#k-activator{
-			/*background-size: 510px 112px;*/
-			background-position: -510px 0px;
+		background-position: -510px 0px;
 	}
 	.kgrid-component#k-service{
-			/*background-size: 600px 120px;*/
-			background-position: -743px 0px;
-	}
-	.pad-bot-xs20{
-		padding-bottom: 20px;
+		background-position: -743px 0px;
 	}
 	.banner-pad-i{
 		padding: 30px 10px 25px 10px;
@@ -972,31 +656,23 @@ section.featured h3.slogan {
 	.banner-pad {
 		padding-top: 20px;
 	}
-	.tool-detail img, .tool-detail0 img {
-		width: 100%;
-		margin-top:0px;
-		margin-bottom:0px;
-	}
 	.pad-hlogo {
 		padding-left:28px;
 	}
-.pad-btitle{
-	padding-bottom: 30px;
-}
-		section.featured h1.slogan {
-			font-size: 24px;
-		}section.featured h3.slogan {
-			font-size: 16px;
-		}
-		.more-parent {
-			height: 70px;
-		}
+	.pad-btitle{
+		padding-bottom: 30px;
+	}
+	section.featured h1.slogan {
+		font-size: 24px;
+	}
+	section.featured h3.slogan {
+		font-size: 16px;
+	}
+	.more-parent {
+		height: 70px;
+	}
 	.navbar-toggle{
 		width: 80px;
-	}
-	span.sectitle{
-		font-size: 22px;
-		font-weight:500;
 	}
 	.align-alt, .align-alt-l{
 		text-align: center;
@@ -1011,12 +687,6 @@ section.featured h3.slogan {
 		max-wiudth: none;
 	}
 
-	.extra-pad-left {
-		padding-left: 20px;
-	}
-	.extra-pad-right {
-		padding-right: 20px;
-	}
 	.modal-dialog {
 		margin: 0px;
 	}
@@ -1026,13 +696,12 @@ section.featured h3.slogan {
 	.pad-right {
 		padding-right: 0px;
 	}
-, .pad-right-c {
-	padding-right: 15px;
-}
+	 .pad-right-c {
+		padding-right: 15px;
+	}
   .line-ht2 {
 		line-height:1.8em;
 	}
-
 	section.section {
 		margin:0;
 		padding: 00px 20px 0px 20px;
@@ -1044,8 +713,6 @@ section.featured h3.slogan {
 	section#footer .school img {
 		height: 1.8em;
 	}
-
-
 	.size170 {
 		width: 170px;
 		height: 170px;
@@ -1056,7 +723,6 @@ section.featured h3.slogan {
 		height: 70px;
 		padding: 5px;
 	}
-
 
 	.avatar-md {
 			width: 60px;
@@ -1071,6 +737,7 @@ section.featured h3.slogan {
 		font-size:14px;
 		font-weight:700;
 	}
+
 }
 
 .avaicon {
