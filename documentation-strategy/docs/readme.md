@@ -1,7 +1,7 @@
 
 # Component Quick Start
 
-These instructions will get the Kgrid Component up and running so that it can be played with relatively quickly. Not all components will have this, especially if they are just dependencies that get included in another project.
+These instructions will get the Kgrid Component up and running so that it can be played with relatively quickly. Not all components will have this, especially if they are just dependencies that get included in another project. This readme should be aimed toward non-technical users.
 
 ## Prerequisites
 
