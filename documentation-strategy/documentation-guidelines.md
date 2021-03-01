@@ -1,6 +1,6 @@
 # Kgrid Documentation Strategy
 
-## Which docs go where
+## Which docs go where?
 ### Reference Documentation
 - Docs concerning a component of Kgrid should live within that component's git repo
   - See the [Reference Documentation Structure](#ReferenceStructure) section for more details.
@@ -9,7 +9,7 @@
 - Guides for developers, integrators, and different actors using the kgrid, or developing Knowledge Objects of their own.
   - Found in the [kgrid guides](https://github.com/kgrid/guides) repo
   
-### Kgrid Developer Guides
+### Kgrid Team Docs
 - Guides and docs for things members of the kgrid team need to know
   - These things are documented generally in the [kgrid-config](https://github.com/kgrid/kgrid-config) repo.
   
