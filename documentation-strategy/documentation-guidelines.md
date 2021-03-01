@@ -3,40 +3,42 @@
 ## Which docs go where?
 ### Reference Documentation
 - Docs concerning a component of Kgrid should live within that component's git repo
-  - See the [Reference Documentation Structure](#ReferenceStructure) section for more details.
+  - These docs should be aimed at the following actors
+    - KO developers that are using components of the Kgrid, developing KOs for existing runtimes, or creating new runtimes
+    - Operators (System Administrators and such) that are setting up and maintaining a Kgrid, and need information about configuration, the APIs exposed, and administration.
+    - Client developers that are writing apps that integrate with a running Kgrid
+  - See the [Reference Documentation Structure](#ReferenceStructure) section of this document for more details.
   
 ### User Guides
-- Guides for developers, integrators, and different actors using the kgrid, or developing Knowledge Objects of their own.
+- Guides for developers, integrators, and different actors using the kgrid, getting started with the Kgrid, or using more advanced features.
   - Found in the [kgrid guides](https://github.com/kgrid/guides) repo
   
-### Kgrid Team Docs
-- Guides and docs for things members of the kgrid team need to know
-  - These things are documented generally in the [kgrid-config](https://github.com/kgrid/kgrid-config) repo.
-  
-### Academic Documentation
+### Standards and Background
 - The brains behind the whole operation. This is the documentation for the research and ideas that have lead to our implementations of the kgrid.
+  - Standards, specifications, white papers, and architectural 
   - Found in the [kgrid specs](https://github.com/kgrid/specs) repo
+  
 ## <a name="ReferenceStructure"></a>Reference Documentation Structure ##
 ### Top-Level Github Readme
 - The first thing you see when you go to the github repo for a Kgrid component. This should be focused on getting a developer who is going to either fork the project, or contribute to it open-source up and running. It should be contained in the root of the project.
     - Check out the [Example Top-level Readme](github-readme.md)
 
-### Vuepress Docs
-- We publish our docs using Vuepress. See the [Vuepress site](https://vuepress.vuejs.org/) for instructions on setting up a new Vuepress project, or if you're feeling bold, just copy an existing one and change all the component names. The following files should be contained in a folder called `docs` contained in the top level of the project.
-#### readme.md
-- Should be the quick start guide that is aimed at getting a non-technical person up and running, able to play with the compiled or packaged component. 
-    - They should not be checking out source code as part of this guide.
-    - Check out the [Example Quick Start](docs/readme.md)
-#### api.md
-- This should be a very dry, developer centric documentation of the component's api if it exposes one.
-    - Keep this file a very clean reference doc
-    - Checkout the [Example API Docs](docs/api.md)
-#### configuration.md
-- This should be a very dry, developer centric documentation of the component's configuration if available.
-    - Keep this file a very clean reference doc
-    - Checkout the [Example Config Docs](docs/configuration.md)
-#### extra-info.md
-- Some components may need some special documentation. We are free to include one-off docs like this, but they should also try to follow the same style guide so that the reader knows what to expect and can easily find information
+### Public Docs
+- We currently publish our docs using Vuepress. See the [Vuepress site](https://vuepress.vuejs.org/) for instructions on setting up a new Vuepress project, or if you're feeling bold, just copy an existing one and change all the component names. The following files should be contained in a folder called `docs` contained in the top level of the project.
+  #### readme.md
+  - Should be the quick start guide that is aimed at getting a non-technical person up and running, able to play with the compiled or packaged component. 
+      - They should not be checking out source code as part of this guide.
+      - Check out the [Example Quick Start](docs/readme.md)
+  #### api.md
+  - This should be a very dry, developer centric documentation of the component's api if it exposes one.
+      - Keep this file a very clean reference doc
+      - Checkout the [Example API Docs](docs/api.md)
+  #### configuration.md
+  - This should be a very dry, developer centric documentation of the component's configuration if available.
+      - Keep this file a very clean reference doc
+      - Checkout the [Example Config Docs](docs/configuration.md)
+  #### extra-info.md
+  - Some components may need some special documentation. We are free to include one-off docs like this, but they should also try to follow the same style guide so that the reader knows what to expect and can easily find information
 ## Style
 ### Headers
 - In general, these docs utilize Headers in a way that allows each main endpoint, configuration, or feature to be turned into a side-bar navigation link by vuepress.
