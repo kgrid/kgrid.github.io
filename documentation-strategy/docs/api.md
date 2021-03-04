@@ -1,4 +1,4 @@
-#Component API
+# Component API
 ## Sub API
 A short explanation of the purpose of this sub API. Each endpoint should be a header contained in tick marks that expresses the Http Method and Endpoint location. Path variables are contained in curly braces, and query parameters should be expressed.
 ### `POST /{pathVariable}?queryParameter=value` 
