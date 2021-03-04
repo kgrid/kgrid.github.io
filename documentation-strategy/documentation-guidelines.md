@@ -28,7 +28,7 @@
   #### readme.md
   - Should be the quick start guide that is aimed at getting a non-technical person up and running, able to play with the compiled or packaged component. 
       - They should not be checking out source code as part of this guide.
-      - Check out the [Example Quick Start](docs/readme.md)
+      - Check out the [Example Quick Start](docs/docs-readme.md)
   #### api.md
   - This should be a very dry, developer centric documentation of the component's api if it exposes one.
       - Keep this file a very clean reference doc
