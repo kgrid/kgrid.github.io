@@ -175,6 +175,9 @@ a, a:hover, a:active, a:visited, a:focus {
 	border: 2px solid #002e5e ;
 	transition: all 0.1s linear;
 }
+.downloadbutton>a, .guidebutton>a {
+		color: #002e5e;
+}
 .downloadbutton:hover {
 	font-weight: 800;
 }
@@ -182,11 +185,12 @@ a, a:hover, a:active, a:visited, a:focus {
 	padding: 15px;
 	color: #002e5e;
 	background-color: #fff;
-	border: none;
+	border: 2px solid #002e5e ;
 	font-weight: 500;
 	transition: all 0.1s linear;
 }
 .guidebutton:hover {
+	text-decoration: underline;
 	font-weight: 800;
 }
 .col-spacer {
