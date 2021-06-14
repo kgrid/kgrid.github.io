@@ -105,7 +105,8 @@ a, a:hover, a:active, a:visited, a:focus {
 .pad-top10 {	padding-top: 10px;}
 .pad-top15 {	padding-top: 15px;}
 .pad-top20 {	padding-top: 20px;}
-
+.pad-top30 {	padding-top: 30px;}
+.pad-top40 {	padding-top: 40px;}
 .pad-bot0 {	padding-bottom: 0; }
 .pad-bot10 {	padding-bottom: 10px;}
 .pad-bot15 {	padding-bottom: 15px;}
@@ -161,13 +162,33 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 .more span {
 	color: #00274c;
-
 	padding-left:0px;
 	font-weight: 700;
 	font-size: 14px;
 	display: table-cell;
 }
-
+.downloadbutton {
+	padding: 15px;
+	color: #002e5e;
+	background-color: #fff;
+	font-weight: 500;
+	border: 2px solid #002e5e ;
+	transition: all 0.1s linear;
+}
+.downloadbutton:hover {
+	font-weight: 800;
+}
+.guidebutton {
+	padding: 15px;
+	color: #002e5e;
+	background-color: #fff;
+	border: none;
+	font-weight: 500;
+	transition: all 0.1s linear;
+}
+.guidebutton:hover {
+	font-weight: 800;
+}
 .col-spacer {
 	position: absolute;
 	background-color:#fff;
@@ -497,7 +518,7 @@ Media queries
 @media only screen and (min-width : 992px)   {
 
 	.banner-pad-i{
-		padding: 80px 40px 80px 10px;
+		padding: 80px 40px 20px 10px;
 	}
 	.banner-pad {
 		padding-top: 90px;
@@ -572,7 +593,7 @@ section.featured h3.slogan {
 	font-size: 14px;
 }
 	.banner-pad-i{
-		padding: 60px 30px 60px 10px;
+		padding: 60px 30px 30px 10px;
 	}
 	.banner-pad {
 		padding-top: 60px;
