@@ -167,19 +167,8 @@ a, a:hover, a:active, a:visited, a:focus {
 	font-size: 14px;
 	display: table-cell;
 }
-.downloadbutton {
-	padding: 15px;
+.guidebutton>a {
 	color: #002e5e;
-	background-color: #fff;
-	font-weight: 500;
-	border: 2px solid #002e5e ;
-	transition: all 0.1s linear;
-}
-.downloadbutton>a, .guidebutton>a {
-		color: #002e5e;
-}
-.downloadbutton:hover {
-	font-weight: 800;
 }
 .guidebutton {
 	padding: 15px;
@@ -196,9 +185,8 @@ a, a:hover, a:active, a:visited, a:focus {
 .col-spacer {
 	position: absolute;
 	background-color:#fff;
-/*outline: 1px solid #fff;*/
-height: 68px;
-right: -15px;
+	height: 68px;
+	right: -15px;
 }
 .wid80 {
 	width: 80px;
